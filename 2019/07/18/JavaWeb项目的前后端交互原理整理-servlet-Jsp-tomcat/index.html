@@ -92,19 +92,19 @@
 
 
 
-<meta name="description" content="&amp;lt;!--more--&amp;gt;   因为最近要写Java-Web的项目，就是通常的那种三层的Jdbc，前端-后端-Db，这两天老师也是讲的很快，我其实是没有听懂多少，感觉就是没有，到现在还是不太清楚一整个Java-Web的项目的交互如何实现，所以今天就是自己再看看然后整理一下项目的过程、原理和具体的实现方法。 Java命名格式整理    就是一直从大一下学习了Java之后到现在都是不是很确定J">
+<meta name="description" content="因为最近要写Java-Web的项目，就是通常的那种三层的Jdbc，前端-后端-Db，这两天老师也是讲的很快，我其实是没有听懂多少，感觉就是没有，到现在还是不太清楚一整个Java-Web的项目的交互如何实现，所以今天就是自己再看看然后整理一下项目的过程、原理和具体的实现方法。 Java命名格式整理    就是一直从大一下学习了Java之后到现在都是不是很确定Java的具体的命名格式(其实也就是">
 <meta name="keywords" content="博客">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaWeb项目的前后端交互原理整理[servlet+Jsp+tomcat]">
 <meta property="og:url" content="http://yoursite.com/2019/07/18/JavaWeb项目的前后端交互原理整理-servlet-Jsp-tomcat/index.html">
 <meta property="og:site_name" content="AggressiveJokerJD&#39;s Blog">
-<meta property="og:description" content="&amp;lt;!--more--&amp;gt;   因为最近要写Java-Web的项目，就是通常的那种三层的Jdbc，前端-后端-Db，这两天老师也是讲的很快，我其实是没有听懂多少，感觉就是没有，到现在还是不太清楚一整个Java-Web的项目的交互如何实现，所以今天就是自己再看看然后整理一下项目的过程、原理和具体的实现方法。 Java命名格式整理    就是一直从大一下学习了Java之后到现在都是不是很确定J">
+<meta property="og:description" content="因为最近要写Java-Web的项目，就是通常的那种三层的Jdbc，前端-后端-Db，这两天老师也是讲的很快，我其实是没有听懂多少，感觉就是没有，到现在还是不太清楚一整个Java-Web的项目的交互如何实现，所以今天就是自己再看看然后整理一下项目的过程、原理和具体的实现方法。 Java命名格式整理    就是一直从大一下学习了Java之后到现在都是不是很确定Java的具体的命名格式(其实也就是">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://study-image-1259719447.cos.ap-chengdu.myqcloud.com/J2EEweb%E6%B5%81%E7%A8%8B.png">
 <meta property="og:updated_time" content="2019-07-28T02:49:00.830Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaWeb项目的前后端交互原理整理[servlet+Jsp+tomcat]">
-<meta name="twitter:description" content="&amp;lt;!--more--&amp;gt;   因为最近要写Java-Web的项目，就是通常的那种三层的Jdbc，前端-后端-Db，这两天老师也是讲的很快，我其实是没有听懂多少，感觉就是没有，到现在还是不太清楚一整个Java-Web的项目的交互如何实现，所以今天就是自己再看看然后整理一下项目的过程、原理和具体的实现方法。 Java命名格式整理    就是一直从大一下学习了Java之后到现在都是不是很确定J">
+<meta name="twitter:description" content="因为最近要写Java-Web的项目，就是通常的那种三层的Jdbc，前端-后端-Db，这两天老师也是讲的很快，我其实是没有听懂多少，感觉就是没有，到现在还是不太清楚一整个Java-Web的项目的交互如何实现，所以今天就是自己再看看然后整理一下项目的过程、原理和具体的实现方法。 Java命名格式整理    就是一直从大一下学习了Java之后到现在都是不是很确定Java的具体的命名格式(其实也就是">
 <meta name="twitter:image" content="https://study-image-1259719447.cos.ap-chengdu.myqcloud.com/J2EEweb%E6%B5%81%E7%A8%8B.png">
 
 
@@ -366,24 +366,24 @@
       
 
       
-        <p>&lt;!--more--&gt;
-  因为最近要写Java-Web的项目，就是通常的那种三层的Jdbc，前端-后端-Db，这两天老师也是讲的很快，我其实是没有听懂多少，感觉就是没有，到现在还是不太清楚一整个Java-Web的项目的交互如何实现，所以今天就是自己再看看然后整理一下项目的过程、原理和具体的实现方法。</p>
-<h2>Java命名格式整理</h2>
+        <a id="more"></a>
+<p>  因为最近要写Java-Web的项目，就是通常的那种三层的Jdbc，前端-后端-Db，这两天老师也是讲的很快，我其实是没有听懂多少，感觉就是没有，到现在还是不太清楚一整个Java-Web的项目的交互如何实现，所以今天就是自己再看看然后整理一下项目的过程、原理和具体的实现方法。</p>
+<h2 id="java命名格式整理">Java命名格式整理</h2>
 <hr>
 <p>  就是一直从大一下学习了Java之后到现在都是不是很确定Java的具体的命名格式(其实也就是学完之后就没有写过了)，因为有点想毕业直接去工作的，所以觉得还是应该关注一下这个方面了。</p>
-<h3>包名的规范</h3>
+<h3 id="包名的规范">包名的规范</h3>
 <ol>
-<li>首先包名都是以小写字母命名，一般以公司名为开始或者是网站可以把域名反过来用作包的命名，例如：&lt;code&gt;com.scu&lt;/code&gt;。</li>
-<li>之后跟模块的名称，用户模块：&lt;code&gt;com.scu.user&lt;/code&gt;。</li>
+<li>首先包名都是以小写字母命名，一般以公司名为开始或者是网站可以把域名反过来用作包的命名，例如：<code>com.scu</code>。</li>
+<li>之后跟模块的名称，用户模块：<code>com.scu.user</code>。</li>
 <li>关于模块的访问操作：
 <ol>
 <li>Dao层：(Data Access Object)用于数据库访问的操作。</li>
 <li>Service层：服务层，后端的一些控制操作等。</li>
-<li>Web层：Web相关操作。&lt;code&gt;com.scu.user.web&lt;/code&gt;</li>
+<li>Web层：Web相关操作。<code>com.scu.user.web</code></li>
 </ol>
 </li>
 </ol>
-<h3>类名的书写规范</h3>
+<h3 id="类名的书写规范">类名的书写规范</h3>
 <ol>
 <li>选择有意义的名词</li>
 <li>参照驼峰命名法，首字母大写，每个词的首字母也大写</li>
@@ -410,7 +410,7 @@
 </ol>
 </li>
 </ol>
-<h3>变量的命名</h3>
+<h3 id="变量的命名">变量的命名</h3>
 <ol>
 <li>普通变量
 <ol>
@@ -425,12 +425,12 @@
 </ol>
 </li>
 </ol>
-<h3>方法的命名</h3>
+<h3 id="方法的命名">方法的命名</h3>
 <ol>
 <li>选择有意义的名字，能快速地传达该方法的用途。一般以动词开头。</li>
 <li>参照java驼峰命名法，首字母以小写开头，每个单词首字母大写（第一个单词除外）</li>
 </ol>
-<h3>注释的方法</h3>
+<h3 id="注释的方法">注释的方法</h3>
 <ol>
 <li>
 <p>对类的具体的描述</p>
@@ -443,7 +443,7 @@
 </code></pre>
 </li>
 <li>
-<p>对变量的备注，可以直接使用&lt;code&gt;//&lt;/code&gt;来进行备注,放在变量之前或者是直接放在变量定义结束符之后。</p>
+<p>对变量的备注，可以直接使用<code>//</code>来进行备注,放在变量之前或者是直接放在变量定义结束符之后。</p>
 </li>
 <li>
 <p>对函数的注释，可以使用/**/来解释，也可以使用如下的Javadoc来解释</p>
@@ -456,20 +456,20 @@
 </code></pre>
 </li>
 </ol>
-<h3>Jsp的书写规范</h3>
+<h3 id="jsp的书写规范">Jsp的书写规范</h3>
 <ol>
 <li>全部采用小写的英文字符和”_ ”组成。</li>
 <li>整体采用模块名+操作的形式。如：user_view.jsp</li>
 <li>Jsp页面尽可能与action的意思对应，如UserListAction 对应者user_list.jsp</li>
 </ol>
-<h2>Java-Web项目的交互原理</h2>
+<h2 id="java-web项目的交互原理">Java-Web项目的交互原理</h2>
 <hr>
-<h3>一.Dao</h3>
+<h3 id="一-dao">一.Dao</h3>
 <p>  首先先建表，在完成了建表的工作之后可以为直接将数据库表设计为实体类，将表属性作为元素，用以存储在Java中获取的数据库的信息。</p>
 <p>  设计Dao(Data Access Object)类，可以设计数据库的工具类Util以获取数据库连接。设计数据库的操作类，增删查改，利用Util获取连接(connection),获取对应的数据库操作(statement),再利用从前端获取到的数据构成具体的sql，使用Jdbc来取出数据库中的数据并返回结果。</p>
-<h3>二.Service</h3>
-<p>  一般的J2EE web应用，会使用以下的设计流程进行
-<img src="https://study-image-1259719447.cos.ap-chengdu.myqcloud.com/J2EEweb%E6%B5%81%E7%A8%8B.png" alt="J2EEweb流程">
+<h3 id="二-service">二.Service</h3>
+<p>  一般的J2EE web应用，会使用以下的设计流程进行<br>
+<img src="https://study-image-1259719447.cos.ap-chengdu.myqcloud.com/J2EEweb%E6%B5%81%E7%A8%8B.png" alt="J2EEweb流程"><br>
   如果Dao层设计的足够好的话，一般可以省略Service层，可以直接从Servlet获取数据已完成对数据库的更新。</p>
 <script>
         document.querySelectorAll('.github-emoji')
@@ -610,7 +610,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">145</span>
+                  <span class="site-state-item-count">146</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -683,7 +683,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.</span> <span class="nav-text">Java命名格式整理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.1.</span> <span class="nav-text">包名的规范</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.2.</span> <span class="nav-text">类名的书写规范</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.3.</span> <span class="nav-text">变量的命名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.4.</span> <span class="nav-text">方法的命名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.5.</span> <span class="nav-text">注释的方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.6.</span> <span class="nav-text">Jsp的书写规范</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">2.</span> <span class="nav-text">Java-Web项目的交互原理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">2.1.</span> <span class="nav-text">一.Dao</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">2.2.</span> <span class="nav-text">二.Service</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#java命名格式整理"><span class="nav-number">1.</span> <span class="nav-text">Java命名格式整理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#包名的规范"><span class="nav-number">1.1.</span> <span class="nav-text">包名的规范</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#类名的书写规范"><span class="nav-number">1.2.</span> <span class="nav-text">类名的书写规范</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#变量的命名"><span class="nav-number">1.3.</span> <span class="nav-text">变量的命名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法的命名"><span class="nav-number">1.4.</span> <span class="nav-text">方法的命名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注释的方法"><span class="nav-number">1.5.</span> <span class="nav-text">注释的方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jsp的书写规范"><span class="nav-number">1.6.</span> <span class="nav-text">Jsp的书写规范</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#java-web项目的交互原理"><span class="nav-number">2.</span> <span class="nav-text">Java-Web项目的交互原理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一-dao"><span class="nav-number">2.1.</span> <span class="nav-text">一.Dao</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二-service"><span class="nav-number">2.2.</span> <span class="nav-text">二.Service</span></a></li></ol></li></ol></div>
             
 
           </div>
