@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+<script>
+    (function () {
+        if ('') {
+            if (prompt('Please input PassWord') !== '') {
+                alert('PassWord  Wrong��');
+                if (history.length === 1) {
+                    location.replace("https://aggressivejokerjd.github.io/"); // �����滻�������ҳ
+                } else {
+                    history.back();
+                }
+            }
+        }
+    })();
+</script>
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="笔记,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="快要考试了，趁着复习的时候赶快的做一下笔记吧，算是边复习边记录了吧。 &amp;lt;!--more--&amp;gt; 计算机网络和因特网  通信的基础    计算机网络 = 通信技术+计算机技术    通信技术：    信源：产生信息的地方 信宿：信息要到达的地方 发送设备：把信息发送到信道的设别(转换信息到信号) 接收设备：把信息从信道接收 信道：传输信号的通道     计算机技术：就是计算机作为信源和">
+<meta name="keywords" content="笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计算机网络笔记">
+<meta property="og:url" content="http://yoursite.com/2019/12/01/计算机网络笔记/index.html">
+<meta property="og:site_name" content="AggressiveJokerJD&#39;s Blog">
+<meta property="og:description" content="快要考试了，趁着复习的时候赶快的做一下笔记吧，算是边复习边记录了吧。 &amp;lt;!--more--&amp;gt; 计算机网络和因特网  通信的基础    计算机网络 = 通信技术+计算机技术    通信技术：    信源：产生信息的地方 信宿：信息要到达的地方 发送设备：把信息发送到信道的设别(转换信息到信号) 接收设备：把信息从信道接收 信道：传输信号的通道     计算机技术：就是计算机作为信源和">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="c:%5CUsers%5CJokEer%5CDesktop%5C%E9%80%9A%E4%BF%A1%E6%A8%A1%E5%9E%8B.png">
+<meta property="og:image" content="c:%5CUsers%5CJokEer%5CDesktop%5C%E8%AE%A1%E7%BD%91%5C%E4%BF%A1%E5%8F%B7%E7%B1%BB%E5%9E%8B.PNG">
+<meta property="og:image" content="c:%5CUsers%5CJokEer%5CDesktop%5C%E8%AE%A1%E7%BD%91%5C%E5%8D%95%E5%B7%A5.PNG">
+<meta property="og:image" content="c:%5CUsers%5CJokEer%5CDesktop%5C%E8%AE%A1%E7%BD%91%5C%E5%8D%8A%E5%8F%8C%E5%B7%A5.PNG">
+<meta property="og:image" content="c:%5CUsers%5CJokEer%5CDesktop%5C%E8%AE%A1%E7%BD%91%5C%E5%85%A8%E5%8F%8C%E5%B7%A5.PNG">
+<meta property="og:image" content="c:%5CUsers%5CJokEer%5CDesktop%5C%E8%AE%A1%E7%BD%91%5C%E7%94%B5%E8%B7%AF%E4%BA%A4%E6%8D%A2.png">
+<meta property="og:image" content="c:%5CUsers%5CJokEer%5CDesktop%5C%E8%AE%A1%E7%BD%91%5C%E9%97%AE%E9%A2%981.png">
+<meta property="og:updated_time" content="2019-12-03T16:06:22.378Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="计算机网络笔记">
+<meta name="twitter:description" content="快要考试了，趁着复习的时候赶快的做一下笔记吧，算是边复习边记录了吧。 &amp;lt;!--more--&amp;gt; 计算机网络和因特网  通信的基础    计算机网络 = 通信技术+计算机技术    通信技术：    信源：产生信息的地方 信宿：信息要到达的地方 发送设备：把信息发送到信道的设别(转换信息到信号) 接收设备：把信息从信道接收 信道：传输信号的通道     计算机技术：就是计算机作为信源和">
+<meta name="twitter:image" content="c:%5CUsers%5CJokEer%5CDesktop%5C%E9%80%9A%E4%BF%A1%E6%A8%A1%E5%9E%8B.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/12/01/计算机网络笔记/">
+
+
+
+
+<link href="/js/google-code-prettify/tranquil-heart.min.css" type="text/css" rel="stylesheet">
+  <title>计算机网络笔记 | AggressiveJokerJD's Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+
+
+<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas> 
+<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+<script type="text/javascript" src="/js/src/fireworks.js"></script>
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+<a href="https://github.com/AggressiveJokerJD" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">AggressiveJokerJD's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/01/计算机网络笔记/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Joker">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="http://pu0chvxph.bkt.clouddn.com/%E7%B4%A2%E7%BD%97%E7%BB%BF%E8%97%BB%E5%A4%B4.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AggressiveJokerJD's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">计算机网络笔记</h1>
+        
+
+        <div class="post-meta">
+
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-01T16:41:08+08:00">
+                2019-12-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">笔记</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>  快要考试了，趁着复习的时候赶快的做一下笔记吧，算是边复习边记录了吧。</p>
+<p>&lt;!--more--&gt;</p>
+<h1>计算机网络和因特网</h1>
+<hr>
+<h3>通信的基础</h3>
+<hr>
+<p>  计算机网络 = 通信技术+计算机技术</p>
+<blockquote>
+<ol>
+<li>
+<p>通信技术：</p>
+<ul>
+<li>
+<p><img src="C:%5CUsers%5CJokEer%5CDesktop%5C%E9%80%9A%E4%BF%A1%E6%A8%A1%E5%9E%8B.png" alt></p>
+<p>信源：产生信息的地方</p>
+<p>信宿：信息要到达的地方</p>
+<p>发送设备：把信息发送到信道的设别(转换信息到信号)</p>
+<p>接收设备：把信息从信道接收</p>
+<p>信道：传输信号的通道</p>
+</li>
+</ul>
+</li>
+<li>
+<p>计算机技术：就是计算机作为信源和信宿。</p>
+</li>
+</ol>
+</blockquote>
+<ul>
+<li>消息是离散的通信单元</li>
+<li>信号是经过编码的消息，即通信信道中对消息进行编码的状态序列</li>
+</ul>
+<p>  计算机网络就是互连（通过通信链路）的，自治的计算机集合</p>
+<blockquote>
+<p>数据传输中的信号的种类：</p>
+<ol>
+<li>
+<p>数字信号(digital data)</p>
+</li>
+<li>
+<p>模拟信号(analog data)</p>
+<p><img src="C:%5CUsers%5CJokEer%5CDesktop%5C%E8%AE%A1%E7%BD%91%5C%E4%BF%A1%E5%8F%B7%E7%B1%BB%E5%9E%8B.PNG" alt></p>
+<p>左边为模拟信号，右边为数字信号</p>
+</li>
+</ol>
+</blockquote>
+<blockquote>
+<p>频道通讯方式：</p>
+<ul>
+<li>单工通信(Simplex Communication)</li>
+</ul>
+<p>一方只能发消息，而另一方只能接收消息，通信是单向的</p>
+<p><img src="C:%5CUsers%5CJokEer%5CDesktop%5C%E8%AE%A1%E7%BD%91%5C%E5%8D%95%E5%B7%A5.PNG" alt></p>
+<ul>
+<li>半双工通信(half-duplex communication)</li>
+</ul>
+<p>就是双方都能发信息，但同一时间则只能一方发信息</p>
+<p><img src="C:%5CUsers%5CJokEer%5CDesktop%5C%E8%AE%A1%E7%BD%91%5C%E5%8D%8A%E5%8F%8C%E5%B7%A5.PNG" alt></p>
+<ul>
+<li>全双工通信(Full-duplex communication)</li>
+</ul>
+<p>就是双方不仅都能发信息，而且能够同时发送</p>
+<p><img src="C:%5CUsers%5CJokEer%5CDesktop%5C%E8%AE%A1%E7%BD%91%5C%E5%85%A8%E5%8F%8C%E5%B7%A5.PNG" alt></p>
+</blockquote>
+<p>信息同步：</p>
+<blockquote>
+<p>异步传输:</p>
+<p>  基于Bytes，不需要同步时钟，Sender可以在任何时候传输信息，Receiver可以按照约定的方式解码信息。</p>
+<p>同步传输：</p>
+<p>  基于帧，Sender将比特流组合成为帧传送，没有间隙，Receiver将比特流划分为字节或者字符，进行重组信息。</p>
+</blockquote>
+<h3>什么是网络</h3>
+<hr>
+<p>  互联网的基本要素：</p>
+<ul>
+<li>主机/终端系统：运行网络应用    （host）</li>
+<li>通信链路：光纤，铜....              传输速率----带宽（links）</li>
+<li>路由器:转发包   （routers）</li>
+</ul>
+<h3>什么是协议</h3>
+<hr>
+<p>  一个协议定义了在两个或多个通信实体之间交换的报文格式和次序，以及报文发送和/或接收一条报文或其他世间所采取的动作。</p>
+<h3>网络结构</h3>
+<hr>
+<ul>
+<li>&lt;font color=red&gt;网络边界:主机和应用统称为网络边界(host and application)&lt;/font&gt;</li>
+<li>&lt;font color=red&gt;网络核心:互联路由器(router)&lt;/font&gt;</li>
+</ul>
+<h2>网络边界(network edge)</h2>
+<p>&lt;font color = red&gt;end system = host&lt;/font&gt;        主机统称为终端</p>
+<h3>连接和渠道</h3>
+<hr>
+<h4>media（媒介，介质）</h4>
+<ol>
+<li>导向型介质
+<ul>
+<li>TP（双绞铜线）</li>
+<li>coax（同轴电缆）</li>
+<li>fiber（光纤）</li>
+</ul>
+</li>
+<li>非导向型介质
+<ul>
+<li>wireless radio（无线广播）</li>
+</ul>
+</li>
+</ol>
+<h4>bandwidth</h4>
+<h3>接入网的方式</h3>
+<hr>
+<ol>
+<li>
+<p>家庭接入：DSL（数字用户线），电缆，FTTH，拨号和卫星</p>
+<ul>
+<li>
+<p>Dial-up Modem（拨号调制解调器)</p>
+<blockquote>
+<p>使用现有的电话基础架构，直接连接到中央办公室(Central Office)</p>
+<p>&lt;font color=red&gt;56Kbps&lt;/font&gt;</p>
+<p>不可以同时进行上网和打电话</p>
+</blockquote>
+</li>
+<li>
+<p>DSL</p>
+<blockquote>
+<p>使用现有的电话基础设施</p>
+<p>&lt;font color=red&gt;上行速度：1Mbps(今天通常&lt;256kbps)&lt;/font&gt;</p>
+<p>&lt;font color=red&gt;下行速度：8Mbps(今天通常&lt;1Mbps)&lt;/font&gt;</p>
+<p>到电话总局的专用路线（&lt;font color=red&gt;专用访问权限&lt;/font&gt;）</p>
+</blockquote>
+</li>
+<li>
+<p>电缆调制解调器</p>
+<blockquote>
+<p>使用有线电视基础设施</p>
+<p>HFC:  Hybrid fiber coax(混合光纤同轴电缆)</p>
+<p>​	&lt;font color=red&gt;非对称，下行速度：30Mbps 上行速度:2Mbps&lt;/font&gt;</p>
+<p>电缆或者光纤将住户连接到ISP路由器</p>
+<p>&lt;font color=red&gt;共享对路由器的使用，DSL具有专用访问权限&lt;/font&gt;</p>
+</blockquote>
+</li>
+<li>
+<p>FTTH(Fiber to the Home,光纤到户)</p>
+<p>PON(Passive Optical network,)</p>
+<p>PAN(Active Optical Network)</p>
+</li>
+<li>
+<p>拨号</p>
+</li>
+<li>
+<p>卫星</p>
+<blockquote>
+<p>45Mbps频道</p>
+<p>270ms终端延迟</p>
+</blockquote>
+<p>典型的家庭网络组件：</p>
+<ul>
+<li>DSL或电缆调制解调器 DSL or cable modem</li>
+<li>router/firewall/NAT 路由器/防火墙/NAT</li>
+<li>Ethernet  以太网</li>
+<li>wireless access point   无线接入点</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>以太网（Ethernet Internet access）</p>
+<blockquote>
+<p>10Mbps，100Mbps1Gbps，10Gbps</p>
+<p>今天终端系统通常连接到以太网交换机</p>
+</blockquote>
+</li>
+<li>
+<p>无线网接入（Wireless access networks）</p>
+<blockquote>
+<ul>
+<li>
+<p>无线局域网（wireless LAN）：802.11b/g(WIFI)</p>
+<p>11/54Mbps</p>
+</li>
+<li>
+<p>广域无线访问</p>
+<p>1Mbps蜂窝系统（3G）</p>
+<p>WiMAX：10Mbps</p>
+</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<h2>网络核心</h2>
+<hr>
+<h3>电路交换(circuit switching)</h3>
+<hr>
+<p>每个呼叫专用电路</p>
+<p>为“呼叫”保留的终端资源</p>
+<ul>
+<li>链路带宽，交换容量</li>
+<li>专用资源：不共享</li>
+<li>类电路（保证）性能</li>
+<li>需要通话设置</li>
+</ul>
+<p>分为频分多路（FDM）和时分多路（TDM）</p>
+<h4>FDM</h4>
+<hr>
+<p><img src="C:%5CUsers%5CJokEer%5CDesktop%5C%E8%AE%A1%E7%BD%91%5C%E7%94%B5%E8%B7%AF%E4%BA%A4%E6%8D%A2.png" alt="电路交换"></p>
+<p>将带宽分为多个来供不同的用户使用，每个用户使用1/n的带宽速度</p>
+<h4>TDM</h4>
+<hr>
+<p>将电路分为多个时隙，每个时隙单独供一整个用户使用，速度为总的速度，但是传输的量要乘以1/n</p>
+<h4>问题</h4>
+<hr>
+<p><img src="C:%5CUsers%5CJokEer%5CDesktop%5C%E8%AE%A1%E7%BD%91%5C%E9%97%AE%E9%A2%981.png" alt></p>
+<ol>
+<li>640000bits/1.536M *24 +500ms = 10.5s</li>
+</ol>
+<h3>分组交换( packet-switching)</h3>
+<hr>
+<p>数据通过网络以离散的块形式发送</p>
+<ul>
+<li>用户A，B数据包共享网络资源</li>
+<li>每个数据包使用完整的链路带宽</li>
+<li>在需要时使用</li>
+</ul>
+<p>资源争用：</p>
+<ul>
+<li>总资源需求可能超过可用数量</li>
+<li>拥塞：数据包排队，等待链接使用</li>
+<li>存储并转发：数据包一次移动一跳：节点在转发之前已收到完整的数据包</li>
+</ul>
+<h4>store and forward（存储转发）</h4>
+<hr>
+<p>存储转发机制是指在交换机能够开始向输出链路传输该分组的第一个比特之前，必须接收到整个分组</p>
+<h2>layer model</h2>
+<hr>
+<h1>应用层</h1>
+<hr>
+<h1>传输层</h1>
+<hr>
+<h1>网络层</h1>
+<hr>
+<h1>链路层</h1>
+<hr>
+<h2>名词解释</h2>
+<hr>
+<p>ISP:网络服务提供商</p>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/笔记/" rel="tag"><i class="fa fa-tag"></i> 笔记</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/12/01/记191201/" rel="next" title="记191201">
+                <i class="fa fa-chevron-left"></i> 记191201
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/12/02/记191202/" rel="prev" title="记191202">
+                记191202 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="http://pu0chvxph.bkt.clouddn.com/%E7%B4%A2%E7%BD%97%E7%BB%BF%E8%97%BB%E5%A4%B4.jpg" alt="Joker">
+            
+              <p class="site-author-name" itemprop="name">Joker</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">145</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/AggressiveJokerJD" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:910368490@qq.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=442319&auto=1&height=66"></iframe>
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">1.</span> <span class="nav-text">计算机网络和因特网</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.0.1.</span> <span class="nav-text">通信的基础</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.0.2.</span> <span class="nav-text">什么是网络</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.0.3.</span> <span class="nav-text">什么是协议</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.0.4.</span> <span class="nav-text">网络结构</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.1.</span> <span class="nav-text">网络边界(network edge)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.1.1.</span> <span class="nav-text">连接和渠道</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#null"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">media（媒介，介质）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#null"><span class="nav-number">1.1.1.2.</span> <span class="nav-text">bandwidth</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.1.2.</span> <span class="nav-text">接入网的方式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.2.</span> <span class="nav-text">网络核心</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.2.1.</span> <span class="nav-text">电路交换(circuit switching)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#null"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">FDM</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#null"><span class="nav-number">1.2.1.2.</span> <span class="nav-text">TDM</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#null"><span class="nav-number">1.2.1.3.</span> <span class="nav-text">问题</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.2.2.</span> <span class="nav-text">分组交换( packet-switching)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#null"><span class="nav-number">1.2.2.1.</span> <span class="nav-text">store and forward（存储转发）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.3.</span> <span class="nav-text">layer model</span></a></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">2.</span> <span class="nav-text">应用层</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">3.</span> <span class="nav-text">传输层</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">4.</span> <span class="nav-text">网络层</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">5.</span> <span class="nav-text">链路层</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">5.1.</span> <span class="nav-text">名词解释</span></a></li></ol></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Joker</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+
+  
+  <script type="text/javascript" color="46,254,64" opacity="0.7" zindex="-2" count="85" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+  
+
+<script type="text/javascript" src="/js/google-code-prettify/prettify.js"></script>
+<script type="text/javascript">
+$(window).load(function(){
+   $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+   prettyPrint();
+ })    
+</script>
+
+
+
+</body>
+</html>

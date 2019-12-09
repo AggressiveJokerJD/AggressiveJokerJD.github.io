@@ -1,0 +1,1448 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+<script>
+    (function () {
+        if ('') {
+            if (prompt('Please input PassWord') !== '') {
+                alert('PassWord  Wrong��');
+                if (history.length === 1) {
+                    location.replace("https://aggressivejokerjd.github.io/"); // �����滻�������ҳ
+                } else {
+                    history.back();
+                }
+            }
+        }
+    })();
+</script>
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="博客,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="最近用MarkDown，然后好多语法可以直接用html的，所以就有了学习一下html的想法，教程主要就是来自菜鸟教程吧，不确定的就会去Google直接搜索。 HTML  HTML基础  HTML标题   使用h1到h6表示，基本和MarkDown里面的#的用法一致，但是使用html标题的话没办法再hexo博客上面单击目录跳转(不太懂什么原因)。 &amp;lt;h1-6&amp;gt;标题内容&amp;lt;/h1-">
+<meta name="keywords" content="博客">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML学习笔记">
+<meta property="og:url" content="http://yoursite.com/2019/07/10/HTML学习笔记/index.html">
+<meta property="og:site_name" content="AggressiveJokerJD&#39;s Blog">
+<meta property="og:description" content="最近用MarkDown，然后好多语法可以直接用html的，所以就有了学习一下html的想法，教程主要就是来自菜鸟教程吧，不确定的就会去Google直接搜索。 HTML  HTML基础  HTML标题   使用h1到h6表示，基本和MarkDown里面的#的用法一致，但是使用html标题的话没办法再hexo博客上面单击目录跳转(不太懂什么原因)。 &amp;lt;h1-6&amp;gt;标题内容&amp;lt;/h1-">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://pu0chvxph.bkt.clouddn.com/%E5%B1%95%E7%A4%BA.png">
+<meta property="og:updated_time" content="2019-07-16T07:09:48.311Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTML学习笔记">
+<meta name="twitter:description" content="最近用MarkDown，然后好多语法可以直接用html的，所以就有了学习一下html的想法，教程主要就是来自菜鸟教程吧，不确定的就会去Google直接搜索。 HTML  HTML基础  HTML标题   使用h1到h6表示，基本和MarkDown里面的#的用法一致，但是使用html标题的话没办法再hexo博客上面单击目录跳转(不太懂什么原因)。 &amp;lt;h1-6&amp;gt;标题内容&amp;lt;/h1-">
+<meta name="twitter:image" content="http://pu0chvxph.bkt.clouddn.com/%E5%B1%95%E7%A4%BA.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/07/10/HTML学习笔记/">
+
+
+
+
+<link href="/js/google-code-prettify/tranquil-heart.min.css" type="text/css" rel="stylesheet">
+  <title>HTML学习笔记 | AggressiveJokerJD's Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+
+
+<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas> 
+<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+<script type="text/javascript" src="/js/src/fireworks.js"></script>
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+<a href="https://github.com/AggressiveJokerJD" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">AggressiveJokerJD's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/10/HTML学习笔记/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Joker">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="http://pu0chvxph.bkt.clouddn.com/%E7%B4%A2%E7%BD%97%E7%BB%BF%E8%97%BB%E5%A4%B4.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AggressiveJokerJD's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">HTML学习笔记</h1>
+        
+
+        <div class="post-meta">
+
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-10T21:13:29+08:00">
+                2019-07-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/HTML/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>  最近用MarkDown，然后好多语法可以直接用html的，所以就有了学习一下html的想法，教程主要就是来自<a href="https://www.runoob.com/html/html-tutorial.html" target="_blank" rel="noopener">菜鸟教程</a>吧，不确定的就会去Google直接搜索。</p>
+<h1>HTML</h1>
+<hr>
+<h2>HTML基础</h2>
+<hr>
+<h3>HTML标题</h3>
+<p>  使用h1到h6表示，基本和MarkDown里面的#的用法一致，但是使用html标题的话没办法再hexo博客上面单击目录跳转(不太懂什么原因)。</p>
+<pre><code>&lt;h1-6&gt;标题内容&lt;/h1-6&gt;
+</code></pre>
+<h3>HTML段落</h3>
+<p>  使用p来定义段落，但是好像不会自动首行缩减。要加上空格(&amp;emsp或者是&amp;nbsp)</p>
+<pre><code>&lt;p&gt;段落内容&lt;/p&gt;
+</code></pre>
+<h3>HTML链接</h3>
+<p>  使用a来定义，和MarkDown的方括号加圆括号一样效果。</p>
+<pre><code>&lt;a href="链接url"&gt;链接的名称&lt;/a&gt;
+</code></pre>
+<h3>HTML图片</h3>
+<p>  使用img来定义，和MarkDown的叹号加方括号加圆括号一样效果，只是markdown无法改变图片的尺寸。</p>
+<pre><code>&lt;img src="图片链接" width='258' hight="39" /&gt;
+</code></pre>
+<p>  可以使用属性来限制图片的属性。</p>
+<h2>HTML元素</h2>
+<hr>
+<table>
+<thead>
+<tr>
+<th>开始标签</th>
+<th>元素内容</th>
+<th>结束标签</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&lt; p &gt;</td>
+<td>段落内容</td>
+<td>&lt; /p &gt;</td>
+</tr>
+<tr>
+<td>&lt; br &gt;</td>
+<td>换行</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>  HTML元素一般以开始标签开始，结束标签为结束，位于开始标签和结束标签之间的内容称为元素的内容，某些元素内容可以为空的元素称为空元素，它们一般就在开始标签中关闭。</p>
+<pre><code>1. 一些标签的使用，切记所有标签都需要闭合，不管是单体标签还是成对标签。（尽管目前浏览器是识别有些标签不闭合的情况，但是取的最好的保证兼容性，使用闭合）
+2. 标签写法要用小写字母（有些版本对大小写可认为相同，而xhtml中强制使用小写）
+</code></pre>
+<h2>HTML属性</h2>
+<hr>
+<p>  HTML元素可以设置属性，一般放在开始标签中，属性总是以__名称-值__的方式出现，值使用引号包括，如果值中本身存在双引号，那么外部只能使用双引号，其余都可。</p>
+<p>  常用的HTML属性：</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>class</td>
+<td>为html元素定义一个或多个类名</td>
+</tr>
+<tr>
+<td>id</td>
+<td>定义元素的唯一id</td>
+</tr>
+<tr>
+<td>style</td>
+<td>规定元素的行内样式</td>
+</tr>
+<tr>
+<td>title</td>
+<td>描述了元素的额外信息</td>
+</tr>
+</tbody>
+</table>
+<h2>HTML标题</h2>
+<hr>
+<p>  html标题就是使用&lt;code&gt;&lt; h1 &gt;到&lt; h6 &gt;&lt;/code&gt;来定义。</p>
+<p>  html水平线使用&lt;code&gt;&lt; hr &gt;&lt;/code&gt;定义</p>
+<p>  注释使用&lt;code&gt;&lt; !--注释内容-- &gt;&lt;/code&gt;表示</p>
+<h2>HTML段落</h2>
+<hr>
+<p>  段落使用&lt;code&gt;&lt; p &gt;&lt;/code&gt;标签定义。</p>
+<p>  在不产生一个新段落的情况下进行换行，使用&lt;code&gt;&lt; br &gt;&lt;/code&gt;</p>
+<h2>HTML文本格式化</h2>
+<hr>
+<p>  使用标签&lt;code&gt;&lt; b &gt;("bold[粗体]")和&lt; i &gt;("italic[斜体]")&lt;/code&gt;对文本进行格式化。</p>
+<p>  &lt;code&gt;&lt; strong &gt;和&lt; b &gt;,&lt; em &gt;和&lt; i &gt;&lt;/code&gt;,&lt;code&gt;&lt; strong &gt;或者&lt; em &gt;&lt;/code&gt;更加强调文本的重要性，所以突出显示。</p>
+<h3>HTLM文本格式化标签</h3>
+<hr>
+<table>
+<thead>
+<tr>
+<th>标签</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&lt;b&gt;</td>
+<td>定义粗体</td>
+</tr>
+<tr>
+<td>&lt;em&gt;</td>
+<td>定义着重文字(斜体)</td>
+</tr>
+<tr>
+<td>&lt;i&gt;</td>
+<td>定义斜体</td>
+</tr>
+<tr>
+<td>&lt;small&gt;</td>
+<td>定义小号字</td>
+</tr>
+<tr>
+<td>&lt;big&gt;</td>
+<td>定义大号字</td>
+</tr>
+<tr>
+<td>&lt;strong&gt;</td>
+<td>定义加重(粗体)</td>
+</tr>
+<tr>
+<td>&lt;sub&gt;</td>
+<td>定义下标</td>
+</tr>
+<tr>
+<td>&lt;sup&gt;</td>
+<td>定义上标</td>
+</tr>
+<tr>
+<td>&lt;ins&gt;</td>
+<td>定义插入字</td>
+</tr>
+<tr>
+<td>&lt;del&gt;</td>
+<td>定义删除字</td>
+</tr>
+</tbody>
+</table>
+<p>  上面的&lt;code&gt;&lt; big &gt;&lt;/code&gt;我在VScode上面写的话会显示红色，就是这个标签可能是不太支持，但是确实是有大一点的字体。</p>
+<h3>HTML"计算机输出"标签</h3>
+<hr>
+<table>
+<thead>
+<tr>
+<th>标签</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&lt;code&gt;</td>
+<td>定义计算机代码</td>
+</tr>
+<tr>
+<td>&lt;kbd&gt;</td>
+<td>定义键盘码</td>
+</tr>
+<tr>
+<td>&lt;samp&gt;</td>
+<td>定义计算机代码样本</td>
+</tr>
+<tr>
+<td>&lt;var&gt;</td>
+<td>定义变量</td>
+</tr>
+<tr>
+<td>&lt;pre&gt;</td>
+<td>定义与格式文本(标签内是什么格式就输出什么格式)</td>
+</tr>
+</tbody>
+</table>
+<h3>HTML引文，引用及标签定义</h3>
+<hr>
+<p>标签|描述
+&lt;abbr&gt;|定义缩写
+&lt;address&gt;|定义地址(定义作者和联系这的信息)
+&lt;bdo&gt;|定义文字方向(无属性时为左到右，添加dir='rtl'，可以变为右到左)
+&lt;blockquote&gt;|定义长引用
+&lt;q&gt;|定义短引用
+&lt;cite&gt;|定义引用，引证(定义作品的标题)
+&lt;dfn&gt;|第一一个定义项目</p>
+<pre><code>The &lt;abbr title="Si Chuan University"&gt;SCU&lt;/abbr&gt; is very good!(有一点类似脚注，但是这个直接显示在缩写下面)
+</code></pre>
+<h2>HTML链接</h2>
+<hr>
+<h3>href属性</h3>
+<p>  html链接使用&lt;code&gt;&lt; a href="url" &gt;链接的名字&lt; a &gt;&lt;/code&gt;来定义，href属性定义链接的地址。</p>
+<h3>target属性</h3>
+<p>  target属性定义点击链接之后链接在何处打开。</p>
+<table>
+<thead>
+<tr>
+<th>target属性名</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>_balnk</td>
+<td>在一个新的窗口打开网站</td>
+</tr>
+<tr>
+<td>_parent</td>
+<td>(具体实施)就是在本窗口上往下跳转一个窗口</td>
+</tr>
+<tr>
+<td>_self</td>
+<td>(具体实施)就是在本窗口</td>
+</tr>
+<tr>
+<td>_top</td>
+<td>(具体实施)就是在本窗口</td>
+</tr>
+</tbody>
+</table>
+<p>  后面的三种看了网上的解释也是复杂难懂，所以就没有细究，自己试了一下没感觉出差别，若果以后理解再来作解释。</p>
+<h3>id属性</h3>
+<p>  id属性可用于创建在一个HTML文档书签标记。</p>
+<p>  提示: 书签是不以任何特殊的方式显示，在HTML文档中是不显示的，所以对于读者来说是隐藏的。</p>
+<p>  没看太懂.....</p>
+<h2>HTML头部</h2>
+<hr>
+<p>  &lt;code&gt;&lt; head &gt;&lt;/code&gt;元素中包含了所有的标签元素，可以插入脚本，样式文件(CSS)等</p>
+<pre><code>可以插入&lt;head&gt;区域的元素：&lt;title&gt;, &lt;style&gt;, &lt;meta&gt;, &lt;link&gt;, &lt;script&gt;, &lt;noscript&gt;, and &lt;base&gt;.
+</code></pre>
+<h3>title元素</h3>
+<p>  &lt;code&gt;&lt; title &gt;&lt;/code&gt;标签定义了文档的标题，就是打开网站的时候最上面浏览器窗口那个的名字。添加到收藏夹的时候，显示在收藏夹的名字也是文档标题。在搜索引擎搜索时所显示的结果页面也是该标题。</p>
+<h3>base元素</h3>
+<p>  &lt;code&gt;&lt; base &gt;&lt;/code&gt;标签描述了基本的链接地址/链接目标，该标签作为html文档中所有链接标签的默认链接。(就是在使用&lt; a &gt;进行链接的时候没有指定href属性的值（也就是值为空""），那么就会链接到base标签中href的地址。)</p>
+<h3>link元素</h3>
+<p>  &lt;code&gt;&lt; link &gt;&lt;/code&gt;标签定义文档和外部资源得关系，一般为链接样式表，就是规定文章中不同部分(标题，段落等)的颜色和格式。</p>
+<h3>style元素</h3>
+<p>  &lt;code&gt;&lt; style &gt;&lt;/code&gt;定义html文档样式文件引用地址。也可以直接添加样式来渲染。</p>
+<h3>mate元素</h3>
+<p>  &lt;code&gt;&lt; mate &gt;&lt;/code&gt;描述了一些基本的元数据，通常为网页的描述，关键词，文件最后修改时间，作者等等。</p>
+<h3>script元素</h3>
+<p>  用于加载脚本文件。</p>
+<pre><code>&lt;!DOCTYPE = html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;meta name="keyword" content="test,html,head"&gt;
+        &lt;meta name="description" content="test element head of html！"&gt;
+        &lt;meta name="author" content="JokerJD"&gt;
+        &lt;meta http-equiv="refresh" content="1000"&gt;&lt;!--多少秒定时刷新页面--&gt;
+        &lt;title&gt;html头属性测试文件&lt;/title&gt;
+        &lt;base href="http://AggressiveJokerJD.github.io" target="_blank"&gt;
+        &lt;style&gt;
+            body {background-color: aquamarine}
+            p {color: pink}
+            h1 {color: plum}
+        &lt;/style&gt;
+        &lt;script&gt;document.write("Hello World!")&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;测试1&lt;/h1&gt;
+        &lt;hr&gt;
+        &lt;p&gt;段落一的内容因该为粉红色的吧！&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>这是一个对于上面不同元素的一个示例。</p>
+<h2>样式CSS</h2>
+<hr>
+<p>  包括内联样式，内部样式表和外部引用三种。</p>
+<p>  内联样式就是直接在标签的开始括号内直接表明某些样式属性的值即可，如&lt;code&gt;style="background-color:yellow"&lt;/code&gt;</p>
+<p>  内部样式表就是在head里面直接添加style属性以达到的样式效果。</p>
+<p>  外部样式就是可以通过link直接指定样式的一个.css文件来达到效果。</p>
+<p>  通过style可以修改的属性有很多，如背景颜色(background-color)，字体颜色(color)，字体(font-family)，字体大小(font-size)，对齐方式(text-align)等</p>
+<p>  具体的写法可以直接查看<a href="https://www.runoob.com/css/css-tutorial.html" target="_blank" rel="noopener">CSS相关教程</a>即可获得相关知识，此处不再过多赘述。</p>
+<h2>HTML图像</h2>
+<hr>
+<p>  使用&lt;code&gt;&lt; img &gt;&lt;/code&gt;定义图像</p>
+<pre><code>&lt;ig src="url" alt="some_text" width="480" height="360" title="标题"&gt;
+其中url为图片的位置(外链),alt为一串可替换文本，当无法访问图片时，alt提示内容可以告诉访问者失去信息。高度和宽度都可以由用户自己定义。title为鼠标移动到图片上显示的文本信息。
+</code></pre>
+<p>  &lt;code&gt;&lt; map &gt;&lt;/code&gt;定义图片地图，&lt;code&gt;&lt; area &gt;&lt;/code&gt;定义图片地图中可点击的区域。</p>
+<pre><code>&lt;img src="url" alt="图片的名字" usemap="map的名字(定义map的时候的name)"&gt;
+&lt;map name=""&gt;
+	&lt;area shape="circle" coords="90，58，3" alt="Sun" href="单机区域链接到的地址(url)"&gt;
+	&lt;area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun"&gt;
+	&lt;area shape="poly" coords="x1,y1,x2,y2 ......" (多边形各顶点坐标)href=url&gt;
+	……
+&lt;/map&gt;
+name是这个图片地图的名字，供图片调用。area定义了可以点击的区域的属性，shape为可点击区域的形状，coords为可点击区域的具体位置，根据不同形状使用不同参数规定，alt为该区域的替换文本，href为点击之后产生链接的地址。
+</code></pre>
+<h2>HTML表格</h2>
+<hr>
+<p>  由&lt;code&gt;&lt; table &gt;&lt;/code&gt;标签定义。由&lt;code&gt;&lt; tr &gt;&lt;/code&gt;定义行数,由&lt;code&gt;&lt; td &gt;&lt;/code&gt;定义列数和属性值,&lt;code&gt;&lt; caption &gt;&lt;/code&gt;定义了表格的标题，</p>
+<pre><code>	&lt;table border="0"&gt;
+		&lt;caption&gt;table&lt;/caption&gt;
+		&lt;colgroup&gt;
+		    &lt;col span="1" style="background-color:greenyellow"&gt;
+		    &lt;col style="background-color: hotpink"&gt;
+		&lt;/colgroup&gt;
+		&lt;tr&gt;
+		    &lt;td&gt;属性&lt;/td&gt;
+		    &lt;td&gt;描述&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+		    &lt;td&gt;border&lt;/td&gt;
+		    &lt;td&gt;表格是否存在边框(0无1有)&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+		    &lt;td&gt;td&lt;/td&gt;
+		    &lt;td&gt;表示表的内容和具体的列数&lt;/td&gt;
+		&lt;/tr&gt;
+		
+		&lt;tr&gt;
+		    &lt;td&gt;tr&lt;/td&gt;
+		    &lt;td&gt;表示表格的具体的行数&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+		    &lt;td&gt;caption&lt;/td&gt;
+		    &lt;td&gt;表示表格的标题&lt;/td&gt;
+		&lt;/tr&gt;
+		 &lt;tr&gt;
+		    &lt;td&gt;colgroup&lt;/td&gt;
+		    &lt;td&gt;表示列的分组，讲列分为若干组来调整颜色或者字体等&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+		    &lt;td&gt;col&lt;/td&gt;
+		    &lt;td&gt;具体的描述列的各个属性&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+		    &lt;td&gt;span&lt;/td&gt;
+		    &lt;td&gt;表示本条对列的描述具体影响多少列&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/table&gt;
+</code></pre>
+<p><img src="http://pu0chvxph.bkt.clouddn.com/%E5%B1%95%E7%A4%BA.png" alt="展示"></p>
+<h2>HTML列表</h2>
+<hr>
+<p>  无须列表使用&lt;code&gt;&lt; ul &gt;&lt;/code&gt;定义并表示,&lt;code&gt;&lt; li &gt;&lt;/code&gt;，表示列表条目，&lt;code&gt;&lt; ol &gt;&lt;/code&gt;定义有序列表，&lt;code&gt;&lt; dl &gt;&lt;/code&gt;定义自定义列表&lt;code&gt;&lt; dt &gt;&lt;/code&gt;表示自定义列表项目，&lt;code&gt;&lt; dd &gt;&lt;/code&gt;表示自定义列表项的描述。</p>
+<pre><code>	&lt;ul&gt;
+        &lt;li&gt;期末考试&lt;/li&gt;
+        &lt;ol&gt;
+            &lt;li&gt;英语&lt;/li&gt;
+            &lt;li&gt;毛概&lt;/li&gt;
+            &lt;li&gt;数据库&lt;/li&gt;
+            &lt;li&gt;架构&lt;/li&gt;
+            &lt;li&gt;软工导&lt;/li&gt;
+            &lt;li&gt;操作系统&lt;/li&gt;
+        &lt;/ol&gt;
+        &lt;li&gt;国际周&lt;/li&gt;
+        &lt;dl&gt;
+            &lt;dt&gt;CIE&lt;/dt&gt;
+            &lt;dd&gt;两周早上1，2节，每周四天&lt;/dd&gt;
+            &lt;dt&gt;DIT&lt;/dt&gt;
+            &lt;dd&gt;两周早上3，4借，每周四天&lt;/dd&gt;
+        &lt;/dl&gt;
+        &lt;li&gt;小学期&lt;/li&gt;
+        &lt;dl&gt;
+            &lt;dt&gt;做项目&lt;/dt&gt;
+            &lt;dd&gt;要十天，晕&lt;/dd&gt;
+        &lt;/dl&gt;
+	&lt;/ul&gt;
+	可以嵌套使用。
+</code></pre>
+<h2>HTML区块</h2>
+<hr>
+<p> emsp;定义区块有&lt;code&gt;&lt; div &gt;&lt;/code&gt;开辟一块区域专门的定义各种属性，&lt;code&gt;&lt; span &gt;&lt;/code&gt;组合行内的元素。div还可以使用不同的属性如&lt;code&gt;weight,height&lt;/code&gt;等等来将区块定位到网页的不同的区域。</p>
+<h2>HTML布局</h2>
+<hr>
+<p>  可以使用div区块的方法和table列表的方法实现，具体参照<a href="https://www.runoob.com/html/html-layouts.html" target="_blank" rel="noopener">链接</a></p>
+<h2>HTML表单</h2>
+<hr>
+<h3>基本表单属性</h3>
+<p>  定义表单使用&lt;code&gt;&lt; form &gt;&lt;/code&gt;定义。允许用户在表单中输入内容，如：文本域，下拉列表，单选框，复选框等等。</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>文本域</td>
+<td>使用type="text"，创建一个可见输入的可输入文本的区域</td>
+</tr>
+<tr>
+<td>密码字段</td>
+<td>使用type="password"，创建一个不可见输入的可输入文本区域</td>
+</tr>
+<tr>
+<td>单选按钮</td>
+<td>使用type="radio"创建一个只单选框</td>
+</tr>
+<tr>
+<td>复选框</td>
+<td>使用type="checkbox"创建一个复选框</td>
+</tr>
+<tr>
+<td>提交按钮</td>
+<td>使用type="submit"创建一个提交按钮</td>
+</tr>
+<tr>
+<td>重置按钮</td>
+<td>使用type="reset"创建一个重置按钮(清空选择)</td>
+</tr>
+<tr>
+<td>按钮</td>
+<td>使用type="button"创建一个按钮(没有提交操作)</td>
+</tr>
+</tbody>
+</table>
+<pre><code>	  &lt;form&gt;
+            First User Name:&lt;input type="text" name="FUSN"&gt;&lt;br&gt;
+            Last User Name:&lt;input type="text" name="LUSN"&gt;&lt;br&gt;
+            Password:&lt;input type="password" name="PSW"&gt;
+            &lt;input type="radio" name="sex" value="male"&gt;Male&lt;br&gt;
+            &lt;input type="radio" name="sex" value="female"&gt;Famale&lt;br&gt;
+            &lt;input type="checkbox" name="many choice" value="male"&gt;I am a boy!&lt;br&gt;
+            &lt;input type="checkbox" name="many choice" value="female"&gt;I am a girl!&lt;br&gt;
+            &lt;input type="checkbox" name="many choice" value="student"&gt;I am a student!&lt;br&gt;
+            &lt;input type="submit" value="确认"&gt;
+			&lt;input type="reset" value="重置"&gt;&lt;br&gt;
+            &lt;input type="button" value="这就是个按钮！"&gt;
+        &lt;/form&gt;
+</code></pre>
+<p>  还可以使用&lt;code&gt;&lt; fieldset &gt;&lt;/code&gt;定义表单的边框，使用&lt;code&gt;&lt; legend &gt;&lt;/code&gt;定义fieldset边框的标题。</p>
+<h3>下拉列表属性</h3>
+<p>  下拉列表，就像是选择日期那种下拉然后选择一样，可以设置预选属性(使用selected做限定即可)。</p>
+<pre><code>	 &lt;select name="data"&gt;
+            &lt;optgroup label="day"&gt;
+            &lt;option value="7日"&gt;7日&lt;/option&gt;
+            &lt;option value="8日" selected&gt;8日&lt;/option&gt;
+            &lt;option value="9日"&gt;9日&lt;/option&gt;
+            &lt;option value="10日"&gt;10日&lt;/option&gt;
+            &lt;/optgroup&gt;
+            &lt;optgroup label="month"&gt;
+            &lt;option value="7月"&gt;7月&lt;/option&gt;
+            &lt;option value="8月" selected&gt;8月&lt;/option&gt;
+            &lt;option value="9月"&gt;9月&lt;/option&gt;
+            &lt;option value="10月"&gt;10月&lt;/option&gt;    
+            &lt;/optgroup&gt;
+            &lt;input type="reset" value="重置"&gt;
+        &lt;/select&gt;
+</code></pre>
+<p>  使用&lt;code&gt;&lt; optgroup &gt;&lt;/code&gt;定义选项组，就是将选项分类显示，给予一个选择的提示。</p>
+<h3>文本域</h3>
+<p>  文本域提供一个区域可供用户输入语句。直接使用taxtarea即可实现。</p>
+<pre><code> &lt;textarea name="文本域" id="1" cols="30" rows="10"&gt;这是一个文本域。&lt;/textarea&gt;可以设定文本区域大小和初始显示的字。
+</code></pre>
+<h2>HTML框架</h2>
+<hr>
+<p>  可以使用框架在一个窗口显示多个页面。定义框架使用&lt;code&gt;&lt; iframe &gt;&lt;/code&gt;。</p>
+<pre><code>	&lt;iframe src="http://AggressiveJokerJD.github.io" name="iframe_a" width="300" height="300" frameborder="0"&gt;&lt;/iframe&gt;
+	使用属性frameborder去除框架的边框。
+    &lt;a href="http://www.google.cn/" target="iframe_a"&gt;google&lt;/a&gt;
+</code></pre>
+<h2>HTML脚本</h2>
+<hr>
+<p>  使用&lt;code&gt;&lt; script &gt;&lt;/code&gt;来定义要使用的脚本，直接在script之间写下脚本语言或者是src指向外部脚本文件,&lt;code&gt;&lt; noscript &gt;&lt;/code&gt;定义了无法使用脚本或者是页面禁用脚本之后会替代script里面内容所显示的内容</p>
+<pre><code>	&lt;h1 id="001"&gt;脚本测试&lt;/h1&gt;
+    &lt;script&gt;
+        function myfunction(){
+            x = document.getElementById("001");
+            x.style.color = "#ffff00";
+        }
+    &lt;/script&gt;&lt;noscript&gt;无法进行操作！&lt;/noscript&gt;
+    &lt;button type="button" onclick="myfunction()"&gt;button&lt;/button&gt;
+</code></pre>
+<h2>HTML字符实体</h2>
+<hr>
+<p>  HTML 中的预留字符必须被替换为字符实体。一些在键盘上找不到的字符也可以使用字符实体来替换。</p>
+<table>
+<thead>
+<tr>
+<th>音标符</th>
+<th>显示效果和写法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>̀</td>
+<td>à  &amp;#768;</td>
+</tr>
+<tr>
+<td>́</td>
+<td>á  &amp;#769;</td>
+</tr>
+<tr>
+<td>̂</td>
+<td>â  &amp;#770;</td>
+</tr>
+<tr>
+<td>̃</td>
+<td>ã  &amp;#771;</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>结果</th>
+<th>描述</th>
+<th>实体名称和编号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> </td>
+<td>空格</td>
+<td>&amp;nbsp/emsp  &amp;#160;</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>小于号，左尖括号</td>
+<td>&amp;lt;  &amp;#60;</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>大于号，右尖括号</td>
+<td>&amp;  &amp;#62;</td>
+</tr>
+<tr>
+<td>&amp;</td>
+<td>和号</td>
+<td>&amp;amp;  &amp;#38;</td>
+</tr>
+<tr>
+<td>"</td>
+<td>引号</td>
+<td>&amp;quot;  &amp;#34;</td>
+</tr>
+<tr>
+<td>'</td>
+<td>撇号</td>
+<td>&amp;apos;  &amp;#39;</td>
+</tr>
+<tr>
+<td>¢</td>
+<td>分</td>
+<td>&amp;cent;  &amp;#162;</td>
+</tr>
+<tr>
+<td>£</td>
+<td>镑</td>
+<td>&amp;pound;  &amp;#163;</td>
+</tr>
+<tr>
+<td>¥</td>
+<td>人民币</td>
+<td>&amp;yen;  &amp;#165;</td>
+</tr>
+<tr>
+<td>€</td>
+<td>欧元</td>
+<td>&amp;euro;  &amp;#8364;</td>
+</tr>
+<tr>
+<td>§</td>
+<td>小节</td>
+<td>&amp;sect;  &amp;#167;</td>
+</tr>
+<tr>
+<td>©</td>
+<td>版权</td>
+<td>&amp;copy;  &amp;#169;</td>
+</tr>
+<tr>
+<td>®</td>
+<td>注册商标</td>
+<td>&amp;reg;  &amp;#174;</td>
+</tr>
+<tr>
+<td>™</td>
+<td>商标</td>
+<td>&amp;trade;  &amp;#8482;</td>
+</tr>
+<tr>
+<td>×</td>
+<td>乘号</td>
+<td>&amp;times;  &amp;#215;</td>
+</tr>
+<tr>
+<td>÷</td>
+<td>除号</td>
+<td>&amp;divide;  &amp;#247;</td>
+</tr>
+</tbody>
+</table>
+<h1>HTML5</h1>
+<hr>
+<p>  HTML5相较于HTML增加了一些新元素，新属性，提供更多的支持，而且删除了一些HTML4.01中的元素。</p>
+<h2>HTML5 Canvas</h2>
+<hr>
+<p>  &lt;code&gt;&lt;canvas&gt;&lt;/code&gt;定义图形，也就是画布，可以通过脚本来对其进行绘制。</p>
+<pre><code>	&lt;canvas id="my_canvas" width="500" height="400" style="background-color: azure"&gt;
+    当前浏览器不支持HTML5 canvas标签&lt;/canvas&gt;&lt;!--如若无法使用提示语句--&gt;
+    &lt;script&gt;
+    var c = document.getElementById("my_canvas");
+    var ctx = c.getContext("2d");
+    ctx.fillStyle = "#ffff00";
+    ctx.fillRect(0,0,150,130);
+	ctx.moveTo(0,0);
+    ctx.lineTo(500,400);
+    ctx.stroke();
+    &lt;/script&gt;
+</code></pre>
+<p>  可以对其进行其他操作，可参考<a href="https://www.runoob.com/html/html5-canvas.html" target="_blank" rel="noopener">&lt;font color=lightblue&gt;链接&lt;/font&gt;</a></p>
+<h2>HTML5视频</h2>
+<hr>
+<p>  &lt;code&gt;&lt;video&gt;&lt;/code&gt;提供了插入视频的方法，和Canvas一样，开始标签和结束标签之间的位置提供无法使用video时候的提示语句。</p>
+<p>  &lt;code&gt;&lt;video&gt;&lt;/code&gt;支持MP4，WebM和Ogg三种视频格式。</p>
+<pre><code>	&lt;video width="320" height="240" controls&gt;
+	  &lt;source src="url" type="video/mp4"&gt;
+	  您的浏览器不支持 HTML5 video 标签。
+	&lt;/video&gt;
+</code></pre>
+<h2>HTML5音频</h2>
+<hr>
+<p>  &lt;code&gt;&lt;audio&gt;&lt;/code&gt;和&lt;code&gt;&lt;video&gt;&lt;/code&gt;基本相似。</p>
+<pre><code>	&lt;video controls&gt;
+	  &lt;source src="url" type="video/mp4"&gt;
+	  您的浏览器不支持 HTML5 video 标签。
+	&lt;/video&gt;
+</code></pre>
+<h2>HTML5 Input</h2>
+<hr>
+<p>  增加了type的类型：date，color，datetime，datatime-local，email，month，nummber等，可以参考<a href="https://www.runoob.com/html/html5-form-input-types.html" target="_blank" rel="noopener">&lt;font color=lightblue&gt;链接&lt;/font&gt;</a>。</p>
+<h2>其余HTML5相关知识</h2>
+<hr>
+<p>  其他的HTML5的知识还包括Web存储，Web SQL，SSE等，均可直接查看<a href="https://www.runoob.com/html/html5-intro.html" target="_blank" rel="noopener">&lt;font color=lightblue&gt;链接&lt;/font&gt;</a>。</p>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/博客/" rel="tag"><i class="fa fa-tag"></i> 博客</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/07/10/记190710/" rel="next" title="记190710">
+                <i class="fa fa-chevron-left"></i> 记190710
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/07/11/记190711/" rel="prev" title="记190711">
+                记190711 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="http://pu0chvxph.bkt.clouddn.com/%E7%B4%A2%E7%BD%97%E7%BB%BF%E8%97%BB%E5%A4%B4.jpg" alt="Joker">
+            
+              <p class="site-author-name" itemprop="name">Joker</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">145</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/AggressiveJokerJD" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:910368490@qq.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=442319&auto=1&height=66"></iframe>
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">1.</span> <span class="nav-text">HTML</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.1.</span> <span class="nav-text">HTML基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.1.1.</span> <span class="nav-text">HTML标题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.1.2.</span> <span class="nav-text">HTML段落</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.1.3.</span> <span class="nav-text">HTML链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.1.4.</span> <span class="nav-text">HTML图片</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.2.</span> <span class="nav-text">HTML元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.3.</span> <span class="nav-text">HTML属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.4.</span> <span class="nav-text">HTML标题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.5.</span> <span class="nav-text">HTML段落</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.6.</span> <span class="nav-text">HTML文本格式化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.6.1.</span> <span class="nav-text">HTLM文本格式化标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.6.2.</span> <span class="nav-text">HTML&quot;计算机输出&quot;标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.6.3.</span> <span class="nav-text">HTML引文，引用及标签定义</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.7.</span> <span class="nav-text">HTML链接</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.7.1.</span> <span class="nav-text">href属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.7.2.</span> <span class="nav-text">target属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.7.3.</span> <span class="nav-text">id属性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.8.</span> <span class="nav-text">HTML头部</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.8.1.</span> <span class="nav-text">title元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.8.2.</span> <span class="nav-text">base元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.8.3.</span> <span class="nav-text">link元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.8.4.</span> <span class="nav-text">style元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.8.5.</span> <span class="nav-text">mate元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.8.6.</span> <span class="nav-text">script元素</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.9.</span> <span class="nav-text">样式CSS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.10.</span> <span class="nav-text">HTML图像</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.11.</span> <span class="nav-text">HTML表格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.12.</span> <span class="nav-text">HTML列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.13.</span> <span class="nav-text">HTML区块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.14.</span> <span class="nav-text">HTML布局</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.15.</span> <span class="nav-text">HTML表单</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.15.1.</span> <span class="nav-text">基本表单属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.15.2.</span> <span class="nav-text">下拉列表属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.15.3.</span> <span class="nav-text">文本域</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.16.</span> <span class="nav-text">HTML框架</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.17.</span> <span class="nav-text">HTML脚本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.18.</span> <span class="nav-text">HTML字符实体</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">2.</span> <span class="nav-text">HTML5</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">2.1.</span> <span class="nav-text">HTML5 Canvas</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">2.2.</span> <span class="nav-text">HTML5视频</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">2.3.</span> <span class="nav-text">HTML5音频</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">2.4.</span> <span class="nav-text">HTML5 Input</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">2.5.</span> <span class="nav-text">其余HTML5相关知识</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Joker</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+
+  
+  <script type="text/javascript" color="46,254,64" opacity="0.7" zindex="-2" count="85" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+  
+
+<script type="text/javascript" src="/js/google-code-prettify/prettify.js"></script>
+<script type="text/javascript">
+$(window).load(function(){
+   $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+   prettyPrint();
+ })    
+</script>
+
+
+
+</body>
+</html>
