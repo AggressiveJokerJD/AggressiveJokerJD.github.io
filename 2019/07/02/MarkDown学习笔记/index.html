@@ -25,7 +25,7 @@
     version: '7.6.0',
     exturl: false,
     sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
-    copycode: {"enable":true,"show_result":true,"style":null},
+    copycode: {"enable":true,"show_result":true,"style":"flat"},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
     fancybox: false,
@@ -108,7 +108,12 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container use-motion">
+  
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+  <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+  <script type="text/javascript" src="/js/src/fireworks.js"></script>
+  
+  <div class="container use-motion">
     <div class="headband"></div>
 
     <a href="https://github.com/AggressiveJokerJD" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
@@ -116,14 +121,6 @@
     
       <script type="text/javascript"
         color="0,255,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
-    
-
-    
-
-    
-      <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
-      <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
-      <script type="text/javascript" src="/js/src/fireworks.js"></script>
     
 
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -180,6 +177,11 @@
         <li class="menu-item menu-item-diary">
 
     <a href="/categories/diary" rel="section"><i class="fa fa-fw fa-book"></i>日记</a>
+
+  </li>
+        <li class="menu-item menu-item-need_to_do">
+
+    <a href="/categories/need-to-do" rel="section"><i class="fa fa-fw fa-flag"></i>need_to_do</a>
 
   </li>
   </ul>
@@ -253,7 +255,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>3.7k</span>
+              <span>3.8k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -274,95 +276,103 @@
       
         <p>  想要在这里记录一下学习markdown的过程吧，顺便把学习到的东西记录在这里供自己查看(感觉自己总是会忘记之前学过的东西啊，所以还是那句话——眼过千遍不如手过一遍(虽然是用键盘哈哈哈哈！))。</p>
 <a id="more"></a>
+<h1 id="一些markdown或者是html的基本语法"><a href="#一些markdown或者是html的基本语法" class="headerlink" title="一些markdown或者是html的基本语法"></a>一些markdown或者是html的基本语法</h1><p></p><hr><p></p>
+<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p></p><hr><p></p>
+<pre><code># 一级标题(使用h1格式)
 
-<h1 id="一些markdown或者是html的基本语法"><a href="#一些markdown或者是html的基本语法" class="headerlink" title="一些markdown或者是html的基本语法"></a>一些markdown或者是html的基本语法</h1><hr>
-## 标题
-<hr>
-    # 一级标题(使用h1格式)
+## 二级标题(使用h2格式)
 
-<pre><code>## 二级标题(使用h2格式)
+……以此类推，一共有六个不同的标题。
+</code></pre><p>但是不知道为什么我在MarkdownPad2上面写’# 一级标题’并不能够被解析，而是直接显示’# 一级标题’，查了资料之后说是可能没有在#和一级标题之间加空格，可是我加了空格也是没有办法使用#定义标题，所以可以使用<h1-6>&lt;/h1-6&gt;来标识标题。希望之后可以找到合适的解释！！</h1-6></p>
+<font color="Red">这里的问题找到了，是因为没有在#和一级标题之间添加空格，所以就没有办法解析，但是当时记得加了的，所以应该是自己上传有点慢，当时比较急，所以闹了个笑话，哈哈哈哈哈！所以还是建议使用#来创建标题，因为我发现了一个问题就是用<h+数字>产生的标题目录没有办法直接点击目录里面的标题而实现跳转，而使用#+标题的方式是可以实现跳转的。</h+数字></font>
 
-……以此类推，一共有六个不同的标题。</code></pre><p>但是不知道为什么我在MarkdownPad2上面写’# 一级标题’并不能够被解析，而是直接显示’# 一级标题’，查了资料之后说是可能没有在#和一级标题之间加空格，可是我加了空格也是没有办法使用#定义标题，所以可以使用<h1-6></h1-6>来标识标题。希望之后可以找到合适的解释！！</p>
-<p><font color="Red">这里的问题找到了，是因为没有在#和一级标题之间添加空格，所以就没有办法解析，但是当时记得加了的，所以应该是自己上传有点慢，当时比较急，所以闹了个笑话，哈哈哈哈哈！所以还是建议使用#来创建标题，因为我发现了一个问题就是用&lt;h+数字&gt;产生的标题目录没有办法直接点击目录里面的标题而实现跳转，而使用#+标题的方式是可以实现跳转的。</font></p>
-<h2 id="空格"><a href="#空格" class="headerlink" title="空格"></a>空格</h2><hr>
-    &nbsp;//半角空格(英文)
 
-<pre><code>&amp;emsp;//全角空格(中文)</code></pre><h2 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h2><hr>
-    ![](){在[]之中填写你要插入图片的名字，在()中填入该图片的连接即可}
-
+<h2 id="空格"><a href="#空格" class="headerlink" title="空格"></a>空格</h2><p></p><hr><br>    &nbsp;//半角空格(英文)<p></p>
+<pre><code>&amp;emsp;//全角空格(中文)
+</code></pre><h2 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h2><p></p><hr><br>    <img src="" alt="">{在[]之中填写你要插入图片的名字，在()中填入该图片的连接即可}<p></p>
 <p>  我将图片都存在七牛云上面，直接可以取<a href="https://www.qiniu.com/" target="_blank" rel="noopener">七牛云网站</a>获取外链。</p>
 <p>  也可以像是加链接一般加入图片</p>
 <pre><code>这个链接用 1 作为网址变量 [RUNOOB][1].
 然后在文档的结尾位变量赋值（网址）
 
-[1]: http://static.runoob.com/images/runoob-logo.png</code></pre><p>  可以使用img来限定图片的高度和宽度</p>
+[1]: http://static.runoob.com/images/runoob-logo.png
+</code></pre><p>  可以使用img来限定图片的高度和宽度</p>
 <p>  可以使用图片链接，点击图片进入链接</p>
-<pre><code>[![图片名称](图片url)](网站url)</code></pre><h2 id="插入音乐"><a href="#插入音乐" class="headerlink" title="插入音乐"></a>插入音乐</h2><hr>
-### 插入单个歌曲
-<hr>
-    {% aplayer "歌曲名称" "作者" "音乐_url" "封面图片_url" "autoplay" %}
-
-<pre><code>{% aplayer "歌曲名称" "作者" "音乐_url" "封面图片_url" "lrc:音乐_lrc" %}</code></pre><h3 id="插入歌单"><a href="#插入歌单" class="headerlink" title="插入歌单"></a>插入歌单</h3><hr>
-    
-        <div id="aplayer-sSdPyZgS" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"></div>
+<pre><code>[![图片名称](图片url)](网站url)
+</code></pre><h2 id="插入音乐"><a href="#插入音乐" class="headerlink" title="插入音乐"></a>插入音乐</h2><p></p><hr><p></p>
+<h3 id="插入单个歌曲"><a href="#插入单个歌曲" class="headerlink" title="插入单个歌曲"></a>插入单个歌曲</h3><p></p><hr><br>    
+			<script>
+				console.error("Error: [hexo-tag-aplayer] Specified asset file not found (封面图片_url)");
+			</script><p></p>
+<pre><code>{% aplayer "歌曲名称" "作者" "音乐_url" "封面图片_url" "lrc:音乐_lrc" %}
+</code></pre><h3 id="插入歌单"><a href="#插入歌单" class="headerlink" title="插入歌单"></a>插入歌单</h3><p></p><hr><br>    
+        <div id="aplayer-tisVRFJf" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"></div>
 			  <script>
 				  var options = {"narrow":false,"autoplay":false,"showlrc":3,"mutex":true,"music":[{"title":"歌曲名","author":"歌手名","url":"https://什么什么什么.mp3","pic":"https://封面图.jpg","lrc":"https://歌词.lrc"},{"title":"歌曲名","author":"歌手名","url":"https://什么什么什么.mp3","pic":"https://封面图.jpg","lrc":"https://歌词.lrc"}]};
-				  options.element = document.getElementById("aplayer-sSdPyZgS");
+				  options.element = document.getElementById("aplayer-tisVRFJf");
 				  var ap = new APlayer(options);
 			    window.aplayers || (window.aplayers = []);
 				  window.aplayers.push(ap);
-			  </script>
-
+			  </script><p></p>
 <p>  直接可以添加到文章底部，<a href="https://music.liuzhijin.cn/" target="_blank" rel="noopener">获取音乐外链网站</a>填入相应的地方就好了。</p>
-<p><font size="4" color="Red">这里发现了一些小的问题，就是用上述的两种方法可以插入歌曲和歌单直接到文章中去，但是歌词却只能同步到本地文件中(也就是hexo s之后的localhost:4000可以看到歌词)，歌词是从网易云扒下来上传到七牛云的，但是在同步到Github之后是看不到歌词的，这次绝对不是我网卡了，然后在<a href="https://github.com/MoePlayer/hexo-tag-aplayer" target="_blank" rel="noopener">Aplayer官方文档</a>中看到一种方法，可以解决host d之后看不到歌词的问题。</font></p>
+<font size="4" color="Red">这里发现了一些小的问题，就是用上述的两种方法可以插入歌曲和歌单直接到文章中去，但是歌词却只能同步到本地文件中(也就是hexo s之后的localhost:4000可以看到歌词)，歌词是从网易云扒下来上传到七牛云的，但是在同步到Github之后是看不到歌词的，这次绝对不是我网卡了，然后在[Aplayer官方文档](https://github.com/MoePlayer/hexo-tag-aplayer)中看到一种方法，可以解决host d之后看不到歌词的问题。</font>
+
 <h3 id="解决看不到歌词的插入方法"><a href="#解决看不到歌词的插入方法" class="headerlink" title="解决看不到歌词的插入方法"></a>解决看不到歌词的插入方法</h3><pre><code>{% aplayerlrc "title" "author" "url" "picture" "autoplay" %}
 	[00:00.000] 歌词lrc
-	{% endaplayerlrc %}</code></pre><h3 id="直接插入网易云歌单"><a href="#直接插入网易云歌单" class="headerlink" title="直接插入网易云歌单"></a>直接插入网易云歌单</h3><hr>
-    { % meting "2819768254" "netease" "playlist" "autoplay" "mutex:false" "listmaxheight:340px" "preload:none" "theme:#ad7a86"% }
-
+	{% endaplayerlrc %}
+</code></pre><h3 id="直接插入网易云歌单"><a href="#直接插入网易云歌单" class="headerlink" title="直接插入网易云歌单"></a>直接插入网易云歌单</h3><p></p><hr><br>    { % meting “2819768254” “netease” “playlist” “autoplay” “mutex:false” “listmaxheight:340px” “preload:none” “theme:#ad7a86”% }<p></p>
 <p>  上面的第一个参数中的数字就是网易云歌单的歌单号，可以取网页版的网易云听一个个单里面的某一首歌，然后上面的网址会显示该个单的id，直接填入就好了。</p>
-<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><hr>
-  Markdown可以使用以下字体：
-
+<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><p></p><hr><br>  Markdown可以使用以下字体：<p></p>
 <pre><code>    *斜体文本*
     _斜体文本_
     **粗体文本**
     __粗体文本__
     ***粗斜体文本***
-    ___粗斜体文本___</code></pre><p>  也可以直接使用HTML语言中的字体font来限制之间的字体的形式。</p>
+    ___粗斜体文本___
+</code></pre><p>  也可以直接使用HTML语言中的字体font来限制之间的字体的形式。</p>
 <h2 id="线"><a href="#线" class="headerlink" title="线"></a>线</h2><hr>
 <h3 id="分隔线"><a href="#分隔线" class="headerlink" title="分隔线"></a>分隔线</h3><p>  分割线可以使用一行中三个或三个以上的*或者-或者_来创建，如：</p>
 <pre><code>---
 ***
 ****
-___</code></pre><p>  这些都可以用来产生分割线，也可以使用html语言中的hr来实现效果。</p>
+___
+</code></pre><p>  这些都可以用来产生分割线，也可以使用html语言中的hr来实现效果。</p>
 <h3 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h3><p>  效果就是在文字上面划一道线。<del>这句话我不想要</del><br>  就是在想要展示被划线的文字两边添加两个~~就好了</p>
-<pre><code>    ~~要加入删除线的语句~~</code></pre><h3 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h3><p>  可以通过html语言的u来实现，如：</p>
+<pre><code>    ~~要加入删除线的语句~~
+</code></pre><h3 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h3><p>  可以通过html语言的u来实现，如：</p>
 <p>  <u>这句话应该会有一条下划线</u></p>
-<pre><code>    &lt;u&gt;要加入下划线的语句&lt;/u&gt;</code></pre><h2 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h2><hr>
-<p>  <a href="这里我们就可以对注脚进行解释，鼠标放上去就可以显示出来了。">^脚注</a>就是对文本的补充说明，可以使的鼠标移到某一个词上可以看到这个词的释义。  </p>
+<pre><code>    &lt;u&gt;要加入下划线的语句&lt;/u&gt;
+</code></pre><h2 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h2><hr>
+<p>  <sup><a href="#fn_脚注" id="reffn_脚注">脚注</a></sup>就是对文本的补充说明，可以使的鼠标移到某一个词上可以看到这个词的释义。  </p>
+<blockquote id="fn_脚注">
+<sup>脚注</sup>. 这里我们就可以对注脚进行解释，鼠标放上去就可以显示出来了。<a href="#reffn_脚注" title="Jump back to footnote [脚注] in the text."> ↩</a>
+</blockquote>
 <pre><code>    创建脚注：[^要创建脚注的词语]
-    [^上面的词语]: 对该词语的解释。</code></pre><h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><hr>
+    [^上面的词语]: 对该词语的解释。
+</code></pre><h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><hr>
 <p>  有序列表和无序列表，无序列表就是直接使用*，-，+中的一个用来标记列表，如：</p>
 <pre><code>    * 第一项
     * 第二项
     * 第三项
-    * 讲*可以换为-或者+</code></pre><p>  有序列表使用数字后面呢跟.表示，如：</p>
+    * 讲*可以换为-或者+
+</code></pre><p>  有序列表使用数字后面呢跟.表示，如：</p>
 <pre><code>    1. 第一项
     2. 第二项
-    3. 第三项</code></pre><p>  列表的嵌套只需要在自序里前面加四个空格即可，如：</p>
+    3. 第三项
+</code></pre><p>  列表的嵌套只需要在自序里前面加四个空格即可，如：</p>
 <pre><code>    1. 第一项
         - 第一项的第一小项
         - 第一项的第二小项
     2. 第二项
         - 第二项的第一小项
-        - 第二项的第二小项</code></pre><h2 id="区块"><a href="#区块" class="headerlink" title="区块"></a>区块</h2><hr>
+        - 第二项的第二小项
+</code></pre><h2 id="区块"><a href="#区块" class="headerlink" title="区块"></a>区块</h2><hr>
 <p>  区块引用在段落开头用&gt;,如下：  </p>
 <blockquote>
 <p>区块引用<br>示例</p>
+<p>区块引用<br>示例</p>
 </blockquote>
-<pre><code>    &gt; 区块引用
-    &gt; 示例</code></pre><p>  嵌套的区块，使用多个&gt;来表示层数。</p>
+<p>  嵌套的区块，使用多个&gt;来表示层数。</p>
 <blockquote>
 <p>最外层</p>
 <blockquote>
@@ -371,10 +381,15 @@ ___</code></pre><p>  这些都可以用来产生分割线，也可以使用h
 <p>第三层</p>
 </blockquote>
 </blockquote>
+<p>最外层</p>
+<blockquote>
+<p>第二层</p>
+<blockquote>
+<p>第三层</p>
 </blockquote>
-<pre><code>    &gt; 最外层
-    &gt; &gt; 第二层
-    &gt; &gt; &gt;第三层</code></pre><p> emsp;在区块中使用列表。</p>
+</blockquote>
+</blockquote>
+<p> emsp;在区块中使用列表。</p>
 <blockquote>
 <p>区块中使用列表</p>
 <ol>
@@ -386,16 +401,20 @@ ___</code></pre><p>  这些都可以用来产生分割线，也可以使用h
 <li>第二项</li>
 <li>第三项</li>
 </ul>
-</blockquote>
-<pre><code>    &gt; 区块中使用列表
-    &gt; 1. 第一项
-    &gt; 2. 第二项
-    &gt; + 第一项
-    &gt; + 第二项
-    &gt; + 第三项</code></pre><p>  在列表中使用区块。</p>
+<p>区块中使用列表</p>
 <ol>
-<li><p>第一项</p>
-<blockquote>
+<li>第一项</li>
+<li>第二项</li>
+</ol>
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ul>
+</blockquote>
+<p>  在列表中使用区块。</p>
+<ol>
+<li>第一项<blockquote>
 <p>区块1<br>区块2</p>
 </blockquote>
 </li>
@@ -404,26 +423,31 @@ ___</code></pre><p>  这些都可以用来产生分割线，也可以使用h
      &gt; 区块1
      &gt; 区块2
 
- 2. 第二项</code></pre></li>
+ 2. 第二项
+</code></pre></li>
 </ol>
 <h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><hr>
 <p>  可以将代码用反引号(`)引用达到code的效果。</p>
 <p>  可以直接引用<code>printf()</code></p>
 <p>  代码区块的引用，可以直接使用Tab制表符来完成，也可以通过三个反引号将代码块包含引用，可以在第一行注明所用语言。</p>
-<pre><code class="C">    #include &lt;stdio.h&gt;
+<pre><code class="lang-C">    #include &lt;stdio.h&gt;
     int main(){
         printf("Hello World!");
         return 0;
-    }</code></pre>
+    }
+</code></pre>
 <h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><hr>
 <p>  使用链接方法</p>
 <pre><code>    [链接名称](链接地址)
     或者
-    &lt;链接地址&gt;</code></pre><p>  高级的链接</p>
+    &lt;链接地址&gt;
+</code></pre><p>  高级的链接</p>
 <p>链接也可以用变量来代替，文档末尾附带变量地址：<br>这个链接用 1 作为网址变量 <a href="http://www.google.com/" target="_blank" rel="noopener">Google</a><br>然后在文档的结尾为变量赋值（网址）</p>
 <pre><code>    [链接名词][链接地址的变量]：如[Google][1]
-    [1]: http://www.google.com/</code></pre><h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><hr>
+    [1]: http://www.google.com/
+</code></pre><h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><hr>
 <p>  制作表格使用 | 来分隔不同的单元格，使用 - 来分隔表头和其他行。</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -431,7 +455,8 @@ ___</code></pre><p>  这些都可以用来产生分割线，也可以使用h
 <th>表头</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>单元格</td>
 <td>单元格</td>
 </tr>
@@ -439,32 +464,41 @@ ___</code></pre><p>  这些都可以用来产生分割线，也可以使用h
 <td>单元格</td>
 <td>单元格</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <pre><code>    |  表头   | 表头  |
     |  ----  | ----  |
     | 单元格  | 单元格 |
-    | 单元格  | 单元格 |</code></pre><p>  对齐方式,<code>-:</code>右对齐,<code>:-</code>左对齐,<code>:-:</code>居中对齐</p>
+    | 单元格  | 单元格 |
+</code></pre><p>  对齐方式,<code>-:</code>右对齐,<code>:-</code>左对齐,<code>:-:</code>居中对齐</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
-<th align="left">左对齐</th>
-<th align="right">右对齐</th>
-<th align="center">居中对齐</th>
+<th style="text-align:left">左对齐</th>
+<th style="text-align:right">右对齐</th>
+<th style="text-align:center">居中对齐</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="left">左对齐内容</td>
-<td align="right">右对齐内容</td>
-<td align="center">居中对齐内容</td>
+<tbody>
+<tr>
+<td style="text-align:left">左对齐内容</td>
+<td style="text-align:right">右对齐内容</td>
+<td style="text-align:center">居中对齐内容</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <pre><code>    | 左对齐 | 右对齐 | 居中对齐 |
     | :----| ----: | :----: |
-    | 单元格 | 单元格 | 单元格 |</code></pre><p>  这里没有办法使用表格的对齐，不知道是什么原因，目前还没有找到原因。</p>
+    | 单元格 | 单元格 | 单元格 |
+</code></pre><p>  这里没有办法使用表格的对齐，不知道是什么原因，目前还没有找到原因。</p>
 <h2 id="支持其他的html元素"><a href="#支持其他的html元素" class="headerlink" title="支持其他的html元素"></a>支持其他的html元素</h2><hr>
 <p>  目前支持的 HTML 元素有：kbd b i em sup sub br等 ，如  </p>
 <p>使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑</p>
-<pre><code>使用 &lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;Alt&lt;/kbd&gt;+&lt;kbd&gt;Del&lt;/kbd&gt; 重启电脑</code></pre><h2 id="转义"><a href="#转义" class="headerlink" title="转义"></a>转义</h2><hr>
+<pre><code>使用 &lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;Alt&lt;/kbd&gt;+&lt;kbd&gt;Del&lt;/kbd&gt; 重启电脑
+</code></pre><h2 id="转义"><a href="#转义" class="headerlink" title="转义"></a>转义</h2><hr>
 <p>  可以使用反斜杠来实现转义功能，支持以下这些符号前面加上反斜杠来帮助插入普通的符号：</p>
 <pre><code>    \   反斜线
     `   反引号
@@ -477,7 +511,8 @@ ___</code></pre><p>  这些都可以用来产生分割线，也可以使用h
     +   加号
     -   减号
     .   英文句点
-    !   感叹号</code></pre><p>​        </p>
+    !   感叹号
+</code></pre><p>​        </p>
 <p>​    </p>
 <script>
         document.querySelectorAll('.github-emoji')
@@ -598,7 +633,7 @@ ___</code></pre><p>  这些都可以用来产生分割线，也可以使用h
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一些markdown或者是html的基本语法"><span class="nav-number">1.</span> <span class="nav-text">一些markdown或者是html的基本语法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#空格"><span class="nav-number">1.1.</span> <span class="nav-text">空格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插入图片"><span class="nav-number">1.2.</span> <span class="nav-text">插入图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插入音乐"><span class="nav-number">1.3.</span> <span class="nav-text">插入音乐</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#插入歌单"><span class="nav-number">1.3.1.</span> <span class="nav-text">插入歌单</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决看不到歌词的插入方法"><span class="nav-number">1.3.2.</span> <span class="nav-text">解决看不到歌词的插入方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#直接插入网易云歌单"><span class="nav-number">1.3.3.</span> <span class="nav-text">直接插入网易云歌单</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字体"><span class="nav-number">1.4.</span> <span class="nav-text">字体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#线"><span class="nav-number">1.5.</span> <span class="nav-text">线</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#分隔线"><span class="nav-number">1.5.1.</span> <span class="nav-text">分隔线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除线"><span class="nav-number">1.5.2.</span> <span class="nav-text">删除线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下划线"><span class="nav-number">1.5.3.</span> <span class="nav-text">下划线</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#脚注"><span class="nav-number">1.6.</span> <span class="nav-text">脚注</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列表"><span class="nav-number">1.7.</span> <span class="nav-text">列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#区块"><span class="nav-number">1.8.</span> <span class="nav-text">区块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码"><span class="nav-number">1.9.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#链接"><span class="nav-number">1.10.</span> <span class="nav-text">链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#表格"><span class="nav-number">1.11.</span> <span class="nav-text">表格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#支持其他的html元素"><span class="nav-number">1.12.</span> <span class="nav-text">支持其他的html元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#转义"><span class="nav-number">1.13.</span> <span class="nav-text">转义</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一些markdown或者是html的基本语法"><span class="nav-number">1.</span> <span class="nav-text">一些markdown或者是html的基本语法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#标题"><span class="nav-number">1.1.</span> <span class="nav-text">标题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#空格"><span class="nav-number">1.2.</span> <span class="nav-text">空格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插入图片"><span class="nav-number">1.3.</span> <span class="nav-text">插入图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插入音乐"><span class="nav-number">1.4.</span> <span class="nav-text">插入音乐</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#插入单个歌曲"><span class="nav-number">1.4.1.</span> <span class="nav-text">插入单个歌曲</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#插入歌单"><span class="nav-number">1.4.2.</span> <span class="nav-text">插入歌单</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决看不到歌词的插入方法"><span class="nav-number">1.4.3.</span> <span class="nav-text">解决看不到歌词的插入方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#直接插入网易云歌单"><span class="nav-number">1.4.4.</span> <span class="nav-text">直接插入网易云歌单</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字体"><span class="nav-number">1.5.</span> <span class="nav-text">字体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#线"><span class="nav-number">1.6.</span> <span class="nav-text">线</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#分隔线"><span class="nav-number">1.6.1.</span> <span class="nav-text">分隔线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除线"><span class="nav-number">1.6.2.</span> <span class="nav-text">删除线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下划线"><span class="nav-number">1.6.3.</span> <span class="nav-text">下划线</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#脚注"><span class="nav-number">1.7.</span> <span class="nav-text">脚注</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列表"><span class="nav-number">1.8.</span> <span class="nav-text">列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#区块"><span class="nav-number">1.9.</span> <span class="nav-text">区块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码"><span class="nav-number">1.10.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#链接"><span class="nav-number">1.11.</span> <span class="nav-text">链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#表格"><span class="nav-number">1.12.</span> <span class="nav-text">表格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#支持其他的html元素"><span class="nav-number">1.13.</span> <span class="nav-text">支持其他的html元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#转义"><span class="nav-number">1.14.</span> <span class="nav-text">转义</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -614,7 +649,7 @@ ___</code></pre><p>  这些都可以用来产生分割线，也可以使用h
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">165</span>
+          <span class="site-state-item-count">167</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -670,13 +705,13 @@ ___</code></pre><p>  这些都可以用来产生分割线，也可以使用h
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">328k</span>
+    <span title="站点总字数">320k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">4:58</span>
+    <span title="站点阅读时长">4:51</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0
   </div>
@@ -699,7 +734,7 @@ ___</code></pre><p>  这些都可以用来产生分割线，也可以使用h
 
   
   
-  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script color='0,255,255' opacity='0.5' zIndex='-1' count='150' src="/lib/canvas-nest/canvas-nest.min.js"></script>
   <script src="/lib/anime.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>

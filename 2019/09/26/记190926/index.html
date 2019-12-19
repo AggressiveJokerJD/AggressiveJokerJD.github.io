@@ -25,7 +25,7 @@
     version: '7.6.0',
     exturl: false,
     sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
-    copycode: {"enable":true,"show_result":true,"style":null},
+    copycode: {"enable":true,"show_result":true,"style":"flat"},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
     fancybox: false,
@@ -47,18 +47,18 @@
 </script>
 
 <link href="/js/google-code-prettify/prettify.css" type="text/css" rel="stylesheet" />
-  <meta name="description" content="2019-09-26  星期四  晴">
+  <meta name="description" content="Here&apos;s something encrypted, password is required to continue reading.">
 <meta name="keywords" content="diary">
 <meta property="og:type" content="article">
 <meta property="og:title" content="记190926">
 <meta property="og:url" content="http://yoursite.com/2019/09/26/记190926/index.html">
 <meta property="og:site_name" content="AggressiveJokerJD&#39;s Blog">
-<meta property="og:description" content="2019-09-26  星期四  晴">
+<meta property="og:description" content="Here&apos;s something encrypted, password is required to continue reading.">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-12-18T14:13:35.371Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="记190926">
-<meta name="twitter:description" content="2019-09-26  星期四  晴">
+<meta name="twitter:description" content="Here&apos;s something encrypted, password is required to continue reading.">
 
 <link rel="canonical" href="http://yoursite.com/2019/09/26/记190926/">
 
@@ -103,12 +103,15 @@
   </style>
 </noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
-<link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
-<script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container use-motion">
+  
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+  <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+  <script type="text/javascript" src="/js/src/fireworks.js"></script>
+  
+  <div class="container use-motion">
     <div class="headband"></div>
 
     <a href="https://github.com/AggressiveJokerJD" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
@@ -116,14 +119,6 @@
     
       <script type="text/javascript"
         color="0,255,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
-    
-
-    
-
-    
-      <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
-      <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
-      <script type="text/javascript" src="/js/src/fireworks.js"></script>
     
 
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -180,6 +175,11 @@
         <li class="menu-item menu-item-diary">
 
     <a href="/categories/diary" rel="section"><i class="fa fa-fw fa-book"></i>日记</a>
+
+  </li>
+        <li class="menu-item menu-item-need_to_do">
+
+    <a href="/categories/need-to-do" rel="section"><i class="fa fa-fw fa-flag"></i>need_to_do</a>
 
   </li>
   </ul>
@@ -272,53 +272,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>2019-09-26  星期四  晴</p>
-<a id="more"></a>
-<p>  emmmm，早上起来了，比之前要起来的早一些，差不多10点多吧，然后就洗漱了一下，就和小洪去校医院了，他好像是喉咙里面有什么东西。然后我是去弄那个腱鞘炎那个嘛，然后就是他弄完就走了，我弄完吃了个饭然后回去了。</p>
-<p>  下午是软件需求分析的课，然后就是去听了，本来还想着好好听听，谁知都又是没有怎么听，就在课上面补了一下日记，然后晚上回来又继续弄了下那个系统级别编程的作业，然后还是弄不出来key3，key4，然后就是以为是要通过修改那个msg的值来跳过，然后发现好像不是的。周六继续做作业的时候发现应该是要再那个地址的基础上，传递参数进栈，栈外的位置保存在栈顶，通过函数修改栈顶的值，使得回到函数之后直接跳转到想要的位置即可(哈哈哈哈哈，其实这篇日记是周六补的，我没了….emmm这好像是周三的事情，算了吧，无所喂了)。</p>
-<p>  晚上就是玩游戏嘛，然后玩了好久的游戏，洗了个澡就上床休息了，晚上还是睡得很晚，没有怎么休息好吧，虽然明天要早起去华西。</p>
-<h2 id="今日推荐曲目"><a href="#今日推荐曲目" class="headerlink" title="今日推荐曲目"></a>今日推荐曲目</h2><hr>
-<div id="aplayer-Irgkcbhq" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
-				<pre class="aplayer-lrc-content"></pre>
-			</div>
-			<script>
-				var ap = new APlayer({
-					element: document.getElementById("aplayer-Irgkcbhq"),
-					narrow: false,
-					autoplay: true,
-					showlrc: 2,
-					music: {
-						title: "Frisbee",
-						author: "Ahxello",
-						url: "https://music.163.com/song/media/outer/url?id=418602744",
-						pic: "https://musci-image-1259719447.cos.ap-chengdu.myqcloud.com/Frisbee.jpg",
-					}
-				});
-				window.aplayers || (window.aplayers = []);
-				window.aplayers.push(ap);
-			</script>
-
-
-<p><b><font color="lightgreen" size="2">今日份小心情:还可以了，就是感觉又是很空虚，没有别的意思，就是没有很充实的反义了。</font></b></p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>
+        <div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <div class="hbe-input-container">
+  <input type="password" id="hbePass" placeholder="" />
+    <label for="hbePass">Hey, password is required here.</label>
+    <div class="bottom-line"></div>
+  </div>
+  <script id="hbeData" type="hbeData" data-hmacdigest="7fe4e25a1f01afe32d1c886fa2211eea4baf02a33f11ec5f8c1e7d7544c2d398">c0423afe58fc1ef51c8c5bf91123b96f48e5160d7fd7b4f3efc0118ab376e627baf97086c083d91a2b97e013eee453cadf68e8bfbf630687f5f8f5d8c0e484f0dfbe1bbe9944d007611ecf72dee874b45b6c892f73fdb7bf3695201e6c86a7e90b5b20964a48777991c43fbcd9cef1b533560de1ba9b7b4bbfecc02b87b2f5a0a49c0d2d478ffa1b03e8a9f6e83263cd12b55f624317126a9f43643d5c9bb75d10db6a0df254ef609da35f403f49dfab4881221bb234b3af1313657eed36ebcda0f7ecbfe09e33c18aebe19e1beb2ec361abae33bb13b50c4ce96babe120b8e198fea4b09c7e11f25fa1824a83d5575959bdd10eab44b989ad53d52cbe258131c8b56481478796f37a693da0da55cd0acc3714eb4394fbb3482273f54110fcad338d0bf0821bbfbf5a0e1988d76b80dc0b43c789354fd2095a53edb9676cfb81c10b0af82fd2c79c891777e45b86487960ffb128c713c0f6c55a8449e47b632c216df1a7d118812ab38087c2cdb5511c43fc88e5036510a3af2b67cea74080b68a7236cb70966c9bc86999db3c20392cb389556cd1a5b42a705fd8b89231e4bc11850c9b3ee486d256d9b9637f7d09415687e05e4b793f3f384e4fc496665c39d396add08be1bae82e6cb8f6d9201bd00a5b31efa79ca37dd01e2bc72f2acb7b8f28784c339ce5ba0f2d8b98f4fdbae0b47f67e80eecf3e0995ad9fbb6c76d979de661dcb5e7eda536a0adadc73f0306d5dd526f02a53411752fb3a1b34036c7ba1628e6305d9c4accab3fa2639f5b04f611fe123c300ec5edf5d1a61642d2e1082bdf0e2139000e1657fd128a3475443c374f828c85feaa7c025a68b60cdc8a7943985b0dcc7a77f1682366ca74f1ebf4ef8d2ae5d75c3cbd1f947ed187b2cde81b6ad99aca9767089a881f58eb939d72241219cef619c27284aa23f709940938bbaa28ea94fc5553ed4c1ae11f84044ea6a3e5aca17794dcc811629ced4ed2276c49fe563075b5b910ea388c16ba5d2a3638df22deb69cbae3700e7fdffee30121285b34908da3638e3865bb8e51dbf3b920d21f387454ff8202a7048bd7aa4933ad4da725fea792c86a951524561fa6fe44715a45fc9dc1d7fb952f339c04247631e0ea4bc96233957969615e1838a78a96b27982689c79a6c873e20ccbbf107ffd434a7c404fd33089fb453a64f42e90edc06fd68d5cc986548b3bd76e0393e2032313117dea6c128b3b6c1ae24d35f1ec80f4fb472a45e4ddb7384545540dc9843b2fd70d7ca4d7b58a60b9bf08154c7c63fea3aef18b3e40c2272e1734f179111c75a0b173a9ab365a6b7a4be2f8451235049587e1392c87dbf1959c0b8793594aa2349a480e9d9882af1c166a2ed265dbe0c96cd2d0c6fed7e54debb33e149edc4fb4c82b112e346dcbcb05587615d72573980b8cc149f188a768f554e6bd29b814fd84b6653a768e0831c5ad4b1fbcea72399e0adbf822d0a59e6e55c415e77b3bcfa2d6a0d48163dd758fa1258e38f454d1aa2ab0e3b30b98d16f8744fff2ad1ca94d38c19dcadb91de443560aef97caa0b615e7b80a49a0fd5e04433e6eb9456a453e82ec101f8888a826e17b762f7f77e426d816cdd8c2fa9e637f70a0645aba31eaf0c19c34318473d0b750e559bd02cfbf505ba9e54453117fa64265bf98b11a804dbe88b2ca53de8cd21ab899db214b813f8b7347436ea6303e063a2c49a698abc94808ba82a2a3e9f38ae228a8b04abc7b3e8fedd5008a7da48838aecf1730eb454263535f5efb71ea89687a51a1b35297068ddfc8d8813d532033d1d12e471a18e138e5abc97135c4aaee5a63e4362e039556ad1ee695ad8635c4d1f31b646c8cd62931859bdee455ce829731103035ddbb76571b0c0488f9c7fc98fd983a50133f4d0ce3eda777a9a4be52cadd3c8dcb3de81cce14aef75aef6dae859cf0b575360d4665e74604dbeecd95f4bbd644fe3c2ded3d794e0256730665f95a17121ca1d195161f31273d08258965d7b927e34cbfb8b0ca1e220fc87756d73a16b6efeed19b4306ae956ddb3ce62f71fb99973dc957da859c91f242f5a8f916f7b370077b6ec0e5c26f161d779f1628609415cb2824f5f5abcf44da97fd2f7bc81f39b17471a49c03f5c088c56037ba939856ab6ce4a51d5f77dd15ce4a8bf9ae0b7e4f5ca89e73d7dc56f6c1404c3c34c2535631e2e4e6e95cb08176e9c6c0da9ba4dca86767e19dff20db3f08db1ffcdef38cbdb8c3730d4fcb0eb4c547f7d09be42c45eac639647f434ae89ad5738802fdf24ce0c549c7edd707f4052432d62a0e426eba760a4d55f79cf7e894b64267cb077367e04241f3ccb00b4091e853fa029dbf9e5fffd141b8e6e5a96c5ee62b30b9e473b6038a4e012ea62e3dc783e62ec14ebb1d25acdd4cce905fe96b2756297e4c0c1baeb7ba070905d37de3ec59a7b65f1192502f8a7fcf1f03da174abad85dac51d61b79cd97502be61c31cbfcfcc40f288ba5a4c631c74518753edf65c6284bf5f93860705ded500e6ccb5d7b9ce50629ff30211ecfe19cfdc3c65364a99a99ab2f1691a9dcab024de1c4b2e629e4dfab750d9b5732d08ef925db767514e338cbbfb98724121168ea61fd83eb2c729bcabb08bd1a054a14b586ddf1f952cdf2cd013bc905a5d4d567f5de94fea282709f5cced9844f11880fcae6986bdf68d30317d025921bb19a19bc367088c44ba300df23aa2f12bce3694115afd24fbcc075c8a1332fd45f3ab25eb40ae10351c0b37aed8b852eaa9ec08157c9a8074f03ea5c38a440c28a9eeff385305908db06fa035744c3f2a70b5a2829ff6a5c5569d219b48bc01c297f6286f6c4a67ddd31425ebdfd639c6bb498784baa73f27adaa863d5d9074f6d833606f150226d83337dad753d45bdaedb58bf578db4297b927d474f0d982b4c3d862eec946a49869ee081a6f2c5e8034323ffc6f0f99ffa539aac90d7889b3ad66c0efa6c7f6067bec54d902e8a62aa97980d38951c096671463f262c0292de2a1e82f308ed39cf4846c4e131e4f4376226d4dde57264495c4fc2638c00d9e6e2d861b1a7e1ea9d90be613c5153eeccb0acf3a81844d967f0b4c15333e1addd4529e398cb99d5a8e7b783e341b296c0245a35db70908f0287cb4bd981ae20534666ca386ed3f5f1fda8042a45cf8f939b704aca77894b0482cecfe16052262857b3b5272318afa582598807977d67ad3c40b22c54e340ab7a384c6683ba592e4bf975975369ed7df30659420060f0b5cc3bdda3807b5716ab141033691f01a98a0181d9a6fe632db4e627b7fbecc2bef63e7942a494a8aeec259f66dd0b32e48c7375013231f3bdb8c5a6d3d014ecf2934883d47b2a343cd425eb2969355367fd372c14faeb55839dd02f5c2c29bd0af1ca1af40421e0f3d4cc70fef3eacbeb8c34e8f1120e16acb1b5c3e5962318e1bad99a7bf1b7fb505c185b76beee08aa8dd15f6348842c2301d3829206a7aab1117a1a20822d2d4ce3b6f0e02df8340b9ac33d792d9ce355e840af3e77d2ab5fb092b0eb7d893b80ee71fff9458ef6aa995a1834258e39c2767c0378e759db32a3e476526a60a8958ec4eeddf85d8cbbc1d042eeea7ad543c099eac1d3a930012256b3f174d0250cd635bd78121f0dc0a08e9bf0840f9007f3cbc8c270ddcab1e1e298758676dabffd941cfdc73e74778cddf8aa445e6ba820a82a8dc48eef83cfb4d5a0c34bce6992095bdee317b4f421ae3fbf786ae2fbc14ede0d7c4babe39ed1120c3b7a7bc5a64f2df1f4a976bc8809d29ee656f4beee78f255d3c2d1001e2065f6d12119ff5435479e6a116aa90bb233a22b2b9107908ab823a4447998ec7de4785ae6a7cd6ea35a9175d501debc1e17013ecc5af6c480096751eac611a5fa254679b58ed353a2898d135d6bd2ae375a21b1cb47d8baa2f68a65a5085846fd2b4ff100f9ca21d26edd2bc60ccb482c2f331caa4d8809965e9a4b68c2eecb78211cd83964ba8157e3cd28dca2928786b54dc57c6a5db24bf1a45d4f4774ff3bda2e6071f7379cea6ff6c9e9fd3b484047724bdc3a5bb130085138d82a162f42f483f44dcd099bd207eb36b74</script>
+</div>
+<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
     </div>
 
     
@@ -419,7 +381,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#今日推荐曲目"><span class="nav-number">1.</span> <span class="nav-text">今日推荐曲目</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -435,7 +396,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">165</span>
+          <span class="site-state-item-count">167</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -491,13 +452,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">328k</span>
+    <span title="站点总字数">320k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">4:58</span>
+    <span title="站点阅读时长">4:51</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0
   </div>
@@ -520,7 +481,7 @@
 
   
   
-  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script color='0,255,255' opacity='0.5' zIndex='-1' count='150' src="/lib/canvas-nest/canvas-nest.min.js"></script>
   <script src="/lib/anime.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>

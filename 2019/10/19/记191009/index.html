@@ -25,7 +25,7 @@
     version: '7.6.0',
     exturl: false,
     sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
-    copycode: {"enable":true,"show_result":true,"style":null},
+    copycode: {"enable":true,"show_result":true,"style":"flat"},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
     fancybox: false,
@@ -47,18 +47,18 @@
 </script>
 
 <link href="/js/google-code-prettify/prettify.css" type="text/css" rel="stylesheet" />
-  <meta name="description" content="2019-10-09  星期三  多云">
+  <meta name="description" content="Here&apos;s something encrypted, password is required to continue reading.">
 <meta name="keywords" content="diary">
 <meta property="og:type" content="article">
 <meta property="og:title" content="记191009">
 <meta property="og:url" content="http://yoursite.com/2019/10/19/记191009/index.html">
 <meta property="og:site_name" content="AggressiveJokerJD&#39;s Blog">
-<meta property="og:description" content="2019-10-09  星期三  多云">
+<meta property="og:description" content="Here&apos;s something encrypted, password is required to continue reading.">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-12-18T14:12:04.277Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="记191009">
-<meta name="twitter:description" content="2019-10-09  星期三  多云">
+<meta name="twitter:description" content="Here&apos;s something encrypted, password is required to continue reading.">
 
 <link rel="canonical" href="http://yoursite.com/2019/10/19/记191009/">
 
@@ -103,12 +103,15 @@
   </style>
 </noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
-<link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
-<script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container use-motion">
+  
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+  <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+  <script type="text/javascript" src="/js/src/fireworks.js"></script>
+  
+  <div class="container use-motion">
     <div class="headband"></div>
 
     <a href="https://github.com/AggressiveJokerJD" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
@@ -116,14 +119,6 @@
     
       <script type="text/javascript"
         color="0,255,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
-    
-
-    
-
-    
-      <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
-      <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
-      <script type="text/javascript" src="/js/src/fireworks.js"></script>
     
 
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -180,6 +175,11 @@
         <li class="menu-item menu-item-diary">
 
     <a href="/categories/diary" rel="section"><i class="fa fa-fw fa-book"></i>日记</a>
+
+  </li>
+        <li class="menu-item menu-item-need_to_do">
+
+    <a href="/categories/need-to-do" rel="section"><i class="fa fa-fw fa-flag"></i>need_to_do</a>
 
   </li>
   </ul>
@@ -272,55 +272,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>2019-10-09  星期三  多云</p>
-<a id="more"></a>
-<p>  </p>
-<h2 id="今日份白嫖"><a href="#今日份白嫖" class="headerlink" title="今日份白嫖"></a>今日份白嫖</h2><hr>
-<p>  <br><img src="" alt=""></p>
-<h2 id="今日推荐曲目"><a href="#今日推荐曲目" class="headerlink" title="今日推荐曲目"></a>今日推荐曲目</h2><hr>
-<p>  </p>
-<div id="aplayer-ZUloxxAk" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
-				<pre class="aplayer-lrc-content"></pre>
-			</div>
-			<script>
-				var ap = new APlayer({
-					element: document.getElementById("aplayer-ZUloxxAk"),
-					narrow: false,
-					autoplay: false,
-					showlrc: 2,
-					music: {
-						title: "https://music.163.com/song/media/outer/url?id=",
-						author: "autoplay",
-						url: "undefined",
-						pic: "",
-					}
-				});
-				window.aplayers || (window.aplayers = []);
-				window.aplayers.push(ap);
-			</script>
-
-
-
-<p><b>&lt;font color=lightgr</b></p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>
+        <div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <div class="hbe-input-container">
+  <input type="password" id="hbePass" placeholder="" />
+    <label for="hbePass">Hey, password is required here.</label>
+    <div class="bottom-line"></div>
+  </div>
+  <script id="hbeData" type="hbeData" data-hmacdigest="aa3dde41fcf55f648cbdcf42b94a8db985fd18acb9405065bdf480e6e8e217ff">b301dc29d27260326f628eb774eea7eea9bb664cdf0a71d9f0e8fc2557d8f2ca5373a6f41717f28497a068bb5a1e762575af9475a8b18b82f26aa8078fc06617fe12d8c5538e3397a35fb54ef55cc9b732f46454e338da202aaf24fba11bfb32fbd41bcf2d2a05311934500fd16b8c2cc8df29c9fe8c3688744f34adcc50040e6e27df5e602e4b156aefc38ff9378ebc1c0287258b12b61c0e8f31952f3d0db15fc65360bf599540df23b9d645f2c3ab99be53efa3375db344ccdc9f027f9cde31973b42e356c44d873b008d39c3b4cb067fc66c2c920bde80545dcff6a824a6dbd95ce0bf43af32dde2e967bb1380e2322cb40a2dc42c8f80f55d3d3cd3ce46a77aec3e3a15a1dae42be2904299962b57fc5bff1fe1db1e51f515b8a768fb70f1734d5c9fd866728d71ae38c3908d716c83faf7e3ef04a61af13a2442f57b3cd30d8223d68f19a9a1db7190185aff8153218ec76e3ec4d0bb6c488d54b8ff6ef0e40eb13ed79f7b9648457ea1c8a46e98345dd9f1fb1a4e8d6876900a1e956db757dd36e548d2a86c7e5bb199bf162ed65267f9c9cbf491f511242d114fb6d5f66f9e8b496d7f14c2d8277807f5d74dea87eb9f28d9516b8b5e25562f31bc1ff6594c85cba44549958c1406b40d4ea3a044a8ed8f143e8512b83abc95d17455641b74bf340405bd6038dcd0424182145d7529122ca9dabb7d686b3341fd8235505ef63fb575fd960d473b998a7919c253b58fe85b7057c5da5200acee77d379a9e8063d7e68fd54097bc763ac0555f6e84dbac2b23f4a4ede2a76a56c50ec384dba8d0c52134aa96bfc5d2a04f667f7aa1f3c07591e9954f4d1ae5960347306105683c5bdc43608c08c0a201a2e00020dd082b2e289d2234362b8e73c496110b655dc48be3264d1046a8a1b064fd847f30c7c1064a34815653027a0f195fb0d05d3c6a20f584a4bfb61d3c7b7d38a6a0a1f4294e5e0d5797b7ae2ebe401ebe1398c187cd44543e0646ababeacb571ca09ef6ea1b2c3ce7a9d5c5b8b94867dfe917c4a9521c63e7f1f59d7a3aab00c27ab074fc1dfb57ec92ace5339e496234ca75c68842fdd1d1e293edcf5d68deed780814d275909c6f0460c1be232ce2bf457835dff59f931ff198c1b6a396086db77bfce88b966478688b6d47e5bf28700b8d960e837653922f08c2e641dfeaf47471352a925bfdf942f65cfa8a06399af752c6c21a238c313024f8006e64fffb96a74efd94199bf61fbd70c94fc0abf3f3d4740a3f4964da9fc58d4cb95251ba8bdfe83d1a8c7a66b01dcc4b0d07a90549419e69cccc05add4d5d54b23d9ff5deb57a7e9ed60636387d51731f5cd5e26088359c6d6b610ec829eb090a0fb4af7368d7a0331db1e4d69860e34adfd67ba2545c9fd55c6bd8e1f28c6765c9bcdf3004aad252be8a2243052b3b0072771b9f4340af23e83fc06e3b6e4168201ebbbd9a88d5b30b0d868d285b1ef95743e6deeaac54afc50260bd5b2d111bac3c11343565d815bbe92a3470e438a20402b6ba01bf3d21ffb29e3016e16c02c666f763c4968ee1806ee87a314d6f9e9ad7ac4866a664ccee0ff0d96e95fcbfef8797ff5b80246d386048c7dc601fbf8afe28f312637890eeccfcba8b157b8d6e9469be2f51ed652abd7555c0cfb369f08ade00a674726238449498973c06921b0b81cbcd2e7aae37d7de545d9aef0cca22b2f01c9267ca5868512dc0dc373e32e2fc856a65a6dbf22cfd9e79fd464b9510c67fcb6b67a950313e70b9e7bb5f65d7fe4d3bae55b99a4baf5b6a1fceb8a9d7e7685cbea9a94fee81c120f33d0850c19db80e231ae48a0d12b1d01e07030916d6362cc0560907baefac032761c71347c86d95e93f6881b798580a39d4ab9c0afaba94b93d6687bd618d98c43b07dc457b9eda47911075ffa0a02a1da6c2ea5e7d5f598fb719d9b8df1ee24e4fb5221aa0b972f60879aa375eff00f8e5dc02c29c32009a41ef0d6a2da15636e43f55469fc8b0dff5d1ccf8e5ed1d4cfb0df10023aaebc676413b8c50dde1dc6afc1888d6ff40829c6941d77da4f594b6cd69b2c496f08466d8726d7efb789d122c7e965dc90b1be7ccba4541be637d678115e0463354a3d9e09733b35daffba818581fbfcae186a72001e5d2945cacf03caba8df1bf3e8832d04d6e4205288744e74b9960b150be09460502b59087aace3af455808ce1b3560ed2b13c61df17cedc5fed073f236d60ce4c7ce95883f7fcc7ca57584572cedc583018275530774ab37e01724dc253988c802514b8a73281e9558eedc952295943c317537aae448d0b9ed0e1a</script>
+</div>
+<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
     </div>
 
     
@@ -421,7 +381,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#今日份白嫖"><span class="nav-number">1.</span> <span class="nav-text">今日份白嫖</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#今日推荐曲目"><span class="nav-number">2.</span> <span class="nav-text">今日推荐曲目</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -437,7 +396,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">165</span>
+          <span class="site-state-item-count">167</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -493,13 +452,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">328k</span>
+    <span title="站点总字数">320k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">4:58</span>
+    <span title="站点阅读时长">4:51</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0
   </div>
@@ -522,7 +481,7 @@
 
   
   
-  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script color='0,255,255' opacity='0.5' zIndex='-1' count='150' src="/lib/canvas-nest/canvas-nest.min.js"></script>
   <script src="/lib/anime.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>

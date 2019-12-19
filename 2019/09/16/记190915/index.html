@@ -25,7 +25,7 @@
     version: '7.6.0',
     exturl: false,
     sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
-    copycode: {"enable":true,"show_result":true,"style":null},
+    copycode: {"enable":true,"show_result":true,"style":"flat"},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
     fancybox: false,
@@ -47,18 +47,18 @@
 </script>
 
 <link href="/js/google-code-prettify/prettify.css" type="text/css" rel="stylesheet" />
-  <meta name="description" content="2019-09-15  星期六  多云">
+  <meta name="description" content="Here&apos;s something encrypted, password is required to continue reading.">
 <meta name="keywords" content="diary">
 <meta property="og:type" content="article">
 <meta property="og:title" content="记190915">
 <meta property="og:url" content="http://yoursite.com/2019/09/16/记190915/index.html">
 <meta property="og:site_name" content="AggressiveJokerJD&#39;s Blog">
-<meta property="og:description" content="2019-09-15  星期六  多云">
+<meta property="og:description" content="Here&apos;s something encrypted, password is required to continue reading.">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-12-18T14:14:15.930Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="记190915">
-<meta name="twitter:description" content="2019-09-15  星期六  多云">
+<meta name="twitter:description" content="Here&apos;s something encrypted, password is required to continue reading.">
 
 <link rel="canonical" href="http://yoursite.com/2019/09/16/记190915/">
 
@@ -106,7 +106,12 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container use-motion">
+  
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+  <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+  <script type="text/javascript" src="/js/src/fireworks.js"></script>
+  
+  <div class="container use-motion">
     <div class="headband"></div>
 
     <a href="https://github.com/AggressiveJokerJD" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
@@ -114,14 +119,6 @@
     
       <script type="text/javascript"
         color="0,255,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
-    
-
-    
-
-    
-      <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
-      <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
-      <script type="text/javascript" src="/js/src/fireworks.js"></script>
     
 
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -178,6 +175,11 @@
         <li class="menu-item menu-item-diary">
 
     <a href="/categories/diary" rel="section"><i class="fa fa-fw fa-book"></i>日记</a>
+
+  </li>
+        <li class="menu-item menu-item-need_to_do">
+
+    <a href="/categories/need-to-do" rel="section"><i class="fa fa-fw fa-flag"></i>need_to_do</a>
 
   </li>
   </ul>
@@ -270,32 +272,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>2019-09-15  星期六  多云</p>
-<a id="more"></a>
-<p>  早上差不多是1点多起来的啊，点外卖，吃了两个汉堡，一个鸡腿，然后打开电脑做计网的作业，虽然不是很多，其实也多，但是感觉自己真的是什么都不会啊，那怎么做嘛，直接就是懵逼么，差不多每一个题都是要搜索一下看他们怎么做的才会做的啊，</p>
-<p>  然后差不多做完之后就晚上的7点多了，我的天啊，虽然下午玩了一会ow的，但是还是感觉时间过的好快啊，就是因为早上没有起床导致的嘛，然后晚上做完作业之后还去包不，但是感觉真的好累啊，没有怎么跑很多，好像是6圈然后走了两圈，最后感觉还是小腿有些抽筋才回来的。</p>
-<p>  还是要坚持锻炼的啊，就是周2，周5，周日晚上都可以去跑步的啊，希望还是要好好的努力锻炼身体，努力的学习的啊，不然感觉真的要没了啊。</p>
-<p>  希望之后的学习生活能够有所改善吧，今晚是喜欢赵晓卉的一晚啊！真的很喜欢这个女孩子啊，给人感觉很耐看，而且很舒服的感觉。</p>
-<p><b><font color="lightgreen" size="2">今日份小心情：荒废的一天，又是…</font></b></p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>
+        <div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <div class="hbe-input-container">
+  <input type="password" id="hbePass" placeholder="" />
+    <label for="hbePass">Hey, password is required here.</label>
+    <div class="bottom-line"></div>
+  </div>
+  <script id="hbeData" type="hbeData" data-hmacdigest="d28c0fcf383196ec73e08224de864f1bdcbe76c4fb915ef3424e82c92d15f178">4b74602b1e2beffc00ffe8d74660fdabff1b192721bbcded9f5ae1025bf28b9447b69a3bdb9ce92bc53fe3ea69e1cc6b7c66f164f985110e9bb0572691741fd09554a55d572a567181e6198f12deb668a1ba2a9be8bdf7968b9bab0bf3bc291bbb428d9f27c33fc36d1ca157200f8dba1eb5fcdad7d88903f930cabe2a16d21cba2e6d1a6f840be8ce1860fdbd002503d927ff63aeabf6b1903a8e5a8e944be0c2c6dacdbce7489a5c7b596aece511bdea3cd12f33e0a11ea1c43bfffc23b1e1220f23fe2c06980fddac17f404f287635e5a8aac2315e068912cd3ac81ca25eea0fe8ce5548b1d0b49c0e21c85d685369faa942e07298cf199241a116a634b3547ca49e2f06d2f903200ed6f4653f5cde8513c75a535c129034dc2afab4de5827a22d571423f6113649caf6b20a4cca57fd1bb78e86ed1f229240e4bc64c0ecb9a80ca62d9e42030c383003fe73f2e00e67f92ab189c15a76deaab82cbeccbb92168ff8de3caf2d1d2c45fc96137bb37d2fe5d5d2e7997e26b4a2c54287d160fede0757127ec7453fb4644a9697eda4435fc706bd5ef5dca055c2b24c2fe3ec6b2ebd92885a61c90dcfd883a8d25b56771f2659f3c869fcfb8af60cfaf9e26a8bdbf3c6f5f83e6aeb2d3d27424ee097587ad10d312557299127907790b399e7f1193ca5cca7336258849423f04c59bf70f52ebd8b72ab68a0bf8597c1555843224e35d3a8e0f6cad2a4a87c5d166e510d4ca22882314424d15202d44160f1e8ac24b2d3883aad5c5c5dc9cd29a282291fc82d8ccab54d9da939d8dcb5665588917dfd397cbd13b0e20ef937ed8d3587daf762549eda5d13294d77481cfcbe4bd30fc6882e31e03bfce21877ca4e6496e8ce01da252122fb4d1cd7f1433d7d8e3ff7483d30821a6da03f06c46bf35287327b43a7021ddd00012f2853e338d9685015e66a25d720050661fe5ce6d82adb4ba36a294b068b527fb49210e30113d7d279d57396c62beb16f66992bedb1f4c717dcfab74b09bea5b0341ece8beafc71dd5e29a0431cf4a60cae3845f4633d39a8022cab61f048a099012222a87ef70cf8e8a00a83bf62d8d8287f0156b34956a4b1ddbb5df0c7297a8f8cdd6460788d46b2dd7d283f3dc287571efd9a7fd0b4de59b8e41084f3a4caa47595d55f05329c69dcd89d5eabe0f785fee5442d1ff5dcb2c0512191e6561c2c0d86802e42a76a98e25c1122061c7a8de412bdb9dc8e10163b48e7d8f9afbfee2df3f480590a950e98ecb8bcb1012c77170e5e5aab26a48a9ab26e62cc062d080646e43053d92a21c3088da5116fbbe9328e5917eacd9592830212070e79cfbad9f2b4d25defd7520d1f264b6c4acca6d5d08d0c00ffe13ae38e9034e5934fd88fc1fb8428c79148d890bda06e1bff48b2a6f8295f288e9d5918f2df63eed878ba1295632953936410fefec24ba65940c4c2f4853eba06c6e150a3c65b15a663274c559ffb13a0a8bb9bafe1e153cc61a34171d6686a427b94afdfa58fede4cefa7c45aade156a474a32a041698d3d6735a8bebbf51a4cb493e80a4ad7a98ed37ef7a720f42ea8b506a6d97179682572e9a667cc96fa1fb2b391b338e9d1e710add34dea50695b465c9d334815dcd51ebc06e60d5ad159fdd0d14bbb76116e58868b1ff3941ec3744b95aa15f32c34710a6f3dacd825a7d4c391eca7ced5d78dea0a2bd692699e090513c896be00a2d911707cb3980b14c3298d089ad3740fcec463f93e1bc1d58fc1d943e50aab30b7cfc26cb3027d6e6b85d7db836f47711ebe9f6c2aeb7289b3ef86662f7db31cc1e32edc39c3a6d1a0f9329d1d3d79f258c97f8a8da65940983546a1dc3a927f54d2ac4dfd7ffa8c9862a6d06e6a30f8cc63b0367ee7bea3b05156d7c66b4bc07715f28d4383f22929578a4e7cd0810934799d38a0b24db85c7e39e2e1e21225db985dbeecdd6f376fad29e19f0c3cd7d71d706a4e5380358065bddde12885b7a76203f63f4ae3da7a4f86fb58d10bb205936895e9551676eca330a0dee80ce0666c96a53f25de9cd25d84de8c83432f12d56fcde57f69f91c7722d66457a874f00e5cb75882b766fa4d78ba28a8c10b35192a71066e1e465f8bf170d7ff5b5b1742680fed681f6c89e12b120d4ddf29020447899c6ba9743cd3271d71092bc7b2dd556bea7ef79f3952641e2de87c076c13d630b9bd690c8c776015f5ba834d5d808ed83199e1752e59b7527b60c44a3c4eca30c2fed8756790595b64c666cc3688e8287c9c6b8bf19c2a1c6b786087050bd73348eabfd5ba816472f94f23364a6e69fe55dfc195944d9c1c2dbeb55f128109ce343cdaf8948168efa82a0b6776e1dc73d3d351a40c0db08b3b9ec29b95bb2935c9dad1890c99b20a4ad8e903b8cb75f7219e1df9e2bf4c77b1657094735a72c4f1a17b32870efb6ef36e92c32c4466509173bceb5f968be1c6f03f2d47b66c217dd16925448f19fc48bda5db3fdc4839138b4bdb277b9627c4a3783d7835d49a793d4506e88dbdc05da36593376fe51381177e2a44f7a591e47568bf3e8aadda31cee3d4565c1997cdff39be02b350459c8a96aff197e64ba6c8c1d342a53f1b1e7f66fa64561986434e27aadd18c28e166a7571283c93ac68d4a540b4ee4f996ab462fb1c5cfcf6f80ca02ccc9f0e198861347d8336ffc4c2d8697e519f89cd3fb2238c8cf0a1e5b03ca336e2f5723179afb9c1a4c1e1af3d7642170931d835d0a8dba162336ad0a7ec037038d203ec508418</script>
+</div>
+<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
     </div>
 
     
@@ -411,7 +396,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">165</span>
+          <span class="site-state-item-count">167</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -467,13 +452,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">328k</span>
+    <span title="站点总字数">320k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">4:58</span>
+    <span title="站点阅读时长">4:51</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0
   </div>
@@ -496,7 +481,7 @@
 
   
   
-  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script color='0,255,255' opacity='0.5' zIndex='-1' count='150' src="/lib/canvas-nest/canvas-nest.min.js"></script>
   <script src="/lib/anime.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
