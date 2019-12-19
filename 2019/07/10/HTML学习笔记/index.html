@@ -1,147 +1,80 @@
 <!DOCTYPE html>
-
-
-
-  
-
-
-<html class="theme-next pisces use-motion" lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.9.0">
+<html lang="zh-CN">
+<head>
   <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<script>
-    (function () {
-        if ('') {
-            if (prompt('Please input PassWord') !== '') {
-                alert('PassWord  Wrong��');
-                if (history.length === 1) {
-                    location.replace("https://aggressivejokerjd.github.io/"); // �����滻�������ҳ
-                } else {
-                    history.back();
-                }
-            }
-        }
-    })();
+<meta name="generator" content="Hexo 3.9.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('http://yoursite.com').hostname,
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.6.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":true,"show_result":true,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":20},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
 </script>
 
-
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="博客,">
-
-
-
-
-
-
-
-
-
-
-<meta name="description" content="最近用MarkDown，然后好多语法可以直接用html的，所以就有了学习一下html的想法，教程主要就是来自菜鸟教程吧，不确定的就会去Google直接搜索。 HTML  HTML基础  HTML标题   使用h1到h6表示，基本和MarkDown里面的#的用法一致，但是使用html标题的话没办法再hexo博客上面单击目录跳转(不太懂什么原因)。 &amp;lt;h1-6&amp;gt;标题内容&amp;lt;/h1-">
+<link href="/js/google-code-prettify/prettify.css" type="text/css" rel="stylesheet" />
+  <meta name="description" content="最近用MarkDown，然后好多语法可以直接用html的，所以就有了学习一下html的想法，教程主要就是来自菜鸟教程吧，不确定的就会去Google直接搜索。">
 <meta name="keywords" content="博客">
 <meta property="og:type" content="article">
 <meta property="og:title" content="HTML学习笔记">
 <meta property="og:url" content="http://yoursite.com/2019/07/10/HTML学习笔记/index.html">
 <meta property="og:site_name" content="AggressiveJokerJD&#39;s Blog">
-<meta property="og:description" content="最近用MarkDown，然后好多语法可以直接用html的，所以就有了学习一下html的想法，教程主要就是来自菜鸟教程吧，不确定的就会去Google直接搜索。 HTML  HTML基础  HTML标题   使用h1到h6表示，基本和MarkDown里面的#的用法一致，但是使用html标题的话没办法再hexo博客上面单击目录跳转(不太懂什么原因)。 &amp;lt;h1-6&amp;gt;标题内容&amp;lt;/h1-">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:description" content="最近用MarkDown，然后好多语法可以直接用html的，所以就有了学习一下html的想法，教程主要就是来自菜鸟教程吧，不确定的就会去Google直接搜索。">
+<meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://pu0chvxph.bkt.clouddn.com/%E5%B1%95%E7%A4%BA.png">
-<meta property="og:updated_time" content="2019-07-16T07:09:48.311Z">
+<meta property="og:updated_time" content="2019-12-18T12:44:42.835Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTML学习笔记">
-<meta name="twitter:description" content="最近用MarkDown，然后好多语法可以直接用html的，所以就有了学习一下html的想法，教程主要就是来自菜鸟教程吧，不确定的就会去Google直接搜索。 HTML  HTML基础  HTML标题   使用h1到h6表示，基本和MarkDown里面的#的用法一致，但是使用html标题的话没办法再hexo博客上面单击目录跳转(不太懂什么原因)。 &amp;lt;h1-6&amp;gt;标题内容&amp;lt;/h1-">
+<meta name="twitter:description" content="最近用MarkDown，然后好多语法可以直接用html的，所以就有了学习一下html的想法，教程主要就是来自菜鸟教程吧，不确定的就会去Google直接搜索。">
 <meta name="twitter:image" content="http://pu0chvxph.bkt.clouddn.com/%E5%B1%95%E7%A4%BA.png">
 
+<link rel="canonical" href="http://yoursite.com/2019/07/10/HTML学习笔记/">
 
 
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Pisces',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
   };
 </script>
 
-
-
-  <link rel="canonical" href="http://yoursite.com/2019/07/10/HTML学习笔记/">
-
-
-
-
-<link href="/js/google-code-prettify/tranquil-heart.min.css" type="text/css" rel="stylesheet">
-  <title>HTML学习笔记 | AggressiveJokerJD's Blog</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title>HTML学习笔记 | AggressiveJokerJD's Blog</title>
   
 
 
@@ -149,213 +82,189 @@
 
 
 
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
 
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
-
-
-<!-- hexo-inject:begin --><!-- hexo-inject:end --><canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas> 
-<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
-<script type="text/javascript" src="/js/src/fireworks.js"></script>
-
-
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left page-post-detail">
+<body itemscope itemtype="http://schema.org/WebPage">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container use-motion">
     <div class="headband"></div>
 
-<a href="https://github.com/AggressiveJokerJD" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
+    <a href="https://github.com/AggressiveJokerJD" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+    
+      <script type="text/javascript"
+        color="0,255,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
     
 
-    <div class="custom-logo-site-title">
+    
+
+    
+      <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+      <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+      <script type="text/javascript" src="/js/src/fireworks.js"></script>
+    
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">AggressiveJokerJD's Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-      
-        <p class="site-subtitle"></p>
-      
   </div>
 
   <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
   </div>
 </div>
 
+
 <nav class="site-nav">
   
-
-  
-    <ul id="menu" class="menu">
-      
-        
+  <ul id="menu" class="menu">
         <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
-            
-            首页
-          </a>
-        </li>
-      
-        
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
         <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
-            
-            标签
-          </a>
-        </li>
-      
-        
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
         <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
-            
-            分类
-          </a>
-        </li>
-      
-        
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
-            
-            归档
-          </a>
-        </li>
-      
 
-      
-    </ul>
-  
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
 
-  
+  </li>
+        <li class="menu-item menu-item-diary">
+
+    <a href="/categories/diary" rel="section"><i class="fa fa-fw fa-book"></i>日记</a>
+
+  </li>
+  </ul>
+
 </nav>
-
-
-
- </div>
+</div>
     </header>
 
-    <main id="main" class="main">
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
       <div class="main-inner">
         <div class="content-wrap">
-          <div id="content" class="content">
+          
+
+          <div class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
-
-  
-
+  <div class="posts-expand">
+      
   
   
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/10/HTML学习笔记/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Joker">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="https://study-image-1259719447.cos.ap-chengdu.myqcloud.com/%E7%B4%A2%E7%BD%97.jpg">
+      <meta itemprop="name" content="Joker">
+      <meta itemprop="description" content="我希望自己能够有提升，而不仅仅是没有事情做而已.">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="AggressiveJokerJD's Blog">
     </span>
-
-    
       <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">HTML学习笔记</h1>
-        
+        <h1 class="post-title" itemprop="name headline">
+          HTML学习笔记
+        </h1>
 
         <div class="post-meta">
+        
 
-          <span class="post-time">
-            
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-10T21:13:29+08:00">
-                2019-07-10
-              </time>
-            
+              <span class="post-meta-item-text">发表于</span>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
+              <time title="创建时间：2019-07-10 21:13:29" itemprop="dateCreated datePublished" datetime="2019-07-10T21:13:29+08:00">2019-07-10</time>
+            </span>
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
+              <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/HTML/" itemprop="url" rel="index">
                     <span itemprop="name">HTML</span>
                   </a>
                 </span>
-
-                
-                
-              
             </span>
-          
 
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>12k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>11 分钟</span>
+            </span>
 
         </div>
       </header>
-    
 
     
     
@@ -363,33 +272,17 @@
     <div class="post-body" itemprop="articleBody">
 
       
-      
-
-      
         <p>  最近用MarkDown，然后好多语法可以直接用html的，所以就有了学习一下html的想法，教程主要就是来自<a href="https://www.runoob.com/html/html-tutorial.html" target="_blank" rel="noopener">菜鸟教程</a>吧，不确定的就会去Google直接搜索。</p>
-<h1>HTML</h1>
-<hr>
-<h2 id="html基础">HTML基础</h2>
-<hr>
-<h3 id="html标题">HTML标题</h3>
-<p>  使用h1到h6表示，基本和MarkDown里面的#的用法一致，但是使用html标题的话没办法再hexo博客上面单击目录跳转(不太懂什么原因)。</p>
-<pre><code>&lt;h1-6&gt;标题内容&lt;/h1-6&gt;
-</code></pre>
-<h3 id="html段落">HTML段落</h3>
-<p>  使用p来定义段落，但是好像不会自动首行缩减。要加上空格(&amp;emsp或者是&amp;nbsp)</p>
-<pre><code>&lt;p&gt;段落内容&lt;/p&gt;
-</code></pre>
-<h3 id="html链接">HTML链接</h3>
-<p>  使用a来定义，和MarkDown的方括号加圆括号一样效果。</p>
-<pre><code>&lt;a href="链接url"&gt;链接的名称&lt;/a&gt;
-</code></pre>
-<h3 id="html图片">HTML图片</h3>
-<p>  使用img来定义，和MarkDown的叹号加方括号加圆括号一样效果，只是markdown无法改变图片的尺寸。</p>
-<pre><code>&lt;img src="图片链接" width='258' hight="39" /&gt;
-</code></pre>
-<p>  可以使用属性来限制图片的属性。</p>
-<h2 id="html元素">HTML元素</h2>
-<hr>
+<a id="more"></a>
+
+<h1 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h1><hr>
+<h2 id="HTML基础"><a href="#HTML基础" class="headerlink" title="HTML基础"></a>HTML基础</h2><hr>
+<h3 id="HTML标题"><a href="#HTML标题" class="headerlink" title="HTML标题"></a>HTML标题</h3><p>  使用h1到h6表示，基本和MarkDown里面的#的用法一致，但是使用html标题的话没办法再hexo博客上面单击目录跳转(不太懂什么原因)。</p>
+<pre><code>&lt;h1-6&gt;标题内容&lt;/h1-6&gt;</code></pre><h3 id="HTML段落"><a href="#HTML段落" class="headerlink" title="HTML段落"></a>HTML段落</h3><p>  使用p来定义段落，但是好像不会自动首行缩减。要加上空格(&amp;emsp或者是&amp;nbsp)</p>
+<pre><code>&lt;p&gt;段落内容&lt;/p&gt;</code></pre><h3 id="HTML链接"><a href="#HTML链接" class="headerlink" title="HTML链接"></a>HTML链接</h3><p>  使用a来定义，和MarkDown的方括号加圆括号一样效果。</p>
+<pre><code>&lt;a href="链接url"&gt;链接的名称&lt;/a&gt;</code></pre><h3 id="HTML图片"><a href="#HTML图片" class="headerlink" title="HTML图片"></a>HTML图片</h3><p>  使用img来定义，和MarkDown的叹号加方括号加圆括号一样效果，只是markdown无法改变图片的尺寸。</p>
+<pre><code>&lt;img src="图片链接" width='258' hight="39" /&gt;</code></pre><p>  可以使用属性来限制图片的属性。</p>
+<h2 id="HTML元素"><a href="#HTML元素" class="headerlink" title="HTML元素"></a>HTML元素</h2><hr>
 <table>
 <thead>
 <tr>
@@ -398,8 +291,7 @@
 <th>结束标签</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>&lt; p &gt;</td>
 <td>段落内容</td>
 <td>&lt; /p &gt;</td>
@@ -409,15 +301,11 @@
 <td>换行</td>
 <td></td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p>  HTML元素一般以开始标签开始，结束标签为结束，位于开始标签和结束标签之间的内容称为元素的内容，某些元素内容可以为空的元素称为空元素，它们一般就在开始标签中关闭。</p>
 <pre><code>1. 一些标签的使用，切记所有标签都需要闭合，不管是单体标签还是成对标签。（尽管目前浏览器是识别有些标签不闭合的情况，但是取的最好的保证兼容性，使用闭合）
-2. 标签写法要用小写字母（有些版本对大小写可认为相同，而xhtml中强制使用小写）
-</code></pre>
-<h2 id="html属性">HTML属性</h2>
-<hr>
-<p>  HTML元素可以设置属性，一般放在开始标签中，属性总是以__名称-值__的方式出现，值使用引号包括，如果值中本身存在双引号，那么外部只能使用双引号，其余都可。</p>
+2. 标签写法要用小写字母（有些版本对大小写可认为相同，而xhtml中强制使用小写）</code></pre><h2 id="HTML属性"><a href="#HTML属性" class="headerlink" title="HTML属性"></a>HTML属性</h2><hr>
+<p>  HTML元素可以设置属性，一般放在开始标签中，属性总是以<strong>名称-值</strong>的方式出现，值使用引号包括，如果值中本身存在双引号，那么外部只能使用双引号，其余都可。</p>
 <p>  常用的HTML属性：</p>
 <table>
 <thead>
@@ -426,8 +314,7 @@
 <th>描述</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>class</td>
 <td>为html元素定义一个或多个类名</td>
 </tr>
@@ -443,23 +330,18 @@
 <td>title</td>
 <td>描述了元素的额外信息</td>
 </tr>
-</tbody>
-</table>
-<h2 id="html标题-v2">HTML标题</h2>
-<hr>
+</tbody></table>
+<h2 id="HTML标题-1"><a href="#HTML标题-1" class="headerlink" title="HTML标题"></a>HTML标题</h2><hr>
 <p>  html标题就是使用<code>&lt; h1 &gt;到&lt; h6 &gt;</code>来定义。</p>
 <p>  html水平线使用<code>&lt; hr &gt;</code>定义</p>
-<p>  注释使用<code>&lt; !–注释内容-- &gt;</code>表示</p>
-<h2 id="html段落-v2">HTML段落</h2>
-<hr>
+<p>  注释使用<code>&lt; !--注释内容-- &gt;</code>表示</p>
+<h2 id="HTML段落-1"><a href="#HTML段落-1" class="headerlink" title="HTML段落"></a>HTML段落</h2><hr>
 <p>  段落使用<code>&lt; p &gt;</code>标签定义。</p>
 <p>  在不产生一个新段落的情况下进行换行，使用<code>&lt; br &gt;</code></p>
-<h2 id="html文本格式化">HTML文本格式化</h2>
-<hr>
-<p>  使用标签<code>&lt; b &gt;(“bold[粗体]”)和&lt; i &gt;(“italic[斜体]”)</code>对文本进行格式化。</p>
+<h2 id="HTML文本格式化"><a href="#HTML文本格式化" class="headerlink" title="HTML文本格式化"></a>HTML文本格式化</h2><hr>
+<p>  使用标签<code>&lt; b &gt;("bold[粗体]")和&lt; i &gt;("italic[斜体]")</code>对文本进行格式化。</p>
 <p>  <code>&lt; strong &gt;和&lt; b &gt;,&lt; em &gt;和&lt; i &gt;</code>,<code>&lt; strong &gt;或者&lt; em &gt;</code>更加强调文本的重要性，所以突出显示。</p>
-<h3 id="htlm文本格式化标签">HTLM文本格式化标签</h3>
-<hr>
+<h3 id="HTLM文本格式化标签"><a href="#HTLM文本格式化标签" class="headerlink" title="HTLM文本格式化标签"></a>HTLM文本格式化标签</h3><hr>
 <table>
 <thead>
 <tr>
@@ -467,8 +349,7 @@
 <th>描述</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>&lt;b&gt;</td>
 <td>定义粗体</td>
 </tr>
@@ -508,11 +389,9 @@
 <td>&lt;del&gt;</td>
 <td>定义删除字</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p>  上面的<code>&lt; big &gt;</code>我在VScode上面写的话会显示红色，就是这个标签可能是不太支持，但是确实是有大一点的字体。</p>
-<h3 id="html-计算机输出-标签">HTML"计算机输出"标签</h3>
-<hr>
+<h3 id="HTML”计算机输出”标签"><a href="#HTML”计算机输出”标签" class="headerlink" title="HTML”计算机输出”标签"></a>HTML”计算机输出”标签</h3><hr>
 <table>
 <thead>
 <tr>
@@ -520,8 +399,7 @@
 <th>描述</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>&lt;code&gt;</td>
 <td>定义计算机代码</td>
 </tr>
@@ -541,26 +419,12 @@
 <td>&lt;pre&gt;</td>
 <td>定义与格式文本(标签内是什么格式就输出什么格式)</td>
 </tr>
-</tbody>
-</table>
-<h3 id="html引文-引用及标签定义">HTML引文，引用及标签定义</h3>
-<hr>
-<p>标签|描述<br>
-&lt;abbr&gt;|定义缩写<br>
-&lt;address&gt;|定义地址(定义作者和联系这的信息)<br>
-&lt;bdo&gt;|定义文字方向(无属性时为左到右，添加dir=‘rtl’，可以变为右到左)<br>
-&lt;blockquote&gt;|定义长引用<br>
-&lt;q&gt;|定义短引用<br>
-&lt;cite&gt;|定义引用，引证(定义作品的标题)<br>
-&lt;dfn&gt;|第一一个定义项目</p>
-<pre><code>The &lt;abbr title="Si Chuan University"&gt;SCU&lt;/abbr&gt; is very good!(有一点类似脚注，但是这个直接显示在缩写下面)
-</code></pre>
-<h2 id="html链接-v2">HTML链接</h2>
-<hr>
-<h3 id="href属性">href属性</h3>
-<p>  html链接使用<code>&lt; a href=“url” &gt;链接的名字&lt; a &gt;</code>来定义，href属性定义链接的地址。</p>
-<h3 id="target属性">target属性</h3>
-<p>  target属性定义点击链接之后链接在何处打开。</p>
+</tbody></table>
+<h3 id="HTML引文，引用及标签定义"><a href="#HTML引文，引用及标签定义" class="headerlink" title="HTML引文，引用及标签定义"></a>HTML引文，引用及标签定义</h3><hr>
+<p>标签|描述<br>&lt;abbr&gt;|定义缩写<br>&lt;address&gt;|定义地址(定义作者和联系这的信息)<br>&lt;bdo&gt;|定义文字方向(无属性时为左到右，添加dir=’rtl’，可以变为右到左)<br>&lt;blockquote&gt;|定义长引用<br>&lt;q&gt;|定义短引用<br>&lt;cite&gt;|定义引用，引证(定义作品的标题)<br>&lt;dfn&gt;|第一一个定义项目</p>
+<pre><code>The &lt;abbr title="Si Chuan University"&gt;SCU&lt;/abbr&gt; is very good!(有一点类似脚注，但是这个直接显示在缩写下面)</code></pre><h2 id="HTML链接-1"><a href="#HTML链接-1" class="headerlink" title="HTML链接"></a>HTML链接</h2><hr>
+<h3 id="href属性"><a href="#href属性" class="headerlink" title="href属性"></a>href属性</h3><p>  html链接使用<code>&lt; a href="url" &gt;链接的名字&lt; a &gt;</code>来定义，href属性定义链接的地址。</p>
+<h3 id="target属性"><a href="#target属性" class="headerlink" title="target属性"></a>target属性</h3><p>  target属性定义点击链接之后链接在何处打开。</p>
 <table>
 <thead>
 <tr>
@@ -568,8 +432,7 @@
 <th>作用</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>_balnk</td>
 <td>在一个新的窗口打开网站</td>
 </tr>
@@ -585,30 +448,19 @@
 <td>_top</td>
 <td>(具体实施)就是在本窗口</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p>  后面的三种看了网上的解释也是复杂难懂，所以就没有细究，自己试了一下没感觉出差别，若果以后理解再来作解释。</p>
-<h3 id="id属性">id属性</h3>
-<p>  id属性可用于创建在一个HTML文档书签标记。</p>
+<h3 id="id属性"><a href="#id属性" class="headerlink" title="id属性"></a>id属性</h3><p>  id属性可用于创建在一个HTML文档书签标记。</p>
 <p>  提示: 书签是不以任何特殊的方式显示，在HTML文档中是不显示的，所以对于读者来说是隐藏的。</p>
-<p>  没看太懂…</p>
-<h2 id="html头部">HTML头部</h2>
-<hr>
+<p>  没看太懂…..</p>
+<h2 id="HTML头部"><a href="#HTML头部" class="headerlink" title="HTML头部"></a>HTML头部</h2><hr>
 <p>  <code>&lt; head &gt;</code>元素中包含了所有的标签元素，可以插入脚本，样式文件(CSS)等</p>
-<pre><code>可以插入&lt;head&gt;区域的元素：&lt;title&gt;, &lt;style&gt;, &lt;meta&gt;, &lt;link&gt;, &lt;script&gt;, &lt;noscript&gt;, and &lt;base&gt;.
-</code></pre>
-<h3 id="title元素">title元素</h3>
-<p>  <code>&lt; title &gt;</code>标签定义了文档的标题，就是打开网站的时候最上面浏览器窗口那个的名字。添加到收藏夹的时候，显示在收藏夹的名字也是文档标题。在搜索引擎搜索时所显示的结果页面也是该标题。</p>
-<h3 id="base元素">base元素</h3>
-<p>  <code>&lt; base &gt;</code>标签描述了基本的链接地址/链接目标，该标签作为html文档中所有链接标签的默认链接。(就是在使用&lt; a &gt;进行链接的时候没有指定href属性的值（也就是值为空""），那么就会链接到base标签中href的地址。)</p>
-<h3 id="link元素">link元素</h3>
-<p>  <code>&lt; link &gt;</code>标签定义文档和外部资源得关系，一般为链接样式表，就是规定文章中不同部分(标题，段落等)的颜色和格式。</p>
-<h3 id="style元素">style元素</h3>
-<p>  <code>&lt; style &gt;</code>定义html文档样式文件引用地址。也可以直接添加样式来渲染。</p>
-<h3 id="mate元素">mate元素</h3>
-<p>  <code>&lt; mate &gt;</code>描述了一些基本的元数据，通常为网页的描述，关键词，文件最后修改时间，作者等等。</p>
-<h3 id="script元素">script元素</h3>
-<p>  用于加载脚本文件。</p>
+<pre><code>可以插入&lt;head&gt;区域的元素：&lt;title&gt;, &lt;style&gt;, &lt;meta&gt;, &lt;link&gt;, &lt;script&gt;, &lt;noscript&gt;, and &lt;base&gt;.</code></pre><h3 id="title元素"><a href="#title元素" class="headerlink" title="title元素"></a>title元素</h3><p>  <code>&lt; title &gt;</code>标签定义了文档的标题，就是打开网站的时候最上面浏览器窗口那个的名字。添加到收藏夹的时候，显示在收藏夹的名字也是文档标题。在搜索引擎搜索时所显示的结果页面也是该标题。</p>
+<h3 id="base元素"><a href="#base元素" class="headerlink" title="base元素"></a>base元素</h3><p>  <code>&lt; base &gt;</code>标签描述了基本的链接地址/链接目标，该标签作为html文档中所有链接标签的默认链接。(就是在使用&lt; a &gt;进行链接的时候没有指定href属性的值（也就是值为空””），那么就会链接到base标签中href的地址。)</p>
+<h3 id="link元素"><a href="#link元素" class="headerlink" title="link元素"></a>link元素</h3><p>  <code>&lt; link &gt;</code>标签定义文档和外部资源得关系，一般为链接样式表，就是规定文章中不同部分(标题，段落等)的颜色和格式。</p>
+<h3 id="style元素"><a href="#style元素" class="headerlink" title="style元素"></a>style元素</h3><p>  <code>&lt; style &gt;</code>定义html文档样式文件引用地址。也可以直接添加样式来渲染。</p>
+<h3 id="mate元素"><a href="#mate元素" class="headerlink" title="mate元素"></a>mate元素</h3><p>  <code>&lt; mate &gt;</code>描述了一些基本的元数据，通常为网页的描述，关键词，文件最后修改时间，作者等等。</p>
+<h3 id="script元素"><a href="#script元素" class="headerlink" title="script元素"></a>script元素</h3><p>  用于加载脚本文件。</p>
 <pre><code>&lt;!DOCTYPE = html&gt;
 &lt;html&gt;
     &lt;head&gt;
@@ -631,82 +483,70 @@
         &lt;hr&gt;
         &lt;p&gt;段落一的内容因该为粉红色的吧！&lt;/p&gt;
     &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-<p>这是一个对于上面不同元素的一个示例。</p>
-<h2 id="样式css">样式CSS</h2>
-<hr>
+&lt;/html&gt;</code></pre><p>这是一个对于上面不同元素的一个示例。</p>
+<h2 id="样式CSS"><a href="#样式CSS" class="headerlink" title="样式CSS"></a>样式CSS</h2><hr>
 <p>  包括内联样式，内部样式表和外部引用三种。</p>
-<p>  内联样式就是直接在标签的开始括号内直接表明某些样式属性的值即可，如<code>style=“background-color:yellow”</code></p>
+<p>  内联样式就是直接在标签的开始括号内直接表明某些样式属性的值即可，如<code>style="background-color:yellow"</code></p>
 <p>  内部样式表就是在head里面直接添加style属性以达到的样式效果。</p>
 <p>  外部样式就是可以通过link直接指定样式的一个.css文件来达到效果。</p>
 <p>  通过style可以修改的属性有很多，如背景颜色(background-color)，字体颜色(color)，字体(font-family)，字体大小(font-size)，对齐方式(text-align)等</p>
 <p>  具体的写法可以直接查看<a href="https://www.runoob.com/css/css-tutorial.html" target="_blank" rel="noopener">CSS相关教程</a>即可获得相关知识，此处不再过多赘述。</p>
-<h2 id="html图像">HTML图像</h2>
-<hr>
+<h2 id="HTML图像"><a href="#HTML图像" class="headerlink" title="HTML图像"></a>HTML图像</h2><hr>
 <p>  使用<code>&lt; img &gt;</code>定义图像</p>
 <pre><code>&lt;ig src="url" alt="some_text" width="480" height="360" title="标题"&gt;
-其中url为图片的位置(外链),alt为一串可替换文本，当无法访问图片时，alt提示内容可以告诉访问者失去信息。高度和宽度都可以由用户自己定义。title为鼠标移动到图片上显示的文本信息。
-</code></pre>
-<p>  <code>&lt; map &gt;</code>定义图片地图，<code>&lt; area &gt;</code>定义图片地图中可点击的区域。</p>
+其中url为图片的位置(外链),alt为一串可替换文本，当无法访问图片时，alt提示内容可以告诉访问者失去信息。高度和宽度都可以由用户自己定义。title为鼠标移动到图片上显示的文本信息。</code></pre><p>  <code>&lt; map &gt;</code>定义图片地图，<code>&lt; area &gt;</code>定义图片地图中可点击的区域。</p>
 <pre><code>&lt;img src="url" alt="图片的名字" usemap="map的名字(定义map的时候的name)"&gt;
 &lt;map name=""&gt;
-	&lt;area shape="circle" coords="90，58，3" alt="Sun" href="单机区域链接到的地址(url)"&gt;
-	&lt;area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun"&gt;
-	&lt;area shape="poly" coords="x1,y1,x2,y2 ......" (多边形各顶点坐标)href=url&gt;
-	……
+    &lt;area shape="circle" coords="90，58，3" alt="Sun" href="单机区域链接到的地址(url)"&gt;
+    &lt;area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun"&gt;
+    &lt;area shape="poly" coords="x1,y1,x2,y2 ......" (多边形各顶点坐标)href=url&gt;
+    ……
 &lt;/map&gt;
-name是这个图片地图的名字，供图片调用。area定义了可以点击的区域的属性，shape为可点击区域的形状，coords为可点击区域的具体位置，根据不同形状使用不同参数规定，alt为该区域的替换文本，href为点击之后产生链接的地址。
-</code></pre>
-<h2 id="html表格">HTML表格</h2>
-<hr>
+name是这个图片地图的名字，供图片调用。area定义了可以点击的区域的属性，shape为可点击区域的形状，coords为可点击区域的具体位置，根据不同形状使用不同参数规定，alt为该区域的替换文本，href为点击之后产生链接的地址。</code></pre><h2 id="HTML表格"><a href="#HTML表格" class="headerlink" title="HTML表格"></a>HTML表格</h2><hr>
 <p>  由<code>&lt; table &gt;</code>标签定义。由<code>&lt; tr &gt;</code>定义行数,由<code>&lt; td &gt;</code>定义列数和属性值,<code>&lt; caption &gt;</code>定义了表格的标题，</p>
-<pre><code>	&lt;table border="0"&gt;
-		&lt;caption&gt;table&lt;/caption&gt;
-		&lt;colgroup&gt;
-		    &lt;col span="1" style="background-color:greenyellow"&gt;
-		    &lt;col style="background-color: hotpink"&gt;
-		&lt;/colgroup&gt;
-		&lt;tr&gt;
-		    &lt;td&gt;属性&lt;/td&gt;
-		    &lt;td&gt;描述&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-		    &lt;td&gt;border&lt;/td&gt;
-		    &lt;td&gt;表格是否存在边框(0无1有)&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-		    &lt;td&gt;td&lt;/td&gt;
-		    &lt;td&gt;表示表的内容和具体的列数&lt;/td&gt;
-		&lt;/tr&gt;
-		
-		&lt;tr&gt;
-		    &lt;td&gt;tr&lt;/td&gt;
-		    &lt;td&gt;表示表格的具体的行数&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-		    &lt;td&gt;caption&lt;/td&gt;
-		    &lt;td&gt;表示表格的标题&lt;/td&gt;
-		&lt;/tr&gt;
-		 &lt;tr&gt;
-		    &lt;td&gt;colgroup&lt;/td&gt;
-		    &lt;td&gt;表示列的分组，讲列分为若干组来调整颜色或者字体等&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-		    &lt;td&gt;col&lt;/td&gt;
-		    &lt;td&gt;具体的描述列的各个属性&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-		    &lt;td&gt;span&lt;/td&gt;
-		    &lt;td&gt;表示本条对列的描述具体影响多少列&lt;/td&gt;
-		&lt;/tr&gt;
-	&lt;/table&gt;
-</code></pre>
-<p><img src="http://pu0chvxph.bkt.clouddn.com/%E5%B1%95%E7%A4%BA.png" alt="展示"></p>
-<h2 id="html列表">HTML列表</h2>
-<hr>
+<pre><code>    &lt;table border="0"&gt;
+        &lt;caption&gt;table&lt;/caption&gt;
+        &lt;colgroup&gt;
+            &lt;col span="1" style="background-color:greenyellow"&gt;
+            &lt;col style="background-color: hotpink"&gt;
+        &lt;/colgroup&gt;
+        &lt;tr&gt;
+            &lt;td&gt;属性&lt;/td&gt;
+            &lt;td&gt;描述&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;border&lt;/td&gt;
+            &lt;td&gt;表格是否存在边框(0无1有)&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;td&lt;/td&gt;
+            &lt;td&gt;表示表的内容和具体的列数&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;tr&lt;/td&gt;
+            &lt;td&gt;表示表格的具体的行数&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;caption&lt;/td&gt;
+            &lt;td&gt;表示表格的标题&lt;/td&gt;
+        &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;colgroup&lt;/td&gt;
+            &lt;td&gt;表示列的分组，讲列分为若干组来调整颜色或者字体等&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;col&lt;/td&gt;
+            &lt;td&gt;具体的描述列的各个属性&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;span&lt;/td&gt;
+            &lt;td&gt;表示本条对列的描述具体影响多少列&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;</code></pre><p><img src="http://pu0chvxph.bkt.clouddn.com/%E5%B1%95%E7%A4%BA.png" alt="展示"></p>
+<h2 id="HTML列表"><a href="#HTML列表" class="headerlink" title="HTML列表"></a>HTML列表</h2><hr>
 <p>  无须列表使用<code>&lt; ul &gt;</code>定义并表示,<code>&lt; li &gt;</code>，表示列表条目，<code>&lt; ol &gt;</code>定义有序列表，<code>&lt; dl &gt;</code>定义自定义列表<code>&lt; dt &gt;</code>表示自定义列表项目，<code>&lt; dd &gt;</code>表示自定义列表项的描述。</p>
-<pre><code>	&lt;ul&gt;
+<pre><code>    &lt;ul&gt;
         &lt;li&gt;期末考试&lt;/li&gt;
         &lt;ol&gt;
             &lt;li&gt;英语&lt;/li&gt;
@@ -728,19 +568,13 @@ name是这个图片地图的名字，供图片调用。area定义了可以点击
             &lt;dt&gt;做项目&lt;/dt&gt;
             &lt;dd&gt;要十天，晕&lt;/dd&gt;
         &lt;/dl&gt;
-	&lt;/ul&gt;
-	可以嵌套使用。
-</code></pre>
-<h2 id="html区块">HTML区块</h2>
-<hr>
+    &lt;/ul&gt;
+    可以嵌套使用。</code></pre><h2 id="HTML区块"><a href="#HTML区块" class="headerlink" title="HTML区块"></a>HTML区块</h2><hr>
 <p> emsp;定义区块有<code>&lt; div &gt;</code>开辟一块区域专门的定义各种属性，<code>&lt; span &gt;</code>组合行内的元素。div还可以使用不同的属性如<code>weight,height</code>等等来将区块定位到网页的不同的区域。</p>
-<h2 id="html布局">HTML布局</h2>
-<hr>
+<h2 id="HTML布局"><a href="#HTML布局" class="headerlink" title="HTML布局"></a>HTML布局</h2><hr>
 <p>  可以使用div区块的方法和table列表的方法实现，具体参照<a href="https://www.runoob.com/html/html-layouts.html" target="_blank" rel="noopener">链接</a></p>
-<h2 id="html表单">HTML表单</h2>
-<hr>
-<h3 id="基本表单属性">基本表单属性</h3>
-<p>  定义表单使用<code>&lt; form &gt;</code>定义。允许用户在表单中输入内容，如：文本域，下拉列表，单选框，复选框等等。</p>
+<h2 id="HTML表单"><a href="#HTML表单" class="headerlink" title="HTML表单"></a>HTML表单</h2><hr>
+<h3 id="基本表单属性"><a href="#基本表单属性" class="headerlink" title="基本表单属性"></a>基本表单属性</h3><p>  定义表单使用<code>&lt; form &gt;</code>定义。允许用户在表单中输入内容，如：文本域，下拉列表，单选框，复选框等等。</p>
 <table>
 <thead>
 <tr>
@@ -748,38 +582,36 @@ name是这个图片地图的名字，供图片调用。area定义了可以点击
 <th>描述</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>文本域</td>
-<td>使用type=“text”，创建一个可见输入的可输入文本的区域</td>
+<td>使用type=”text”，创建一个可见输入的可输入文本的区域</td>
 </tr>
 <tr>
 <td>密码字段</td>
-<td>使用type=“password”，创建一个不可见输入的可输入文本区域</td>
+<td>使用type=”password”，创建一个不可见输入的可输入文本区域</td>
 </tr>
 <tr>
 <td>单选按钮</td>
-<td>使用type="radio"创建一个只单选框</td>
+<td>使用type=”radio”创建一个只单选框</td>
 </tr>
 <tr>
 <td>复选框</td>
-<td>使用type="checkbox"创建一个复选框</td>
+<td>使用type=”checkbox”创建一个复选框</td>
 </tr>
 <tr>
 <td>提交按钮</td>
-<td>使用type="submit"创建一个提交按钮</td>
+<td>使用type=”submit”创建一个提交按钮</td>
 </tr>
 <tr>
 <td>重置按钮</td>
-<td>使用type="reset"创建一个重置按钮(清空选择)</td>
+<td>使用type=”reset”创建一个重置按钮(清空选择)</td>
 </tr>
 <tr>
 <td>按钮</td>
-<td>使用type="button"创建一个按钮(没有提交操作)</td>
+<td>使用type=”button”创建一个按钮(没有提交操作)</td>
 </tr>
-</tbody>
-</table>
-<pre><code>	  &lt;form&gt;
+</tbody></table>
+<pre><code>      &lt;form&gt;
             First User Name:&lt;input type="text" name="FUSN"&gt;&lt;br&gt;
             Last User Name:&lt;input type="text" name="LUSN"&gt;&lt;br&gt;
             Password:&lt;input type="password" name="PSW"&gt;
@@ -789,14 +621,11 @@ name是这个图片地图的名字，供图片调用。area定义了可以点击
             &lt;input type="checkbox" name="many choice" value="female"&gt;I am a girl!&lt;br&gt;
             &lt;input type="checkbox" name="many choice" value="student"&gt;I am a student!&lt;br&gt;
             &lt;input type="submit" value="确认"&gt;
-			&lt;input type="reset" value="重置"&gt;&lt;br&gt;
+            &lt;input type="reset" value="重置"&gt;&lt;br&gt;
             &lt;input type="button" value="这就是个按钮！"&gt;
-        &lt;/form&gt;
-</code></pre>
-<p>  还可以使用<code>&lt; fieldset &gt;</code>定义表单的边框，使用<code>&lt; legend &gt;</code>定义fieldset边框的标题。</p>
-<h3 id="下拉列表属性">下拉列表属性</h3>
-<p>  下拉列表，就像是选择日期那种下拉然后选择一样，可以设置预选属性(使用selected做限定即可)。</p>
-<pre><code>	 &lt;select name="data"&gt;
+        &lt;/form&gt;</code></pre><p>  还可以使用<code>&lt; fieldset &gt;</code>定义表单的边框，使用<code>&lt; legend &gt;</code>定义fieldset边框的标题。</p>
+<h3 id="下拉列表属性"><a href="#下拉列表属性" class="headerlink" title="下拉列表属性"></a>下拉列表属性</h3><p>  下拉列表，就像是选择日期那种下拉然后选择一样，可以设置预选属性(使用selected做限定即可)。</p>
+<pre><code>     &lt;select name="data"&gt;
             &lt;optgroup label="day"&gt;
             &lt;option value="7日"&gt;7日&lt;/option&gt;
             &lt;option value="8日" selected&gt;8日&lt;/option&gt;
@@ -810,34 +639,22 @@ name是这个图片地图的名字，供图片调用。area定义了可以点击
             &lt;option value="10月"&gt;10月&lt;/option&gt;    
             &lt;/optgroup&gt;
             &lt;input type="reset" value="重置"&gt;
-        &lt;/select&gt;
-</code></pre>
-<p>  使用<code>&lt; optgroup &gt;</code>定义选项组，就是将选项分类显示，给予一个选择的提示。</p>
-<h3 id="文本域">文本域</h3>
-<p>  文本域提供一个区域可供用户输入语句。直接使用taxtarea即可实现。</p>
-<pre><code> &lt;textarea name="文本域" id="1" cols="30" rows="10"&gt;这是一个文本域。&lt;/textarea&gt;可以设定文本区域大小和初始显示的字。
-</code></pre>
-<h2 id="html框架">HTML框架</h2>
-<hr>
+        &lt;/select&gt;</code></pre><p>  使用<code>&lt; optgroup &gt;</code>定义选项组，就是将选项分类显示，给予一个选择的提示。</p>
+<h3 id="文本域"><a href="#文本域" class="headerlink" title="文本域"></a>文本域</h3><p>  文本域提供一个区域可供用户输入语句。直接使用taxtarea即可实现。</p>
+<pre><code> &lt;textarea name="文本域" id="1" cols="30" rows="10"&gt;这是一个文本域。&lt;/textarea&gt;可以设定文本区域大小和初始显示的字。</code></pre><h2 id="HTML框架"><a href="#HTML框架" class="headerlink" title="HTML框架"></a>HTML框架</h2><hr>
 <p>  可以使用框架在一个窗口显示多个页面。定义框架使用<code>&lt; iframe &gt;</code>。</p>
-<pre><code>	&lt;iframe src="http://AggressiveJokerJD.github.io" name="iframe_a" width="300" height="300" frameborder="0"&gt;&lt;/iframe&gt;
-	使用属性frameborder去除框架的边框。
-    &lt;a href="http://www.google.cn/" target="iframe_a"&gt;google&lt;/a&gt;
-</code></pre>
-<h2 id="html脚本">HTML脚本</h2>
-<hr>
+<pre><code>    &lt;iframe src="http://AggressiveJokerJD.github.io" name="iframe_a" width="300" height="300" frameborder="0"&gt;&lt;/iframe&gt;
+    使用属性frameborder去除框架的边框。
+    &lt;a href="http://www.google.cn/" target="iframe_a"&gt;google&lt;/a&gt;</code></pre><h2 id="HTML脚本"><a href="#HTML脚本" class="headerlink" title="HTML脚本"></a>HTML脚本</h2><hr>
 <p>  使用<code>&lt; script &gt;</code>来定义要使用的脚本，直接在script之间写下脚本语言或者是src指向外部脚本文件,<code>&lt; noscript &gt;</code>定义了无法使用脚本或者是页面禁用脚本之后会替代script里面内容所显示的内容</p>
-<pre><code>	&lt;h1 id="001"&gt;脚本测试&lt;/h1&gt;
+<pre><code>    &lt;h1 id="001"&gt;脚本测试&lt;/h1&gt;
     &lt;script&gt;
         function myfunction(){
             x = document.getElementById("001");
             x.style.color = "#ffff00";
         }
     &lt;/script&gt;&lt;noscript&gt;无法进行操作！&lt;/noscript&gt;
-    &lt;button type="button" onclick="myfunction()"&gt;button&lt;/button&gt;
-</code></pre>
-<h2 id="html字符实体">HTML字符实体</h2>
-<hr>
+    &lt;button type="button" onclick="myfunction()"&gt;button&lt;/button&gt;</code></pre><h2 id="HTML字符实体"><a href="#HTML字符实体" class="headerlink" title="HTML字符实体"></a>HTML字符实体</h2><hr>
 <p>  HTML 中的预留字符必须被替换为字符实体。一些在键盘上找不到的字符也可以使用字符实体来替换。</p>
 <table>
 <thead>
@@ -846,8 +663,7 @@ name是这个图片地图的名字，供图片调用。area定义了可以点击
 <th>显示效果和写法</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>̀</td>
 <td>à  &amp;#768;</td>
 </tr>
@@ -863,8 +679,7 @@ name是这个图片地图的名字，供图片调用。area定义了可以点击
 <td>̃</td>
 <td>ã  &amp;#771;</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <table>
 <thead>
 <tr>
@@ -873,8 +688,7 @@ name是这个图片地图的名字，供图片调用。area定义了可以点击
 <th>实体名称和编号</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td> </td>
 <td>空格</td>
 <td>&amp;nbsp/emsp  &amp;#160;</td>
@@ -954,49 +768,36 @@ name是这个图片地图的名字，供图片调用。area定义了可以点击
 <td>除号</td>
 <td>&amp;divide;  &amp;#247;</td>
 </tr>
-</tbody>
-</table>
-<h1>HTML5</h1>
-<hr>
+</tbody></table>
+<h1 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h1><hr>
 <p>  HTML5相较于HTML增加了一些新元素，新属性，提供更多的支持，而且删除了一些HTML4.01中的元素。</p>
-<h2 id="html5-canvas">HTML5 Canvas</h2>
-<hr>
+<h2 id="HTML5-Canvas"><a href="#HTML5-Canvas" class="headerlink" title="HTML5 Canvas"></a>HTML5 Canvas</h2><hr>
 <p>  <code>&lt;canvas&gt;</code>定义图形，也就是画布，可以通过脚本来对其进行绘制。</p>
-<pre><code>	&lt;canvas id="my_canvas" width="500" height="400" style="background-color: azure"&gt;
+<pre><code>    &lt;canvas id="my_canvas" width="500" height="400" style="background-color: azure"&gt;
     当前浏览器不支持HTML5 canvas标签&lt;/canvas&gt;&lt;!--如若无法使用提示语句--&gt;
     &lt;script&gt;
     var c = document.getElementById("my_canvas");
     var ctx = c.getContext("2d");
     ctx.fillStyle = "#ffff00";
     ctx.fillRect(0,0,150,130);
-	ctx.moveTo(0,0);
+    ctx.moveTo(0,0);
     ctx.lineTo(500,400);
     ctx.stroke();
-    &lt;/script&gt;
-</code></pre>
-<p>  可以对其进行其他操作，可参考<a href="https://www.runoob.com/html/html5-canvas.html" target="_blank" rel="noopener"><font color="lightblue">链接</font></a></p>
-<h2 id="html5视频">HTML5视频</h2>
-<hr>
+    &lt;/script&gt;</code></pre><p>  可以对其进行其他操作，可参考<a href="https://www.runoob.com/html/html5-canvas.html" target="_blank" rel="noopener"><font color="lightblue">链接</font></a></p>
+<h2 id="HTML5视频"><a href="#HTML5视频" class="headerlink" title="HTML5视频"></a>HTML5视频</h2><hr>
 <p>  <code>&lt;video&gt;</code>提供了插入视频的方法，和Canvas一样，开始标签和结束标签之间的位置提供无法使用video时候的提示语句。</p>
 <p>  <code>&lt;video&gt;</code>支持MP4，WebM和Ogg三种视频格式。</p>
-<pre><code>	&lt;video width="320" height="240" controls&gt;
-	  &lt;source src="url" type="video/mp4"&gt;
-	  您的浏览器不支持 HTML5 video 标签。
-	&lt;/video&gt;
-</code></pre>
-<h2 id="html5音频">HTML5音频</h2>
-<hr>
+<pre><code>    &lt;video width="320" height="240" controls&gt;
+      &lt;source src="url" type="video/mp4"&gt;
+      您的浏览器不支持 HTML5 video 标签。
+    &lt;/video&gt;</code></pre><h2 id="HTML5音频"><a href="#HTML5音频" class="headerlink" title="HTML5音频"></a>HTML5音频</h2><hr>
 <p>  <code>&lt;audio&gt;</code>和<code>&lt;video&gt;</code>基本相似。</p>
-<pre><code>	&lt;video controls&gt;
-	  &lt;source src="url" type="video/mp4"&gt;
-	  您的浏览器不支持 HTML5 video 标签。
-	&lt;/video&gt;
-</code></pre>
-<h2 id="html5-input">HTML5 Input</h2>
-<hr>
+<pre><code>    &lt;video controls&gt;
+      &lt;source src="url" type="video/mp4"&gt;
+      您的浏览器不支持 HTML5 video 标签。
+    &lt;/video&gt;</code></pre><h2 id="HTML5-Input"><a href="#HTML5-Input" class="headerlink" title="HTML5 Input"></a>HTML5 Input</h2><hr>
 <p>  增加了type的类型：date，color，datetime，datatime-local，email，month，nummber等，可以参考<a href="https://www.runoob.com/html/html5-form-input-types.html" target="_blank" rel="noopener"><font color="lightblue">链接</font></a>。</p>
-<h2 id="其余html5相关知识">其余HTML5相关知识</h2>
-<hr>
+<h2 id="其余HTML5相关知识"><a href="#其余HTML5相关知识" class="headerlink" title="其余HTML5相关知识"></a>其余HTML5相关知识</h2><hr>
 <p>  其他的HTML5的知识还包括Web存储，Web SQL，SSE等，均可直接查看<a href="https://www.runoob.com/html/html5-intro.html" target="_blank" rel="noopener"><font color="lightblue">链接</font></a>。</p>
 <script>
         document.querySelectorAll('.github-emoji')
@@ -1017,285 +818,220 @@ name是这个图片地图的名字，供图片调用。area定义了可以点击
             document.body.appendChild(img);
           });
       </script>
-      
     </div>
-    
-    
-    
 
     
-
     
-
     
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/博客/" rel="tag"><i class="fa fa-tag"></i> 博客</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2019/07/10/记190710/" rel="next" title="记190710">
-                <i class="fa fa-chevron-left"></i> 记190710
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/07/11/记190711/" rel="prev" title="记190711">
-                记190711 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-
-    <div class="post-spread">
-      
-    </div>
-  </div>
-
-
-          </div>
-          
-
-
-          
-
-  
-
-
-
-        </div>
         
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
 
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
-
-      <section class="site-overview-wrap sidebar-panel">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <img class="site-author-image" itemprop="image" src="https://study-image-1259719447.cos.ap-chengdu.myqcloud.com/%E7%B4%A2%E7%BD%97.jpg" alt="Joker">
-            
-              <p class="site-author-name" itemprop="name">Joker</p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
-
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives/">
-              
-                  <span class="site-state-item-count">164</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">15</span>
-                  <span class="site-state-item-name">分类</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">11</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
-            
-
-          </nav>
-
-          
-
-          
-            <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/AggressiveJokerJD" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="mailto:910368490@qq.com" target="_blank" title="E-Mail">
-                      
-                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
-                  </span>
-                
-            </div>
-          
-
-          
-          
-
-          
-          
-
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=442319&auto=1&height=66"></iframe>
-
-          
-
-        </div>
-      </section>
-
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">1.</span> <span class="nav-text">HTML</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#html基础"><span class="nav-number">1.1.</span> <span class="nav-text">HTML基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#html标题"><span class="nav-number">1.1.1.</span> <span class="nav-text">HTML标题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#html段落"><span class="nav-number">1.1.2.</span> <span class="nav-text">HTML段落</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#html链接"><span class="nav-number">1.1.3.</span> <span class="nav-text">HTML链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#html图片"><span class="nav-number">1.1.4.</span> <span class="nav-text">HTML图片</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#html元素"><span class="nav-number">1.2.</span> <span class="nav-text">HTML元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#html属性"><span class="nav-number">1.3.</span> <span class="nav-text">HTML属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#html标题-v2"><span class="nav-number">1.4.</span> <span class="nav-text">HTML标题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#html段落-v2"><span class="nav-number">1.5.</span> <span class="nav-text">HTML段落</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#html文本格式化"><span class="nav-number">1.6.</span> <span class="nav-text">HTML文本格式化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#htlm文本格式化标签"><span class="nav-number">1.6.1.</span> <span class="nav-text">HTLM文本格式化标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#html-计算机输出-标签"><span class="nav-number">1.6.2.</span> <span class="nav-text">HTML&quot;计算机输出&quot;标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#html引文-引用及标签定义"><span class="nav-number">1.6.3.</span> <span class="nav-text">HTML引文，引用及标签定义</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#html链接-v2"><span class="nav-number">1.7.</span> <span class="nav-text">HTML链接</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#href属性"><span class="nav-number">1.7.1.</span> <span class="nav-text">href属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#target属性"><span class="nav-number">1.7.2.</span> <span class="nav-text">target属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#id属性"><span class="nav-number">1.7.3.</span> <span class="nav-text">id属性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#html头部"><span class="nav-number">1.8.</span> <span class="nav-text">HTML头部</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#title元素"><span class="nav-number">1.8.1.</span> <span class="nav-text">title元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#base元素"><span class="nav-number">1.8.2.</span> <span class="nav-text">base元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#link元素"><span class="nav-number">1.8.3.</span> <span class="nav-text">link元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#style元素"><span class="nav-number">1.8.4.</span> <span class="nav-text">style元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mate元素"><span class="nav-number">1.8.5.</span> <span class="nav-text">mate元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#script元素"><span class="nav-number">1.8.6.</span> <span class="nav-text">script元素</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#样式css"><span class="nav-number">1.9.</span> <span class="nav-text">样式CSS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#html图像"><span class="nav-number">1.10.</span> <span class="nav-text">HTML图像</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#html表格"><span class="nav-number">1.11.</span> <span class="nav-text">HTML表格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#html列表"><span class="nav-number">1.12.</span> <span class="nav-text">HTML列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#html区块"><span class="nav-number">1.13.</span> <span class="nav-text">HTML区块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#html布局"><span class="nav-number">1.14.</span> <span class="nav-text">HTML布局</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#html表单"><span class="nav-number">1.15.</span> <span class="nav-text">HTML表单</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本表单属性"><span class="nav-number">1.15.1.</span> <span class="nav-text">基本表单属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下拉列表属性"><span class="nav-number">1.15.2.</span> <span class="nav-text">下拉列表属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文本域"><span class="nav-number">1.15.3.</span> <span class="nav-text">文本域</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#html框架"><span class="nav-number">1.16.</span> <span class="nav-text">HTML框架</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#html脚本"><span class="nav-number">1.17.</span> <span class="nav-text">HTML脚本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#html字符实体"><span class="nav-number">1.18.</span> <span class="nav-text">HTML字符实体</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">2.</span> <span class="nav-text">HTML5</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#html5-canvas"><span class="nav-number">2.1.</span> <span class="nav-text">HTML5 Canvas</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#html5视频"><span class="nav-number">2.2.</span> <span class="nav-text">HTML5视频</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#html5音频"><span class="nav-number">2.3.</span> <span class="nav-text">HTML5音频</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#html5-input"><span class="nav-number">2.4.</span> <span class="nav-text">HTML5 Input</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其余html5相关知识"><span class="nav-number">2.5.</span> <span class="nav-text">其余HTML5相关知识</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
-      
-
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Joker</span>
-
-  
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Joker
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://yoursite.com/2019/07/10/HTML学习笔记/" title="HTML学习笔记">http://yoursite.com/2019/07/10/HTML学习笔记/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
-
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
-
-
-
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/博客/" rel="tag"><i class=“fa fa-tag”></i># 博客</a>
+          </div>
 
         
 
 
-
-
-
-
-
         
-      </div>
-    </footer>
-
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2019/07/10/记190710/" rel="prev" title="记190710">
+      <i class="fa fa-chevron-left"></i> 记190710
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2019/07/11/记190711/" rel="next" title="记190711">
+      记190711 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-    
+  </article>
+  
+  
+  
 
   </div>
 
-  
 
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
   }
 </script>
 
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HTML"><span class="nav-number">1.</span> <span class="nav-text">HTML</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML基础"><span class="nav-number">1.1.</span> <span class="nav-text">HTML基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML标题"><span class="nav-number">1.1.1.</span> <span class="nav-text">HTML标题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML段落"><span class="nav-number">1.1.2.</span> <span class="nav-text">HTML段落</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML链接"><span class="nav-number">1.1.3.</span> <span class="nav-text">HTML链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML图片"><span class="nav-number">1.1.4.</span> <span class="nav-text">HTML图片</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML元素"><span class="nav-number">1.2.</span> <span class="nav-text">HTML元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML属性"><span class="nav-number">1.3.</span> <span class="nav-text">HTML属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML标题-1"><span class="nav-number">1.4.</span> <span class="nav-text">HTML标题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML段落-1"><span class="nav-number">1.5.</span> <span class="nav-text">HTML段落</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML文本格式化"><span class="nav-number">1.6.</span> <span class="nav-text">HTML文本格式化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTLM文本格式化标签"><span class="nav-number">1.6.1.</span> <span class="nav-text">HTLM文本格式化标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML”计算机输出”标签"><span class="nav-number">1.6.2.</span> <span class="nav-text">HTML”计算机输出”标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML引文，引用及标签定义"><span class="nav-number">1.6.3.</span> <span class="nav-text">HTML引文，引用及标签定义</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML链接-1"><span class="nav-number">1.7.</span> <span class="nav-text">HTML链接</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#href属性"><span class="nav-number">1.7.1.</span> <span class="nav-text">href属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#target属性"><span class="nav-number">1.7.2.</span> <span class="nav-text">target属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#id属性"><span class="nav-number">1.7.3.</span> <span class="nav-text">id属性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML头部"><span class="nav-number">1.8.</span> <span class="nav-text">HTML头部</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#title元素"><span class="nav-number">1.8.1.</span> <span class="nav-text">title元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#base元素"><span class="nav-number">1.8.2.</span> <span class="nav-text">base元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#link元素"><span class="nav-number">1.8.3.</span> <span class="nav-text">link元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#style元素"><span class="nav-number">1.8.4.</span> <span class="nav-text">style元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mate元素"><span class="nav-number">1.8.5.</span> <span class="nav-text">mate元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#script元素"><span class="nav-number">1.8.6.</span> <span class="nav-text">script元素</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#样式CSS"><span class="nav-number">1.9.</span> <span class="nav-text">样式CSS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML图像"><span class="nav-number">1.10.</span> <span class="nav-text">HTML图像</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML表格"><span class="nav-number">1.11.</span> <span class="nav-text">HTML表格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML列表"><span class="nav-number">1.12.</span> <span class="nav-text">HTML列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML区块"><span class="nav-number">1.13.</span> <span class="nav-text">HTML区块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML布局"><span class="nav-number">1.14.</span> <span class="nav-text">HTML布局</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML表单"><span class="nav-number">1.15.</span> <span class="nav-text">HTML表单</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本表单属性"><span class="nav-number">1.15.1.</span> <span class="nav-text">基本表单属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下拉列表属性"><span class="nav-number">1.15.2.</span> <span class="nav-text">下拉列表属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文本域"><span class="nav-number">1.15.3.</span> <span class="nav-text">文本域</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML框架"><span class="nav-number">1.16.</span> <span class="nav-text">HTML框架</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML脚本"><span class="nav-number">1.17.</span> <span class="nav-text">HTML脚本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML字符实体"><span class="nav-number">1.18.</span> <span class="nav-text">HTML字符实体</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#HTML5"><span class="nav-number">2.</span> <span class="nav-text">HTML5</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML5-Canvas"><span class="nav-number">2.1.</span> <span class="nav-text">HTML5 Canvas</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML5视频"><span class="nav-number">2.2.</span> <span class="nav-text">HTML5视频</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML5音频"><span class="nav-number">2.3.</span> <span class="nav-text">HTML5音频</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML5-Input"><span class="nav-number">2.4.</span> <span class="nav-text">HTML5 Input</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其余HTML5相关知识"><span class="nav-number">2.5.</span> <span class="nav-text">其余HTML5相关知识</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Joker"
+      src="https://study-image-1259719447.cos.ap-chengdu.myqcloud.com/%E7%B4%A2%E7%BD%97.jpg">
+  <p class="site-author-name" itemprop="name">Joker</p>
+  <div class="site-description" itemprop="description">我希望自己能够有提升，而不仅仅是没有事情做而已.</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">165</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/AggressiveJokerJD" title="GitHub → https://github.com/AggressiveJokerJD" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:910368490@qq.com" title="E-Mail → mailto:910368490@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Joker</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">328k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">4:58</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://pisces.theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.6.0
+  </div>
+
+        
 
 
 
 
 
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/pisces.js"></script>
+<script src="/js/next-boot.js"></script>
 
 
 
   
 
 
-  
 
 
 
@@ -1307,162 +1043,27 @@ name是这个图片地图的名字，供图片调用。area定义了可以点击
 
 
 
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  
-
-
-  
-
-  
-
-
-  
-  <script type="text/javascript" color="46,254,64" opacity="0.7" zindex="-2" count="85" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
-  
-
-<script type="text/javascript" src="/js/google-code-prettify/prettify.js"></script>
-<script type="text/javascript">
-$(window).load(function(){
-   $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
-   prettyPrint();
- })    
+<script>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme: 'forest',
+      logLevel: 3,
+      flowchart: { curve: 'linear' },
+      gantt: { axisFormat: '%m/%d/%Y' },
+      sequence: { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
 </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+
+  
+
+  
+
+  
+
 
 
 

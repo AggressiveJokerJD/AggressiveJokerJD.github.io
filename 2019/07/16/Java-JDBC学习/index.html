@@ -1,147 +1,80 @@
 <!DOCTYPE html>
-
-
-
-  
-
-
-<html class="theme-next pisces use-motion" lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.9.0">
+<html lang="zh-CN">
+<head>
   <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<script>
-    (function () {
-        if ('') {
-            if (prompt('Please input PassWord') !== '') {
-                alert('PassWord  Wrong��');
-                if (history.length === 1) {
-                    location.replace("https://aggressivejokerjd.github.io/"); // �����滻�������ҳ
-                } else {
-                    history.back();
-                }
-            }
-        }
-    })();
+<meta name="generator" content="Hexo 3.9.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('http://yoursite.com').hostname,
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.6.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":true,"show_result":true,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":20},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
 </script>
 
-
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="博客,">
-
-
-
-
-
-
-
-
-
-
-<meta name="description" content="JDBC是Java Database Connectivity(Java数据库连接)的简称，用Java语言规范客户端程序如何访问数据库的应用接口，提供了通过Java传输SQL操作给数据库的方法。 JDBC架构    JDBC架构分为双层架构和三层架构。 JDBC双层架构   双层架构就是通过Java API(JDBC)直接访问数据库。Java API或者应用直接访问数据源。 JDBC三层架构">
+<link href="/js/google-code-prettify/prettify.css" type="text/css" rel="stylesheet" />
+  <meta name="description" content="JDBC是Java Database Connectivity(Java数据库连接)的简称，用Java语言规范客户端程序如何访问数据库的应用接口，提供了通过Java传输SQL操作给数据库的方法。">
 <meta name="keywords" content="博客">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java_JDBC学习">
 <meta property="og:url" content="http://yoursite.com/2019/07/16/Java-JDBC学习/index.html">
 <meta property="og:site_name" content="AggressiveJokerJD&#39;s Blog">
-<meta property="og:description" content="JDBC是Java Database Connectivity(Java数据库连接)的简称，用Java语言规范客户端程序如何访问数据库的应用接口，提供了通过Java传输SQL操作给数据库的方法。 JDBC架构    JDBC架构分为双层架构和三层架构。 JDBC双层架构   双层架构就是通过Java API(JDBC)直接访问数据库。Java API或者应用直接访问数据源。 JDBC三层架构">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:description" content="JDBC是Java Database Connectivity(Java数据库连接)的简称，用Java语言规范客户端程序如何访问数据库的应用接口，提供了通过Java传输SQL操作给数据库的方法。">
+<meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://study-image-1259719447.cos.ap-chengdu.myqcloud.com/%E8%BF%9E%E6%8E%A5%E5%9E%8B%E5%AD%97%E6%AE%B5%E7%9A%84%E5%BC%8A%E7%AB%AF.png">
-<meta property="og:updated_time" content="2019-07-28T02:49:26.269Z">
+<meta property="og:updated_time" content="2019-12-18T12:44:52.350Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java_JDBC学习">
-<meta name="twitter:description" content="JDBC是Java Database Connectivity(Java数据库连接)的简称，用Java语言规范客户端程序如何访问数据库的应用接口，提供了通过Java传输SQL操作给数据库的方法。 JDBC架构    JDBC架构分为双层架构和三层架构。 JDBC双层架构   双层架构就是通过Java API(JDBC)直接访问数据库。Java API或者应用直接访问数据源。 JDBC三层架构">
+<meta name="twitter:description" content="JDBC是Java Database Connectivity(Java数据库连接)的简称，用Java语言规范客户端程序如何访问数据库的应用接口，提供了通过Java传输SQL操作给数据库的方法。">
 <meta name="twitter:image" content="https://study-image-1259719447.cos.ap-chengdu.myqcloud.com/%E8%BF%9E%E6%8E%A5%E5%9E%8B%E5%AD%97%E6%AE%B5%E7%9A%84%E5%BC%8A%E7%AB%AF.png">
 
+<link rel="canonical" href="http://yoursite.com/2019/07/16/Java-JDBC学习/">
 
 
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Pisces',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
   };
 </script>
 
-
-
-  <link rel="canonical" href="http://yoursite.com/2019/07/16/Java-JDBC学习/">
-
-
-
-
-<link href="/js/google-code-prettify/tranquil-heart.min.css" type="text/css" rel="stylesheet">
-  <title>Java_JDBC学习 | AggressiveJokerJD's Blog</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title>Java_JDBC学习 | AggressiveJokerJD's Blog</title>
   
 
 
@@ -149,213 +82,189 @@
 
 
 
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
 
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
-
-
-<!-- hexo-inject:begin --><!-- hexo-inject:end --><canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas> 
-<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
-<script type="text/javascript" src="/js/src/fireworks.js"></script>
-
-
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left page-post-detail">
+<body itemscope itemtype="http://schema.org/WebPage">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container use-motion">
     <div class="headband"></div>
 
-<a href="https://github.com/AggressiveJokerJD" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
+    <a href="https://github.com/AggressiveJokerJD" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+    
+      <script type="text/javascript"
+        color="0,255,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
     
 
-    <div class="custom-logo-site-title">
+    
+
+    
+      <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+      <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+      <script type="text/javascript" src="/js/src/fireworks.js"></script>
+    
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">AggressiveJokerJD's Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-      
-        <p class="site-subtitle"></p>
-      
   </div>
 
   <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
   </div>
 </div>
 
+
 <nav class="site-nav">
   
-
-  
-    <ul id="menu" class="menu">
-      
-        
+  <ul id="menu" class="menu">
         <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
-            
-            首页
-          </a>
-        </li>
-      
-        
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
         <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
-            
-            标签
-          </a>
-        </li>
-      
-        
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
         <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
-            
-            分类
-          </a>
-        </li>
-      
-        
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
-            
-            归档
-          </a>
-        </li>
-      
 
-      
-    </ul>
-  
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
 
-  
+  </li>
+        <li class="menu-item menu-item-diary">
+
+    <a href="/categories/diary" rel="section"><i class="fa fa-fw fa-book"></i>日记</a>
+
+  </li>
+  </ul>
+
 </nav>
-
-
-
- </div>
+</div>
     </header>
 
-    <main id="main" class="main">
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
       <div class="main-inner">
         <div class="content-wrap">
-          <div id="content" class="content">
+          
+
+          <div class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
-
-  
-
+  <div class="posts-expand">
+      
   
   
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/16/Java-JDBC学习/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Joker">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="https://study-image-1259719447.cos.ap-chengdu.myqcloud.com/%E7%B4%A2%E7%BD%97.jpg">
+      <meta itemprop="name" content="Joker">
+      <meta itemprop="description" content="我希望自己能够有提升，而不仅仅是没有事情做而已.">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="AggressiveJokerJD's Blog">
     </span>
-
-    
       <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">Java_JDBC学习</h1>
-        
+        <h1 class="post-title" itemprop="name headline">
+          Java_JDBC学习
+        </h1>
 
         <div class="post-meta">
+        
 
-          <span class="post-time">
-            
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-16T18:22:15+08:00">
-                2019-07-16
-              </time>
-            
+              <span class="post-meta-item-text">发表于</span>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
+              <time title="创建时间：2019-07-16 18:22:15" itemprop="dateCreated datePublished" datetime="2019-07-16T18:22:15+08:00">2019-07-16</time>
+            </span>
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
+              <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/JAVA/" itemprop="url" rel="index">
                     <span itemprop="name">JAVA</span>
                   </a>
                 </span>
-
-                
-                
-              
             </span>
-          
 
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>2.2k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
+            </span>
 
         </div>
       </header>
-    
 
     
     
@@ -363,94 +272,63 @@
     <div class="post-body" itemprop="articleBody">
 
       
-      
-
-      
         <p>  JDBC是Java Database Connectivity(Java数据库连接)的简称，用Java语言规范客户端程序如何访问数据库的应用接口，提供了通过Java传输SQL操作给数据库的方法。</p>
-<h2 id="jdbc架构">JDBC架构</h2>
-<hr>
+<a id="more"></a>
+
+<h2 id="JDBC架构"><a href="#JDBC架构" class="headerlink" title="JDBC架构"></a>JDBC架构</h2><hr>
 <p>  JDBC架构分为双层架构和三层架构。</p>
-<h3 id="jdbc双层架构">JDBC双层架构</h3>
-<p>  双层架构就是通过Java API(JDBC)直接访问数据库。Java API或者应用直接访问数据源。</p>
-<h3 id="jdbc三层架构">JDBC三层架构</h3>
-<p>  三层结构就是客户端(GUI)，服务端(JDBC)，数据库。</p>
-<h2 id="jdbc的基本步骤">JDBC的基本步骤</h2>
-<hr>
+<h3 id="JDBC双层架构"><a href="#JDBC双层架构" class="headerlink" title="JDBC双层架构"></a>JDBC双层架构</h3><p>  双层架构就是通过Java API(JDBC)直接访问数据库。Java API或者应用直接访问数据源。</p>
+<h3 id="JDBC三层架构"><a href="#JDBC三层架构" class="headerlink" title="JDBC三层架构"></a>JDBC三层架构</h3><p>  三层结构就是客户端(GUI)，服务端(JDBC)，数据库。</p>
+<h2 id="JDBC的基本步骤"><a href="#JDBC的基本步骤" class="headerlink" title="JDBC的基本步骤"></a>JDBC的基本步骤</h2><hr>
 <ol>
-<li>
-<p>建立数据库的驱动，安装驱动程序。</p>
-<pre><code>Class.forName(driver);
-其中driver为驱动，就是使用Jdbc的要使用的驱动，一般为：driver = "com.mysql.cj.jdbc.Driver";(如果是使用mysql-connector-java-5.1之前的版
-本，则去掉cj即可，这个是使用8.0版本时必须要加入的。)
-</code></pre>
-</li>
-<li>
-<p>建立与数据库的连接，通知数据库要进行连接。</p>
-<pre><code>Connection connection = DriverManager.getConnection(url, username, password);
-其中url为要连接的数据库的相关信息，一般为：url="jdbc:mysql://localhost:3306/test_jdbc?useUnicode=true&amp;characterEncoding=utf8&amp;serverTimezone=GMT";
-username = '你要连接数据库索要使用的用户名'
-password = '你使用的用户的密码'
-</code></pre>
-</li>
-<li>
-<p>创建操作数据库的对象</p>
-<pre><code>Statement stmt = connection.createStatement();
-或者
-PreparedStatement pstmt = connection.prepareStatement(sql);
-</code></pre>
-</li>
-<li>
-<p>使用数据库对象执行数据库的操作</p>
+<li><p>建立数据库的驱动，安装驱动程序。</p>
+<pre><code> Class.forName(driver);
+ 其中driver为驱动，就是使用Jdbc的要使用的驱动，一般为：driver = "com.mysql.cj.jdbc.Driver";(如果是使用mysql-connector-java-5.1之前的版
+ 本，则去掉cj即可，这个是使用8.0版本时必须要加入的。)</code></pre></li>
+<li><p>建立与数据库的连接，通知数据库要进行连接。</p>
+<pre><code> Connection connection = DriverManager.getConnection(url, username, password);
+ 其中url为要连接的数据库的相关信息，一般为：url="jdbc:mysql://localhost:3306/test_jdbc?useUnicode=true&amp;characterEncoding=utf8&amp;serverTimezone=GMT";
+ username = '你要连接数据库索要使用的用户名'
+ password = '你使用的用户的密码'</code></pre></li>
+<li><p>创建操作数据库的对象</p>
+<pre><code> Statement stmt = connection.createStatement();
+ 或者
+ PreparedStatement pstmt = connection.prepareStatement(sql);</code></pre></li>
+<li><p>使用数据库对象执行数据库的操作</p>
 <ol>
-<li>
-<p>使用修改数据库信息的操作(无返回数据)</p>
-<pre><code>String sql="update user set LoginName='博哥' where Id=1";
-int row = stmt.executeUpdate(sql);	//row：代表数据库受到影响的函数，一般来说，增删改都会提示数据库受影响的行，一般可以用来判断是否操作成功。
-</code></pre>
-</li>
-<li>
-<p>使用查询已提取数据库信息的操作(含返回数据)</p>
-<pre><code>String sql="select * from user";
-ResultSet rs = stmt.executeQuery(sql);
-List list=new ArrayList();
-查询的方法时executeQuery()，它接受一个ResultSet类型的结果，当读取数据库数据的时候，它有一个游标指针，指向数据库第一条记录，如果循环读取，每读一行指针就会下移一行数据，直到所有数据读取完毕。
-其中ResultSet类型的参数读取数据有两种方法。1.rs.get(索引)2.rs.get(数据库字段名)第一种就是所搜寻当前记录的第几条属性，1代表的就是搜到结果的第一个属性，以此类推。第二种就是直接输入字段名直接获得与之匹配的属性，数据库字段名不区分大小写。
-</code></pre>
-</li>
+<li><p>使用修改数据库信息的操作(无返回数据)</p>
+<pre><code> String sql="update user set LoginName='博哥' where Id=1";
+ int row = stmt.executeUpdate(sql);    //row：代表数据库受到影响的函数，一般来说，增删改都会提示数据库受影响的行，一般可以用来判断是否操作成功。</code></pre></li>
+<li><p>使用查询已提取数据库信息的操作(含返回数据)</p>
+<pre><code> String sql="select * from user";
+ ResultSet rs = stmt.executeQuery(sql);
+ List list=new ArrayList();
+ 查询的方法时executeQuery()，它接受一个ResultSet类型的结果，当读取数据库数据的时候，它有一个游标指针，指向数据库第一条记录，如果循环读取，每读一行指针就会下移一行数据，直到所有数据读取完毕。
+ 其中ResultSet类型的参数读取数据有两种方法。1.rs.get(索引)2.rs.get(数据库字段名)第一种就是所搜寻当前记录的第几条属性，1代表的就是搜到结果的第一个属性，以此类推。第二种就是直接输入字段名直接获得与之匹配的属性，数据库字段名不区分大小写。</code></pre></li>
 </ol>
 </li>
-<li>
-<p>关闭数据库的连接</p>
-<pre><code>connection.close();//关闭之前创建的数据库对象
-</code></pre>
-</li>
+<li><p>关闭数据库的连接</p>
+<pre><code> connection.close();//关闭之前创建的数据库对象</code></pre></li>
 </ol>
 <p>  其中的sql语句分为两种形式，不同类型的sql语句也会使用不同的数据库对象。</p>
 <ol>
-<li>
-<p>连接型</p>
-<pre><code>连接型的sql使用Statement类型的数据库对象，直接将完整的sql语句传入Statement的executeUpdate()/executeQuery()方法中来完成操作。
-Statement stmt = conniction.createStatement();
-int row = stmt.executeUpdate(sql);
-或者
-Statement stmt = conniction.createStatement();
-ResultSet rs = stmt.executeQuery(sql);	
-</code></pre>
-</li>
-<li>
-<p>索引型</p>
-<pre><code>索引型的sql使用PreparedStatement类型的数据库对象，将带有索引的sql语句传入connection的方法prepareStatement(sql)方法来完成操作。
-String sql = "seletc * from user where LoginName=? and LoginPwd=?"//其中的?代表的是之后要传入的值。
-PreparedStatement pstmt = connection.prepareStatement(sql);
-//将参数按照之前sql之中定义的顺序一一填入其中，第一个值为索引，就是?出现在sql语句中的第几个位置。第二个值为要传入该位置的确定的值。
-pstmt.setString(1,name);
-pstmt.setString(2,pwd);
-</code></pre>
-</li>
+<li><p>连接型</p>
+<pre><code> 连接型的sql使用Statement类型的数据库对象，直接将完整的sql语句传入Statement的executeUpdate()/executeQuery()方法中来完成操作。
+ Statement stmt = conniction.createStatement();
+ int row = stmt.executeUpdate(sql);
+ 或者
+ Statement stmt = conniction.createStatement();
+ ResultSet rs = stmt.executeQuery(sql);    </code></pre></li>
+<li><p>索引型</p>
+<pre><code> 索引型的sql使用PreparedStatement类型的数据库对象，将带有索引的sql语句传入connection的方法prepareStatement(sql)方法来完成操作。
+ String sql = "seletc * from user where LoginName=? and LoginPwd=?"//其中的?代表的是之后要传入的值。
+ PreparedStatement pstmt = connection.prepareStatement(sql);
+ //将参数按照之前sql之中定义的顺序一一填入其中，第一个值为索引，就是?出现在sql语句中的第几个位置。第二个值为要传入该位置的确定的值。
+ pstmt.setString(1,name);
+ pstmt.setString(2,pwd);</code></pre></li>
 </ol>
-<p>  其中索引型要比连接型更加的安全，更加快捷。<br>
-<img src="https://study-image-1259719447.cos.ap-chengdu.myqcloud.com/%E8%BF%9E%E6%8E%A5%E5%9E%8B%E5%AD%97%E6%AE%B5%E7%9A%84%E5%BC%8A%E7%AB%AF.png" alt="连接型字段的弊端"><br>
-可以直接通过上面图片显示的方法直接登录，即使数据库中没有用户的登录名为"‘or 1=1 or’"。</p>
+<p>  其中索引型要比连接型更加的安全，更加快捷。<br><img src="https://study-image-1259719447.cos.ap-chengdu.myqcloud.com/%E8%BF%9E%E6%8E%A5%E5%9E%8B%E5%AD%97%E6%AE%B5%E7%9A%84%E5%BC%8A%E7%AB%AF.png" alt="连接型字段的弊端"><br>可以直接通过上面图片显示的方法直接登录，即使数据库中没有用户的登录名为”‘or 1=1 or’”。</p>
+<p>​<br>​<br>​        </p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -470,285 +348,220 @@ pstmt.setString(2,pwd);
             document.body.appendChild(img);
           });
       </script>
-      
     </div>
-    
-    
-    
 
     
-
     
-
     
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/博客/" rel="tag"><i class="fa fa-tag"></i> 博客</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2019/07/15/记190715/" rel="next" title="记190715">
-                <i class="fa fa-chevron-left"></i> 记190715
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/07/16/记190716/" rel="prev" title="记190716">
-                记190716 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-
-    <div class="post-spread">
-      
-    </div>
-  </div>
-
-
-          </div>
-          
-
-
-          
-
-  
-
-
-
-        </div>
         
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
 
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
-
-      <section class="site-overview-wrap sidebar-panel">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <img class="site-author-image" itemprop="image" src="https://study-image-1259719447.cos.ap-chengdu.myqcloud.com/%E7%B4%A2%E7%BD%97.jpg" alt="Joker">
-            
-              <p class="site-author-name" itemprop="name">Joker</p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
-
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives/">
-              
-                  <span class="site-state-item-count">164</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">15</span>
-                  <span class="site-state-item-name">分类</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">11</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
-            
-
-          </nav>
-
-          
-
-          
-            <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/AggressiveJokerJD" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="mailto:910368490@qq.com" target="_blank" title="E-Mail">
-                      
-                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
-                  </span>
-                
-            </div>
-          
-
-          
-          
-
-          
-          
-
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=442319&auto=1&height=66"></iframe>
-
-          
-
-        </div>
-      </section>
-
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#jdbc架构"><span class="nav-number">1.</span> <span class="nav-text">JDBC架构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#jdbc双层架构"><span class="nav-number">1.1.</span> <span class="nav-text">JDBC双层架构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jdbc三层架构"><span class="nav-number">1.2.</span> <span class="nav-text">JDBC三层架构</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#jdbc的基本步骤"><span class="nav-number">2.</span> <span class="nav-text">JDBC的基本步骤</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
-      
-
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Joker</span>
-
-  
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Joker
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://yoursite.com/2019/07/16/Java-JDBC学习/" title="Java_JDBC学习">http://yoursite.com/2019/07/16/Java-JDBC学习/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
-
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
-
-
-
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/博客/" rel="tag"><i class=“fa fa-tag”></i># 博客</a>
+          </div>
 
         
 
 
-
-
-
-
-
         
-      </div>
-    </footer>
-
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2019/07/15/记190715/" rel="prev" title="记190715">
+      <i class="fa fa-chevron-left"></i> 记190715
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2019/07/16/记190716/" rel="next" title="记190716">
+      记190716 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-    
+  </article>
+  
+  
+  
 
   </div>
 
-  
 
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
   }
 </script>
 
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#JDBC架构"><span class="nav-number">1.</span> <span class="nav-text">JDBC架构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#JDBC双层架构"><span class="nav-number">1.1.</span> <span class="nav-text">JDBC双层架构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JDBC三层架构"><span class="nav-number">1.2.</span> <span class="nav-text">JDBC三层架构</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JDBC的基本步骤"><span class="nav-number">2.</span> <span class="nav-text">JDBC的基本步骤</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Joker"
+      src="https://study-image-1259719447.cos.ap-chengdu.myqcloud.com/%E7%B4%A2%E7%BD%97.jpg">
+  <p class="site-author-name" itemprop="name">Joker</p>
+  <div class="site-description" itemprop="description">我希望自己能够有提升，而不仅仅是没有事情做而已.</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">165</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/AggressiveJokerJD" title="GitHub → https://github.com/AggressiveJokerJD" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:910368490@qq.com" title="E-Mail → mailto:910368490@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Joker</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">328k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">4:58</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://pisces.theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.6.0
+  </div>
+
+        
 
 
 
 
 
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/pisces.js"></script>
+<script src="/js/next-boot.js"></script>
 
 
 
   
 
 
-  
 
 
 
@@ -760,162 +573,27 @@ pstmt.setString(2,pwd);
 
 
 
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  
-
-
-  
-
-  
-
-
-  
-  <script type="text/javascript" color="46,254,64" opacity="0.7" zindex="-2" count="85" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
-  
-
-<script type="text/javascript" src="/js/google-code-prettify/prettify.js"></script>
-<script type="text/javascript">
-$(window).load(function(){
-   $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
-   prettyPrint();
- })    
+<script>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme: 'forest',
+      logLevel: 3,
+      flowchart: { curve: 'linear' },
+      gantt: { axisFormat: '%m/%d/%Y' },
+      sequence: { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
 </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+
+  
+
+  
+
+  
+
 
 
 
