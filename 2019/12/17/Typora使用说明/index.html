@@ -182,7 +182,7 @@
   </li>
         <li class="menu-item menu-item-need_to_do">
 
-    <a href="/categories/need-to-do" rel="section"><i class="fa fa-fw fa-flag"></i>need_to_do</a>
+    <a href="/categories/need-to-do" rel="section"><i class="fa fa-fw fa-flag"></i>干呗</a>
 
   </li>
   </ul>
@@ -256,7 +256,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>3.8k</span>
+              <span>3.7k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -276,24 +276,29 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="总览"><a href="#总览" class="headerlink" title="总览"></a>总览</h2><hr>
+        <h2 id="总览">总览</h2>
+<hr>
 <p>  <strong>Markdown</strong>由<a href="http://daringfireball.net/" target="_blank" rel="noopener">Daring Fireball</a>创建；原始说明文档在<a href="http://daringfireball.net/projects/markdown/syntax" target="_blank" rel="noopener">这里</a>。</p>
-<p>  之前写博客才接触到了<strong>Markdown</strong>,然后一直使用的是<strong>MarkdownPad2</strong>那个软件，其实还是能够基本满足使用的，但是没有导出等功能，然后就了解到了<strong>Typora</strong>，用了之后是发现真的比较好用的，直接就将渲染后的效果直接显示。然后不同的编译器之间有一些语法的差异，所以在这里就整理一下<strong>Typora</strong>的使用文档吧。</p>
+<p>  之前写博客才接触到了__Markdown__,然后一直使用的是<strong>MarkdownPad2</strong>那个软件，其实还是能够基本满足使用的，但是没有导出等功能，然后就了解到了<strong>Typora</strong>，用了之后是发现真的比较好用的，直接就将渲染后的效果直接显示。然后不同的编译器之间有一些语法的差异，所以在这里就整理一下<strong>Typora</strong>的使用文档吧。</p>
 <p>  <strong>Markdown</strong>语法基本分为三块：块元素，跨度元素和HTML元素。</p>
-<h2 id="块元素"><a href="#块元素" class="headerlink" title="块元素"></a>块元素</h2><hr>
-<h3 id="段落和换行符"><a href="#段落和换行符" class="headerlink" title="段落和换行符"></a>段落和换行符</h3><hr>
+<h2 id="块元素">块元素</h2>
+<hr>
+<h3 id="段落和换行符">段落和换行符</h3>
+<hr>
 <p>  在Markdown语法中，换行一般为文段末尾跟两个空格或者两个以上的空行（多个<code>Enter</code>），也可以在文段末尾跟上<code>&lt;br/&gt;</code>或者<code>&lt;br&gt;</code>，可以实现换行，在Typora中只需要一个空白行(一下<code>Enter</code>)即可创建新段落。</p>
 <p>  使用<code>Shift+Enter</code>可以创建单个换行符，一般的编译器会忽略单个换行符。</p>
-<h3 id="标头"><a href="#标头" class="headerlink" title="标头"></a>标头</h3><hr>
+<h3 id="标头">标头</h3>
+<hr>
 <p>  使用<code>#</code>在一个空白行的开头来标识标头，可以使用1-6个<code>#</code>之后带一个<code>空格</code>对应标头级别1-6。</p>
 <p>  也可以使用<code>&lt;h1&gt;</code>等HTML语法来标识1-6级别的标头。</p>
 <p>  而在Typora中也可以使用快捷键<code>Ctrl+1-6(数字键)</code>直接创建相应级别的标头。</p>
-<pre><code class="lang-markdown">    1. #(1-6个) 标头信息
-    2. &lt;h1&gt;一级标头内容&lt;/h1&gt;
-        &lt;h2&gt;二级标头内容&lt;/h2&gt;
-    3. Ctrl+大键盘数字键1-6，然后直接输入相应标题内容即可
+<pre><code class="language-markdown">	1. #(1-6个) 标头信息
+	2. &lt;h1&gt;一级标头内容&lt;/h1&gt;
+		&lt;h2&gt;二级标头内容&lt;/h2&gt;
+	3. Ctrl+大键盘数字键1-6，然后直接输入相应标题内容即可
 </code></pre>
-<h3 id="块引用"><a href="#块引用" class="headerlink" title="块引用"></a>块引用</h3><hr>
+<h3 id="块引用">块引用</h3>
+<hr>
 <p>  块引用是在一个空白行上用<code>&gt;</code>后面跟<code>Space</code>来实现的，也可以在一个快引用内部嵌套更多的块引用。</p>
 <blockquote>
 <p>这是一个块引用，使用了<code>&gt;</code>+<code>Space</code>创建。</p>
@@ -301,7 +306,8 @@
 <p>这个是块引用内部的块引用，在上层块引用的空白行内使用<code>&gt;</code>+<code>Space</code>创建</p>
 </blockquote>
 </blockquote>
-<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><hr>
+<h3 id="列表">列表</h3>
+<hr>
 <p>创建一个无序列表使用<code>*/+/-</code>+<code>Space</code>创建一个无序列表。</p>
 <ul>
 <li>苹果</li>
@@ -320,24 +326,28 @@
 <li>[ ] Orange</li>
 </ul>
 <p>可以单击复选框更改状态。</p>
-<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><hr>
-<p>  使用<code>``` </code>+<code>Enter</code>可以创建一个代码块，然后可以在下方的语言栏输入相应的语言名称，等同于<code>```语言名称</code>+<code>Enter</code>。</p>
-<pre><code class="lang-c">#include &lt;stdio.h&gt;
+<h3 id="代码块">代码块</h3>
+<hr>
+<p>  使用<code>```</code>+<code>Enter</code>可以创建一个代码块，然后可以在下方的语言栏输入相应的语言名称，等同于````语言名称<code>+</code>Enter`。</p>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
 
 void main(){
     printf("This is a C language code block!");
 }
 </code></pre>
-<h3 id="数学块"><a href="#数学块" class="headerlink" title="数学块"></a>数学块</h3><hr>
+<h3 id="数学块">数学块</h3>
+<hr>
 <p>  我们可以在Typora中直接写出自己想要的数学公式，在Typora中通过<strong>MathJax</strong>渲染<em>LaTeX</em>数学表达式。</p>
-<p>  通过使用$$$$+<code>Enter</code>来出发一个接收<em>Tex/LaTex</em>源输入字段。</p>
-<script type="math/tex; mode=display">
-\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
-\mathbf{i} & \mathbf{j} & \mathbf{k} \\\\
-\frac{\partial X}{\partial u} &  \frac{\partial Y}{\partial u} & 0 \\\\
-\frac{\partial X}{\partial v} &  \frac{\partial Y}{\partial v} & 0 \\\\
-\end{vmatrix}</script><p>上述的数学公式的表达式为：</p>
-<pre><code class="lang-markdown">$$
+<p>  通过使用<code>$$</code>+<code>Enter</code>来出发一个接收<em>Tex/LaTex</em>源输入字段。<br>
+$$<br>
+\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}<br>
+\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\<br>
+\frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 \\<br>
+\frac{\partial X}{\partial v} &amp;  \frac{\partial Y}{\partial v} &amp; 0 \\<br>
+\end{vmatrix}<br>
+$$<br>
+上述的数学公式的表达式为：</p>
+<pre><code class="language-markdown">$$
 \mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
 \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\\\
 \frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 \\\\
@@ -346,10 +356,10 @@ void main(){
 $$
 </code></pre>
 <p>我们可以在<a href="http://support.typora.io/Math/#math-block-display-math" target="_blank" rel="noopener">这里</a>查看到更多的和数学相关的知识。</p>
-<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><hr>
+<h3 id="表格">表格</h3>
+<hr>
 <p>  我们可以像Word一样插入一个表格，而且Typora支持创建表格后任意的修改它。所以为了简单起见我们其实可以直接创建一个2*2的表格之后直接手动的修改其大小和布局。当然也可以严谨的使用Markdown相关语法 创建完整表格。</p>
 <p>  我们输入<code>|表格标头1|表格标头2|</code>+<code>Enter</code>即可创建一个2*2大小的表格。然后你就可以为它</p>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -360,62 +370,80 @@ $$
 <tbody>
 <tr>
 <td style="text-align:left"></td>
+<td></td>
 </tr>
 </tbody>
 </table>
-</div>
 <p>可以直接在上面的表中进行对表格的插入和删除，也可以对其中内容格式进行规定。</p>
-<h3 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h3><hr>
+<h3 id="脚注">脚注</h3>
+<hr>
 <p>  使用<code>[^脚注名称]</code>和一个在之后文章中的解释如<code>[^脚注名称]：解释</code>即可实现相应的效果…</p>
-<p>众所周知的三个苹果<sup><a href="#fn_1" id="reffn_1">1</a></sup>是什么呢…,可以将鼠标移至前述脚注处查看效果。</p>
-<h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><hr>
+<p>众所周知的三个苹果<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>是什么呢…,可以将鼠标移至前述脚注处查看效果。</p>
+<h3 id="分割线">分割线</h3>
+<hr>
 <p>  在空白行上输<code>---/***</code>+<code>Enter</code>即可绘制一条分割线。</p>
-<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><hr>
+<h3 id="目录">目录</h3>
+<hr>
 <p>  在空白行输<code>[toc]</code>+<code>Enter</code>会将本文中的标题列为一个目录，会根据文章的改动而自动更新。这个是一个本篇文章的效果图。由于hexo好像无法在文章内部集成目录，所以无法解析文章内部的Toc命令。</p>
 <p><img src="https://study-image-1259719447.cos.ap-chengdu.myqcloud.com/%E7%9B%AE%E5%BD%95.png" alt="目录"></p>
-<h2 id="跨度元素"><a href="#跨度元素" class="headerlink" title="跨度元素"></a>跨度元素</h2><hr>
-<h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><hr>
-<p>  内联链接：使用<code>[链接的名称](#文章内部的块的名称)</code>即可创建一个链接<a href="#代码块">code block</a>，单机这个链接将跳转到文章上方的代码块部份。</p>
+<h2 id="跨度元素">跨度元素</h2>
+<hr>
+<h3 id="链接">链接</h3>
+<hr>
+<p>  内联链接：使用<code>[链接的名称](#文章内部的块的名称)</code>即可创建一个链接<a href="#%E4%BB%A3%E7%A0%81%E5%9D%97">code block</a>，单机这个链接将跳转到文章上方的代码块部份。</p>
 <p>  普通的链接：就是使用<code>[链接名称](链接的url)</code>可以跳转到相应的url网址。这是一个到<a href="http://google.com/" target="_blank" rel="noopener">Google</a>的链接。</p>
-<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><hr>
+<h3 id="图片">图片</h3>
+<hr>
 <p>  使用<code>![图片名称](图片url)</code>应用图片。</p>
 <p><img src="https://aggressivejoker-image-1259719447.cos.ap-chengdu.myqcloud.com/%E5%B0%8F%E8%88%9F.jpg" alt=""></p>
 <p>也可以直接将图片拖入文档中，会直接识别相对路径。</p>
-<h3 id="格式"><a href="#格式" class="headerlink" title="格式"></a>格式</h3><hr>
+<h3 id="格式">格式</h3>
+<hr>
 <p>  <code>*斜体文字*/_斜体文字_</code>：将创建出斜体效果，<em>这里应该是斜体。</em></p>
 <p>  <code>**加粗文字**/__加粗文字__</code>：将创建出加粗效果，<strong>这里应该是加粗。</strong></p>
 <p>  使用（`）将代码括起来即可，与效果<code>&lt;code&gt;&lt;/code&gt;</code>相同。</p>
-<p>  删除线：使用<code>~~要产生删除线的内容~~</code>即可，<del>这里应该被删除</del></p>
+<p>  删除线：使用<code>~~要产生删除线的内容~~</code>即可，<s>这里应该被删除</s></p>
 <p>  下划线：使用<code>&lt;u&gt;&lt;/u&gt;</code>，<u>这里有下划线</u></p>
 <p>  下标：我无法正常使用Typora的相关功能，在设置开启也不可以，所以可以直接使用<code>&lt;sub&gt;下表&lt;/sub&gt;</code>来标记:H<sub>2</sub>O.</p>
 <p>  上标：和上同，直接使用<code>&lt;sup&gt;上标&lt;/sup&gt;</code>来标记：X<sup>2</sup>.</p>
-<h3 id="表情"><a href="#表情" class="headerlink" title="表情"></a>表情</h3><hr>
+<h3 id="表情">表情</h3>
+<hr>
 <p>想要Markdown使用标签，需要为Markdown更换渲染器。</p>
-<p>使用<code>:相关表情的名字:</code>即可产生所输入名字的表情，如我输入<code>:older_man:</code>::older_man:就出现了这个表情。</p>
+<p>使用<code>:相关表情的名字:</code>即可产生所输入名字的表情，如我输入<code>:older_man:</code>:👴就出现了这个表情。</p>
 <p>如果要在<strong>Hexo</strong>中添加表情，那么需要跟换hexo的markdown渲染器，具体步骤可以参考<a href="https://chaxiaoniu.oschina.io/2017/07/10/HexoAddEmoji" target="_blank" rel="noopener">这里</a>.</p>
-<h3 id="内联数学"><a href="#内联数学" class="headerlink" title="内联数学"></a>内联数学</h3><hr>
-<p>相关知识可以参考本文章之前的<a href="#数学块">数学块</a>相关内容。</p>
+<h3 id="内联数学">内联数学</h3>
+<hr>
+<p>相关知识可以参考本文章之前的<a href="#%E6%95%B0%E5%AD%A6%E5%9D%97">数学块</a>相关内容。</p>
 <p>这里如果要在<strong>Hexo</strong>中显示相关数学公式，需要安装<strong>mathjax</strong>相关的插件，具体步骤可以参考<a href="http://stevenshi.me/2017/06/26/hexo-insert-formula/" target="_blank" rel="noopener">这里</a>.</p>
-<h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><hr>
-<h3 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h3><hr>
-<p><iframe width="560" height="315" src="https://www.youtube.com/embed/kWs00knpQwg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe><br>可以直接去视频网址选择分享，方式为嵌入(如果有的话)。</p>
-<pre><code class="lang-html">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/kWs00knpQwg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+<h2 id="html">HTML</h2>
+<hr>
+<h3 id="视频">视频</h3>
+<hr>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kWs00knpQwg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+可以直接去视频网址选择分享，方式为嵌入(如果有的话)。
+<pre><code class="language-html">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/kWs00knpQwg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 </code></pre>
 <p>如上所示的代码即为该视频的外部分享链接。</p>
-<h3 id="音乐"><a href="#音乐" class="headerlink" title="音乐"></a>音乐</h3><hr>
+<h3 id="音乐">音乐</h3>
+<hr>
 <p>可以使用这种方式：</p>
-<pre><code class="lang-markdown">{% aplayerlrc "歌曲名" "创作着" "url" "歌曲播放封面图片url" "autoplay" %}
+<pre><code class="language-markdown">{% aplayerlrc "歌曲名" "创作着" "url" "歌曲播放封面图片url" "autoplay" %}
 歌词的lrc文件
 {% endaplayerlrc %}
 </code></pre>
 <p>也可以这样：</p>
-<p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&amp;id=864711417&amp;auto=1&amp;height=66"></iframe><br>这种必须要在音乐网站的歌曲开放外部链接的前提下才可以使用。</p>
-<pre><code class="lang-html">&lt;iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&amp;id=864711417&amp;auto=1&amp;height=66"&gt;&lt;/iframe&gt;
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&amp;id=864711417&amp;auto=1&amp;height=66"></iframe>
+这种必须要在音乐网站的歌曲开放外部链接的前提下才可以使用。
+<pre><code class="language-html">&lt;iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&amp;id=864711417&amp;auto=1&amp;height=66"&gt;&lt;/iframe&gt;
 </code></pre>
 <p>而上述的第一种可以使用到<strong>Hexo</strong>文章中…</p>
-<blockquote id="fn_1">
-<sup>1</sup>. 第一个苹果被夏娃吃了，第二个苹果砸中了牛顿，第三个给了福布斯.<a href="#reffn_1" title="Jump back to footnote [1] in the text."> ↩</a>
-</blockquote>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>第一个苹果被夏娃吃了，第二个苹果砸中了牛顿，第三个给了福布斯. <a href="#fnref1" class="footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -535,7 +563,7 @@ $$
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#总览"><span class="nav-number">1.</span> <span class="nav-text">总览</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#块元素"><span class="nav-number">2.</span> <span class="nav-text">块元素</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#段落和换行符"><span class="nav-number">2.1.</span> <span class="nav-text">段落和换行符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#标头"><span class="nav-number">2.2.</span> <span class="nav-text">标头</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#块引用"><span class="nav-number">2.3.</span> <span class="nav-text">块引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#列表"><span class="nav-number">2.4.</span> <span class="nav-text">列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码块"><span class="nav-number">2.5.</span> <span class="nav-text">代码块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数学块"><span class="nav-number">2.6.</span> <span class="nav-text">数学块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表格"><span class="nav-number">2.7.</span> <span class="nav-text">表格</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#脚注"><span class="nav-number">2.8.</span> <span class="nav-text">脚注</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分割线"><span class="nav-number">2.9.</span> <span class="nav-text">分割线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#目录"><span class="nav-number">2.10.</span> <span class="nav-text">目录</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#跨度元素"><span class="nav-number">3.</span> <span class="nav-text">跨度元素</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#链接"><span class="nav-number">3.1.</span> <span class="nav-text">链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图片"><span class="nav-number">3.2.</span> <span class="nav-text">图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#格式"><span class="nav-number">3.3.</span> <span class="nav-text">格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表情"><span class="nav-number">3.4.</span> <span class="nav-text">表情</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#内联数学"><span class="nav-number">3.5.</span> <span class="nav-text">内联数学</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML"><span class="nav-number">4.</span> <span class="nav-text">HTML</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#视频"><span class="nav-number">4.1.</span> <span class="nav-text">视频</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#音乐"><span class="nav-number">4.2.</span> <span class="nav-text">音乐</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#总览"><span class="nav-number">1.</span> <span class="nav-text">总览</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#块元素"><span class="nav-number">2.</span> <span class="nav-text">块元素</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#段落和换行符"><span class="nav-number">2.1.</span> <span class="nav-text">段落和换行符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#标头"><span class="nav-number">2.2.</span> <span class="nav-text">标头</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#块引用"><span class="nav-number">2.3.</span> <span class="nav-text">块引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#列表"><span class="nav-number">2.4.</span> <span class="nav-text">列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码块"><span class="nav-number">2.5.</span> <span class="nav-text">代码块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数学块"><span class="nav-number">2.6.</span> <span class="nav-text">数学块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表格"><span class="nav-number">2.7.</span> <span class="nav-text">表格</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#脚注"><span class="nav-number">2.8.</span> <span class="nav-text">脚注</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分割线"><span class="nav-number">2.9.</span> <span class="nav-text">分割线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#目录"><span class="nav-number">2.10.</span> <span class="nav-text">目录</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#跨度元素"><span class="nav-number">3.</span> <span class="nav-text">跨度元素</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#链接"><span class="nav-number">3.1.</span> <span class="nav-text">链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图片"><span class="nav-number">3.2.</span> <span class="nav-text">图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#格式"><span class="nav-number">3.3.</span> <span class="nav-text">格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表情"><span class="nav-number">3.4.</span> <span class="nav-text">表情</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#内联数学"><span class="nav-number">3.5.</span> <span class="nav-text">内联数学</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#html"><span class="nav-number">4.</span> <span class="nav-text">HTML</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#视频"><span class="nav-number">4.1.</span> <span class="nav-text">视频</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#音乐"><span class="nav-number">4.2.</span> <span class="nav-text">音乐</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -607,13 +635,13 @@ $$
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">320k</span>
+    <span title="站点总字数">1.3m</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">4:51</span>
+    <span title="站点阅读时长">19:59</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0
   </div>

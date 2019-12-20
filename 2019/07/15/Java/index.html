@@ -179,7 +179,7 @@
   </li>
         <li class="menu-item menu-item-need_to_do">
 
-    <a href="/categories/need-to-do" rel="section"><i class="fa fa-fw fa-flag"></i>need_to_do</a>
+    <a href="/categories/need-to-do" rel="section"><i class="fa fa-fw fa-flag"></i>干呗</a>
 
   </li>
   </ul>
@@ -253,7 +253,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2.4k</span>
+              <span>2.6k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -274,85 +274,124 @@
       
         <p>  就是最近也正好在做小学期了嘛，觉得有必要整理一下之前学习过的Java，其实基本就是从零开始了，很多东西都忘记了的。</p>
 <a id="more"></a>
-<h1 id="JAVA基础"><a href="#JAVA基础" class="headerlink" title="JAVA基础"></a>JAVA基础</h1><hr>
+<h1>JAVA基础</h1>
+<hr>
 <p>  </p>
-<h1 id="JAVA面向对象"><a href="#JAVA面向对象" class="headerlink" title="JAVA面向对象"></a>JAVA面向对象</h1><hr>
+<h1>JAVA面向对象</h1>
+<hr>
 <p>  主要就是关于Java的面向对象的知识，有继承，抽象，接口等。对于面向对象的语言来说还是非常重要的。</p>
-<h2 id="Java继承"><a href="#Java继承" class="headerlink" title="Java继承"></a>Java继承</h2><hr>
+<h2 id="java继承">Java继承</h2>
+<hr>
 <p>  继承就是子类继承父类的特征和行为，使得子类对象（实例）具有父类的实例域和方法，或子类从父类继承方法，使得子类具有父类相同的行为。继承需要符合的关系是：is a，父类更通用，子类更具体。</p>
-<pre><code>    class 父类{
-    }
-    class 子类 extend 父类{
-    }
-</code></pre><p>  对于继承的使用可以减少部分代码重复，增强可维护性。</p>
+<pre><code>	class 父类{
+	}
+	class 子类 extend 父类{
+	}
+</code></pre>
+<p>  对于继承的使用可以减少部分代码重复，增强可维护性。</p>
 <p>  Java不支持多继承，但是支持多重继承。(继承可以使用<code>extends</code>和<code>implements</code>两个关键词)，使用implements可以变相的使java具有多继承特性，一般为类继承(实现)接口的时候，可以实现多个接口(接口间使用逗号分隔)。</p>
-<pre><code>    super关键字：我们可以通过super关键字来实现对父类成员的访问，用来引用当前对象的父类。(继承父类的公有方法和属性)
-    this关键字：指向自己的引用。
-    final 关键字声明类可以把类定义为不能继承的，即最终类；或者用于修饰方法，该方法不能被子类重写。
-</code></pre><p>子类是不继承父类的构造器（构造方法或者构造函数）的，它只是调用（隐式或显式）。如果父类的构造器带有参数，则必须在子类的构造器中显式地通过 super 关键字调用父类的构造器并配以适当的参数列表。</p>
-<p>如果父类构造器没有参数，则在子类的构造器中不需要使用 super 关键字调用父类构造器，系统会自动调用父类的无参构造器。    </p>
-<pre><code>    class SuperClass {
-      private int n;
-      SuperClass(){
-        System.out.println("SuperClass()");
-      }
-      SuperClass(int n) {
-        System.out.println("SuperClass(int n)");
-        this.n = n;
-      }
-    }
-    // SubClass 类继承
-    class SubClass extends SuperClass{
-      private int n;
-
-      SubClass(){ // 自动调用父类的无参数构造器
-        System.out.println("SubClass");
-      }  
-
-      public SubClass(int n){ 
-        super(300);  // 调用父类中带有参数的构造器
-        System.out.println("SubClass(int n):"+n);
-        this.n = n;
-      }
-    }
-    // SubClas2 类继承
-    class SubClass2 extends SuperClass{
-      private int n;
-
-      SubClass2(){
-        super(300);  // 调用父类中带有参数的构造器
-        System.out.println("SubClass2");
-      }  
-
-      public SubClass2(int n){ // 自动调用父类的无参数构造器
-        System.out.println("SubClass2(int n):"+n);
-        this.n = n;
-      }
-    }
-    public class TestSuperSub{
-      public static void main (String args[]){
-        System.out.println("------SubClass 类继承------");
-        SubClass sc1 = new SubClass();
-        SubClass sc2 = new SubClass(100); 
-        System.out.println("------SubClass2 类继承------");
-        SubClass2 sc3 = new SubClass2();
-        SubClass2 sc4 = new SubClass2(200); 
-      }
-    }
-</code></pre><h2 id="重写和重载"><a href="#重写和重载" class="headerlink" title="重写和重载"></a>重写和重载</h2><hr>
+<pre><code>	super关键字：我们可以通过super关键字来实现对父类成员的访问，用来引用当前对象的父类。(继承父类的公有方法和属性)
+	this关键字：指向自己的引用。
+	final 关键字声明类可以把类定义为不能继承的，即最终类；或者用于修饰方法，该方法不能被子类重写。
+</code></pre>
+<p>子类是不继承父类的构造器（构造方法或者构造函数）的，它只是调用（隐式或显式）。如果父类的构造器带有参数，则必须在子类的构造器中显式地通过 super 关键字调用父类的构造器并配以适当的参数列表。</p>
+<p>如果父类构造器没有参数，则在子类的构造器中不需要使用 super 关键字调用父类构造器，系统会自动调用父类的无参构造器。</p>
+<pre><code>	class SuperClass {
+	  private int n;
+	  SuperClass(){
+	    System.out.println("SuperClass()");
+	  }
+	  SuperClass(int n) {
+	    System.out.println("SuperClass(int n)");
+	    this.n = n;
+	  }
+	}
+	// SubClass 类继承
+	class SubClass extends SuperClass{
+	  private int n;
+	  
+	  SubClass(){ // 自动调用父类的无参数构造器
+	    System.out.println("SubClass");
+	  }  
+	  
+	  public SubClass(int n){ 
+	    super(300);  // 调用父类中带有参数的构造器
+	    System.out.println("SubClass(int n):"+n);
+	    this.n = n;
+	  }
+	}
+	// SubClas2 类继承
+	class SubClass2 extends SuperClass{
+	  private int n;
+	  
+	  SubClass2(){
+	    super(300);  // 调用父类中带有参数的构造器
+	    System.out.println("SubClass2");
+	  }  
+	  
+	  public SubClass2(int n){ // 自动调用父类的无参数构造器
+	    System.out.println("SubClass2(int n):"+n);
+	    this.n = n;
+	  }
+	}
+	public class TestSuperSub{
+	  public static void main (String args[]){
+	    System.out.println("------SubClass 类继承------");
+	    SubClass sc1 = new SubClass();
+	    SubClass sc2 = new SubClass(100); 
+	    System.out.println("------SubClass2 类继承------");
+	    SubClass2 sc3 = new SubClass2();
+	    SubClass2 sc4 = new SubClass2(200); 
+	  }
+	}
+</code></pre>
+<h2 id="重写和重载">重写和重载</h2>
+<hr>
 <p>  重写就是子类对继承于父类的某些方法的重写定义，然后形成满足自己需求的(类似)父类方法的方法。</p>
-<pre><code>    参数列表必须完全与被重写方法的相同；
-    返回类型与被重写方法的返回类型可以不相同，但是必须是父类返回值的派生类（java5 及更早版本返回类型要一样，java7 及更高版本可以不同）；
-    访问权限不能比父类中被重写的方法的访问权限更低。例如：如果父类的一个方法被声明为public，那么在子类中重写该方法就不能声明为protected。
-    父类的成员方法只能被它的子类重写。
-    声明为final的方法不能被重写。
-    声明为static的方法不能被重写，但是能够被再次声明。
-    子类和父类在同一个包中，那么子类可以重写父类所有方法，除了声明为private和final的方法。
-    子类和父类不在同一个包中，那么子类只能够重写父类的声明为public和protected的非final方法。
-    重写的方法能够抛出任何非强制异常，无论被重写的方法是否抛出异常。但是，重写的方法不能抛出新的强制性异常，或者比被重写方法声明的更广泛的强制性异常，反之则可以。
-    构造方法不能被重写。
-    如果不能继承一个方法，则不能重写这个方法。
-</code></pre><p>  重载(overloading) 是在一个类里面，方法名字相同，而参数不同。返回类型可以相同也可以不同。每个重载的方法（或者构造函数）都必须有一个独一无二的参数类型列表。最常用的地方就是构造器的重载。<br>区别点|重载|重写<br>—-|—-|—-<br>参数列表|必须修改|不变<br>返回类型|可以修改|不变<br>异常|可以修改|可以减少，但是不可抛出新的或者更广的异常<br>访问|可以修改|不能做更严格的限制</p>
+<pre><code>	参数列表必须完全与被重写方法的相同；
+	返回类型与被重写方法的返回类型可以不相同，但是必须是父类返回值的派生类（java5 及更早版本返回类型要一样，java7 及更高版本可以不同）；
+	访问权限不能比父类中被重写的方法的访问权限更低。例如：如果父类的一个方法被声明为public，那么在子类中重写该方法就不能声明为protected。
+	父类的成员方法只能被它的子类重写。
+	声明为final的方法不能被重写。
+	声明为static的方法不能被重写，但是能够被再次声明。
+	子类和父类在同一个包中，那么子类可以重写父类所有方法，除了声明为private和final的方法。
+	子类和父类不在同一个包中，那么子类只能够重写父类的声明为public和protected的非final方法。
+	重写的方法能够抛出任何非强制异常，无论被重写的方法是否抛出异常。但是，重写的方法不能抛出新的强制性异常，或者比被重写方法声明的更广泛的强制性异常，反之则可以。
+	构造方法不能被重写。
+	如果不能继承一个方法，则不能重写这个方法。
+</code></pre>
+<p>  重载(overloading) 是在一个类里面，方法名字相同，而参数不同。返回类型可以相同也可以不同。每个重载的方法（或者构造函数）都必须有一个独一无二的参数类型列表。最常用的地方就是构造器的重载。</p>
+<table>
+<thead>
+<tr>
+<th>区别点</th>
+<th>重载</th>
+<th>重写</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>参数列表</td>
+<td>必须修改</td>
+<td>不变</td>
+</tr>
+<tr>
+<td>返回类型</td>
+<td>可以修改</td>
+<td>不变</td>
+</tr>
+<tr>
+<td>异常</td>
+<td>可以修改</td>
+<td>可以减少，但是不可抛出新的或者更广的异常</td>
+</tr>
+<tr>
+<td>访问</td>
+<td>可以修改</td>
+<td>不能做更严格的限制</td>
+</tr>
+</tbody>
+</table>
 <p>  载就是同样的一个方法能够根据输入数据的不同，做出不同的处理。重写就是当子类继承自父类的相同方法，输入数据一样，但要做出有别于父类的响应时，你就要覆盖父类方法</p>
 <script>
         document.querySelectorAll('.github-emoji')
@@ -473,7 +512,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JAVA基础"><span class="nav-number">1.</span> <span class="nav-text">JAVA基础</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JAVA面向对象"><span class="nav-number">2.</span> <span class="nav-text">JAVA面向对象</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Java继承"><span class="nav-number">2.1.</span> <span class="nav-text">Java继承</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重写和重载"><span class="nav-number">2.2.</span> <span class="nav-text">重写和重载</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">1.</span> <span class="nav-text">JAVA基础</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">2.</span> <span class="nav-text">JAVA面向对象</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#java继承"><span class="nav-number">2.1.</span> <span class="nav-text">Java继承</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重写和重载"><span class="nav-number">2.2.</span> <span class="nav-text">重写和重载</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -545,13 +584,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">320k</span>
+    <span title="站点总字数">1.3m</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">4:51</span>
+    <span title="站点阅读时长">19:59</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0
   </div>
