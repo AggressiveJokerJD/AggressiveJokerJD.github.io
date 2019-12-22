@@ -25,7 +25,7 @@
     version: '7.6.0',
     exturl: false,
     sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
-    copycode: {"enable":true,"show_result":true,"style":"flat"},
+    copycode: {"enable":true,"show_result":true,"style":"mac"},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
     fancybox: false,
@@ -57,7 +57,7 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://study-image-1259719447.cos.ap-chengdu.myqcloud.com/%E7%9B%AE%E5%BD%95.png">
 <meta property="og:image" content="https://aggressivejoker-image-1259719447.cos.ap-chengdu.myqcloud.com/%E5%B0%8F%E8%88%9F.jpg">
-<meta property="og:updated_time" content="2019-12-18T20:22:03.261Z">
+<meta property="og:updated_time" content="2019-12-22T16:49:30.067Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Typora使用说明">
 <meta name="twitter:description" content="Typora真的是一个很好用的编辑器了吧，功能强大，而且真的美观...这里只是再巩固一下Typora相关的Markdown知识...">
@@ -196,6 +196,7 @@
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
+  <div class="reading-progress-bar"></div>
 
 
     <main class="main">
@@ -256,7 +257,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>3.7k</span>
+              <span>3.8k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -292,11 +293,7 @@
 <p>  使用<code>#</code>在一个空白行的开头来标识标头，可以使用1-6个<code>#</code>之后带一个<code>空格</code>对应标头级别1-6。</p>
 <p>  也可以使用<code>&lt;h1&gt;</code>等HTML语法来标识1-6级别的标头。</p>
 <p>  而在Typora中也可以使用快捷键<code>Ctrl+1-6(数字键)</code>直接创建相应级别的标头。</p>
-<pre><code class="language-markdown">	1. #(1-6个) 标头信息
-	2. &lt;h1&gt;一级标头内容&lt;/h1&gt;
-		&lt;h2&gt;二级标头内容&lt;/h2&gt;
-	3. Ctrl+大键盘数字键1-6，然后直接输入相应标题内容即可
-</code></pre>
+<figure class="highlight markdown"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">1. </span>#(1-6个) 标头信息</span><br><span class="line"><span class="bullet">2. </span><span class="xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span></span>一级标头内容<span class="xml"><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="code">	&lt;h2&gt;二级标头内容&lt;/h2&gt;</span></span><br><span class="line"><span class="bullet">3. </span>Ctrl+大键盘数字键1-6，然后直接输入相应标题内容即可</span><br></pre></td></tr></tbody></table></figure>
 <h3 id="块引用">块引用</h3>
 <hr>
 <p>  块引用是在一个空白行上用<code>&gt;</code>后面跟<code>Space</code>来实现的，也可以在一个快引用内部嵌套更多的块引用。</p>
@@ -328,13 +325,8 @@
 <p>可以单击复选框更改状态。</p>
 <h3 id="代码块">代码块</h3>
 <hr>
-<p>  使用<code>```</code>+<code>Enter</code>可以创建一个代码块，然后可以在下方的语言栏输入相应的语言名称，等同于````语言名称<code>+</code>Enter`。</p>
-<pre><code class="language-c">#include &lt;stdio.h&gt;
-
-void main(){
-    printf("This is a C language code block!");
-}
-</code></pre>
+<p>  使用 ```+<code>Enter</code>可以创建一个代码块，然后可以在下方的语言栏输入相应的语言名称，等同于```<code>语言名称</code>+<code>Enter</code>。</p>
+<figure class="highlight c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>{</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"This is a C language code block!"</span>);</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <h3 id="数学块">数学块</h3>
 <hr>
 <p>  我们可以在Typora中直接写出自己想要的数学公式，在Typora中通过<strong>MathJax</strong>渲染<em>LaTeX</em>数学表达式。</p>
@@ -347,14 +339,7 @@ $$<br>
 \end{vmatrix}<br>
 $$<br>
 上述的数学公式的表达式为：</p>
-<pre><code class="language-markdown">$$
-\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
-\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\\\
-\frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 \\\\
-\frac{\partial X}{\partial v} &amp;  \frac{\partial Y}{\partial v} &amp; 0 \\\\
-\end{vmatrix}
-$$
-</code></pre>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}</span><br><span class="line">\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\\\</span><br><span class="line">\frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 \\\\</span><br><span class="line">\frac{\partial X}{\partial v} &amp;  \frac{\partial Y}{\partial v} &amp; 0 \\\\</span><br><span class="line">\end{vmatrix}</span><br><span class="line">$$</span><br></pre></td></tr></tbody></table></figure>
 <p>我们可以在<a href="http://support.typora.io/Math/#math-block-display-math" target="_blank" rel="noopener">这里</a>查看到更多的和数学相关的知识。</p>
 <h3 id="表格">表格</h3>
 <hr>
@@ -421,21 +406,16 @@ $$
 <hr>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kWs00knpQwg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 可以直接去视频网址选择分享，方式为嵌入(如果有的话)。
-<pre><code class="language-html">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/kWs00knpQwg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-</code></pre>
+<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">width</span>=<span class="string">"560"</span> <span class="attr">height</span>=<span class="string">"315"</span> <span class="attr">src</span>=<span class="string">"https://www.youtube.com/embed/kWs00knpQwg"</span> <span class="attr">frameborder</span>=<span class="string">"0"</span> <span class="attr">allow</span>=<span class="string">"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"</span> <span class="attr">allowfullscreen</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
 <p>如上所示的代码即为该视频的外部分享链接。</p>
 <h3 id="音乐">音乐</h3>
 <hr>
 <p>可以使用这种方式：</p>
-<pre><code class="language-markdown">{% aplayerlrc "歌曲名" "创作着" "url" "歌曲播放封面图片url" "autoplay" %}
-歌词的lrc文件
-{% endaplayerlrc %}
-</code></pre>
+<figure class="highlight markdown"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">{% aplayerlrc "歌曲名" "创作着" "url" "歌曲播放封面图片url" "autoplay" %}</span><br><span class="line">歌词的lrc文件</span><br><span class="line">{% endaplayerlrc %}</span><br></pre></td></tr></tbody></table></figure>
 <p>也可以这样：</p>
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&amp;id=864711417&amp;auto=1&amp;height=66"></iframe>
 这种必须要在音乐网站的歌曲开放外部链接的前提下才可以使用。
-<pre><code class="language-html">&lt;iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&amp;id=864711417&amp;auto=1&amp;height=66"&gt;&lt;/iframe&gt;
-</code></pre>
+<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">frameborder</span>=<span class="string">"no"</span> <span class="attr">border</span>=<span class="string">"0"</span> <span class="attr">marginwidth</span>=<span class="string">"0"</span> <span class="attr">marginheight</span>=<span class="string">"0"</span> <span class="attr">width</span>=<span class="string">330</span> <span class="attr">height</span>=<span class="string">86</span> <span class="attr">src</span>=<span class="string">"//music.163.com/outchain/player?type=2&amp;id=864711417&amp;auto=1&amp;height=66"</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
 <p>而上述的第一种可以使用到<strong>Hexo</strong>文章中…</p>
 <hr class="footnotes-sep">
 <section class="footnotes">
@@ -487,8 +467,9 @@ $$
 
 
       <footer class="post-footer">
+          
           <div class="post-tags">
-              <a href="/tags/Typora/" rel="tag"><i class=“fa fa-tag”></i># Typora</a>
+              <a href="/tags/Typora/" rel="tag"><i class=“fa fa-tag”></i><i class="fa fa-tag"></i> Typora</a>
           </div>
 
         
@@ -579,7 +560,7 @@ $$
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">167</span>
+          <span class="site-state-item-count">168</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -635,13 +616,13 @@ $$
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">1.3m</span>
+    <span title="站点总字数">1.4m</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">20:19</span>
+    <span title="站点阅读时长">20:28</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0
   </div>
