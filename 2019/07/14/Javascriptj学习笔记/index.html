@@ -254,7 +254,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2k</span>
+              <span>2.1k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -274,12 +274,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="js基础">Js基础</h2>
-<hr>
+        <h2 id="Js基础"><a href="#Js基础" class="headerlink" title="Js基础"></a>Js基础</h2><hr>
 <p>  记录可能会不是很详细，有什么不懂可以直接去<a href="https://www.w3schools.com/js/js_syntax.asp" target="_blank" rel="noopener"><font color="lightblue">w3school</font></a>网站查看具体详细的教程。</p>
 <p>  一般在HTML中使用JS最多的是<code>getElementById()</code>方法,可以用来修改HTML的内容，属性值，和样式(CSS)等。可以将Javascript代码放到<code>&lt;head&gt;</code>或者<code>&lt;body&gt;</code>中或者放在外部，通过<code>&lt;script&gt;</code>的<code>src</code>属性直接引入即可。一般会使用外部引入的方法，可以更加有效的管理脚本和网页内容。</p>
-<pre><code>	放置在&lt;head&gt;中的script：
-	&lt;head&gt;
+<pre><code>    放置在&lt;head&gt;中的script：
+    &lt;head&gt;
     &lt;meta charset="utf-8"&gt;
     &lt;title&gt;Javascript_Test&lt;/title&gt;
     &lt;script&gt;
@@ -294,8 +293,8 @@
         &lt;button type="button" onclick="myfunction()"&gt;翻页&lt;/button&gt;
     &lt;/body&gt;
 
-	放在&lt;body&gt;中的script：效果完全一样，只是位置不同
-	&lt;body&gt;
+    放在&lt;body&gt;中的script：效果完全一样，只是位置不同
+    &lt;body&gt;
     &lt;h1&gt;A head Javascript&lt;/h1&gt;&lt;br&gt;
     &lt;p id = "demo"&gt;A page!&lt;/p&gt;&lt;br&gt;
     &lt;button type="button" onclick="myfunction()"&gt;翻页&lt;/button&gt;
@@ -305,36 +304,10 @@
                 document.getElementById("demo").innerHTML = "Paragraph changed."
             }
     &lt;/script&gt;
-	&lt;/body&gt;
-</code></pre>
-<p>  Javascript的输出方式。</p>
-<table>
-<thead>
-<tr>
-<th>形式</th>
-<th>效果</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>innerHtml</td>
-<td>将HTML本来的内部的东西做修改</td>
-</tr>
-<tr>
-<td>document.write()</td>
-<td>将括号内内容显示到HTML中</td>
-</tr>
-<tr>
-<td>window.alert()</td>
-<td>写入警告框，提示框，就像提示翻译一样</td>
-</tr>
-<tr>
-<td>console.log()</td>
-<td>输出到浏览器控制台，可以通过F12查看。</td>
-</tr>
-</tbody>
-</table>
+    &lt;/body&gt;
+</code></pre><p>  Javascript的输出方式。<br>形式|效果<br>—-|—-<br>innerHtml|将HTML本来的内部的东西做修改<br>document.write()|将括号内内容显示到HTML中<br>window.alert()|写入警告框，提示框，就像提示翻译一样<br>console.log()|输出到浏览器控制台，可以通过F12查看。</p>
 <p>  比较运算符：</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -361,30 +334,27 @@
 </tr>
 </tbody>
 </table>
-<p>  JS的数据类型与其余基本相同，其中如果变量没有赋值，则为undefined，可以直接将变量的值赋为undefined，还可以赋为null，null和undefined可以用来清空对象(类似python中的字典)[数组，对象和空值(null)都是对象属性]。<br>
-null和undefined值相同，但是数据类型不同。<code>typeof</code>可以返回变量的数据类型，typeof function myFunc(){}   // Returns “function”。</p>
-<h2 id="js函数和对象">JS函数和对象</h2>
-<hr>
+</div>
+<p>  JS的数据类型与其余基本相同，其中如果变量没有赋值，则为undefined，可以直接将变量的值赋为undefined，还可以赋为null，null和undefined可以用来清空对象(类似python中的字典)[数组，对象和空值(null)都是对象属性]。<br>null和undefined值相同，但是数据类型不同。<code>typeof</code>可以返回变量的数据类型，typeof function myFunc(){}   // Returns “function”。</p>
+<h2 id="JS函数和对象"><a href="#JS函数和对象" class="headerlink" title="JS函数和对象"></a>JS函数和对象</h2><hr>
 <p>  使用<code>function</code>关键字定义JavaScript里面的函数，变量直接写名字在括号，用,隔开。</p>
-<pre><code>	function toCelsius(fahrenheit) {
-	  return (5/9) * (fahrenheit-32);
-	}
-	document.getElementById("demo").innerHTML = toCelsius; 返回函数的定义。
-</code></pre>
-<p>  JavaScript中的对象直接使用var定义为{}包括的对即可。</p>
-<pre><code>	调用可以使用objectName.propertyName
-	或者objectName["propertyName"]
+<pre><code>    function toCelsius(fahrenheit) {
+      return (5/9) * (fahrenheit-32);
+    }
+    document.getElementById("demo").innerHTML = toCelsius; 返回函数的定义。
+</code></pre><p>  JavaScript中的对象直接使用var定义为{}包括的对即可。</p>
+<pre><code>    调用可以使用objectName.propertyName
+    或者objectName["propertyName"]
 
-	var person = {
-	  firstName: "John",
-	  lastName : "Doe",
-	  id       : 5566,
-	  fullName : function() {
-	    return this.firstName + " " + this.lastName;
-	  }
-	 }; //调用fullName时要使用person.fullName()，如果使用person.fullName则返回函数定义。
-</code></pre>
-<p>​</p>
+    var person = {
+      firstName: "John",
+      lastName : "Doe",
+      id       : 5566,
+      fullName : function() {
+        return this.firstName + " " + this.lastName;
+      }
+     }; //调用fullName时要使用person.fullName()，如果使用person.fullName则返回函数定义。
+</code></pre><p>​        </p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -505,7 +475,7 @@ null和undefined值相同，但是数据类型不同。<code>typeof</code>可以
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#js基础"><span class="nav-number">1.</span> <span class="nav-text">Js基础</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#js函数和对象"><span class="nav-number">2.</span> <span class="nav-text">JS函数和对象</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Js基础"><span class="nav-number">1.</span> <span class="nav-text">Js基础</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JS函数和对象"><span class="nav-number">2.</span> <span class="nav-text">JS函数和对象</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -577,13 +547,13 @@ null和undefined值相同，但是数据类型不同。<code>typeof</code>可以
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">318k</span>
+    <span title="站点总字数">325k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">4:49</span>
+    <span title="站点阅读时长">4:56</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0
   </div>

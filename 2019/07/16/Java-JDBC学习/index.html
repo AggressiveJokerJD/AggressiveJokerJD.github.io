@@ -256,7 +256,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2.1k</span>
+              <span>2.2k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -277,93 +277,68 @@
       
         <p>  JDBC是Java Database Connectivity(Java数据库连接)的简称，用Java语言规范客户端程序如何访问数据库的应用接口，提供了通过Java传输SQL操作给数据库的方法。</p>
 <a id="more"></a>
-<h2 id="jdbc架构">JDBC架构</h2>
-<hr>
+<h2 id="JDBC架构"><a href="#JDBC架构" class="headerlink" title="JDBC架构"></a>JDBC架构</h2><hr>
 <p>  JDBC架构分为双层架构和三层架构。</p>
-<h3 id="jdbc双层架构">JDBC双层架构</h3>
-<p>  双层架构就是通过Java API(JDBC)直接访问数据库。Java API或者应用直接访问数据源。</p>
-<h3 id="jdbc三层架构">JDBC三层架构</h3>
-<p>  三层结构就是客户端(GUI)，服务端(JDBC)，数据库。</p>
-<h2 id="jdbc的基本步骤">JDBC的基本步骤</h2>
-<hr>
+<h3 id="JDBC双层架构"><a href="#JDBC双层架构" class="headerlink" title="JDBC双层架构"></a>JDBC双层架构</h3><p>  双层架构就是通过Java API(JDBC)直接访问数据库。Java API或者应用直接访问数据源。</p>
+<h3 id="JDBC三层架构"><a href="#JDBC三层架构" class="headerlink" title="JDBC三层架构"></a>JDBC三层架构</h3><p>  三层结构就是客户端(GUI)，服务端(JDBC)，数据库。</p>
+<h2 id="JDBC的基本步骤"><a href="#JDBC的基本步骤" class="headerlink" title="JDBC的基本步骤"></a>JDBC的基本步骤</h2><hr>
 <ol>
-<li>
-<p>建立数据库的驱动，安装驱动程序。</p>
-<pre><code>Class.forName(driver);
-其中driver为驱动，就是使用Jdbc的要使用的驱动，一般为：driver = "com.mysql.cj.jdbc.Driver";(如果是使用mysql-connector-java-5.1之前的版
-本，则去掉cj即可，这个是使用8.0版本时必须要加入的。)
-</code></pre>
-</li>
-<li>
-<p>建立与数据库的连接，通知数据库要进行连接。</p>
-<pre><code>Connection connection = DriverManager.getConnection(url, username, password);
-其中url为要连接的数据库的相关信息，一般为：url="jdbc:mysql://localhost:3306/test_jdbc?useUnicode=true&amp;characterEncoding=utf8&amp;serverTimezone=GMT";
-username = '你要连接数据库索要使用的用户名'
-password = '你使用的用户的密码'
-</code></pre>
-</li>
-<li>
-<p>创建操作数据库的对象</p>
-<pre><code>Statement stmt = connection.createStatement();
-或者
-PreparedStatement pstmt = connection.prepareStatement(sql);
-</code></pre>
-</li>
-<li>
-<p>使用数据库对象执行数据库的操作</p>
+<li><p>建立数据库的驱动，安装驱动程序。</p>
+<pre><code> Class.forName(driver);
+ 其中driver为驱动，就是使用Jdbc的要使用的驱动，一般为：driver = "com.mysql.cj.jdbc.Driver";(如果是使用mysql-connector-java-5.1之前的版
+ 本，则去掉cj即可，这个是使用8.0版本时必须要加入的。)
+</code></pre></li>
+<li><p>建立与数据库的连接，通知数据库要进行连接。</p>
+<pre><code> Connection connection = DriverManager.getConnection(url, username, password);
+ 其中url为要连接的数据库的相关信息，一般为：url="jdbc:mysql://localhost:3306/test_jdbc?useUnicode=true&amp;characterEncoding=utf8&amp;serverTimezone=GMT";
+ username = '你要连接数据库索要使用的用户名'
+ password = '你使用的用户的密码'
+</code></pre></li>
+<li><p>创建操作数据库的对象</p>
+<pre><code> Statement stmt = connection.createStatement();
+ 或者
+ PreparedStatement pstmt = connection.prepareStatement(sql);
+</code></pre></li>
+<li><p>使用数据库对象执行数据库的操作</p>
 <ol>
-<li>
-<p>使用修改数据库信息的操作(无返回数据)</p>
-<pre><code>String sql="update user set LoginName='博哥' where Id=1";
-int row = stmt.executeUpdate(sql);	//row：代表数据库受到影响的函数，一般来说，增删改都会提示数据库受影响的行，一般可以用来判断是否操作成功。
-</code></pre>
-</li>
-<li>
-<p>使用查询已提取数据库信息的操作(含返回数据)</p>
-<pre><code>String sql="select * from user";
-ResultSet rs = stmt.executeQuery(sql);
-List list=new ArrayList();
-查询的方法时executeQuery()，它接受一个ResultSet类型的结果，当读取数据库数据的时候，它有一个游标指针，指向数据库第一条记录，如果循环读取，每读一行指针就会下移一行数据，直到所有数据读取完毕。
-其中ResultSet类型的参数读取数据有两种方法。1.rs.get(索引)2.rs.get(数据库字段名)第一种就是所搜寻当前记录的第几条属性，1代表的就是搜到结果的第一个属性，以此类推。第二种就是直接输入字段名直接获得与之匹配的属性，数据库字段名不区分大小写。
-</code></pre>
-</li>
+<li><p>使用修改数据库信息的操作(无返回数据)</p>
+<pre><code> String sql="update user set LoginName='博哥' where Id=1";
+ int row = stmt.executeUpdate(sql);    //row：代表数据库受到影响的函数，一般来说，增删改都会提示数据库受影响的行，一般可以用来判断是否操作成功。
+</code></pre></li>
+<li><p>使用查询已提取数据库信息的操作(含返回数据)</p>
+<pre><code> String sql="select * from user";
+ ResultSet rs = stmt.executeQuery(sql);
+ List list=new ArrayList();
+ 查询的方法时executeQuery()，它接受一个ResultSet类型的结果，当读取数据库数据的时候，它有一个游标指针，指向数据库第一条记录，如果循环读取，每读一行指针就会下移一行数据，直到所有数据读取完毕。
+ 其中ResultSet类型的参数读取数据有两种方法。1.rs.get(索引)2.rs.get(数据库字段名)第一种就是所搜寻当前记录的第几条属性，1代表的就是搜到结果的第一个属性，以此类推。第二种就是直接输入字段名直接获得与之匹配的属性，数据库字段名不区分大小写。
+</code></pre></li>
 </ol>
 </li>
-<li>
-<p>关闭数据库的连接</p>
-<pre><code>connection.close();//关闭之前创建的数据库对象
-</code></pre>
-</li>
+<li><p>关闭数据库的连接</p>
+<pre><code> connection.close();//关闭之前创建的数据库对象
+</code></pre></li>
 </ol>
 <p>  其中的sql语句分为两种形式，不同类型的sql语句也会使用不同的数据库对象。</p>
 <ol>
-<li>
-<p>连接型</p>
-<pre><code>连接型的sql使用Statement类型的数据库对象，直接将完整的sql语句传入Statement的executeUpdate()/executeQuery()方法中来完成操作。
-Statement stmt = conniction.createStatement();
-int row = stmt.executeUpdate(sql);
-或者
-Statement stmt = conniction.createStatement();
-ResultSet rs = stmt.executeQuery(sql);	
-</code></pre>
-</li>
-<li>
-<p>索引型</p>
-<pre><code>索引型的sql使用PreparedStatement类型的数据库对象，将带有索引的sql语句传入connection的方法prepareStatement(sql)方法来完成操作。
-String sql = "seletc * from user where LoginName=? and LoginPwd=?"//其中的?代表的是之后要传入的值。
-PreparedStatement pstmt = connection.prepareStatement(sql);
-//将参数按照之前sql之中定义的顺序一一填入其中，第一个值为索引，就是?出现在sql语句中的第几个位置。第二个值为要传入该位置的确定的值。
-pstmt.setString(1,name);
-pstmt.setString(2,pwd);
-</code></pre>
-</li>
+<li><p>连接型</p>
+<pre><code> 连接型的sql使用Statement类型的数据库对象，直接将完整的sql语句传入Statement的executeUpdate()/executeQuery()方法中来完成操作。
+ Statement stmt = conniction.createStatement();
+ int row = stmt.executeUpdate(sql);
+ 或者
+ Statement stmt = conniction.createStatement();
+ ResultSet rs = stmt.executeQuery(sql);    
+</code></pre></li>
+<li><p>索引型</p>
+<pre><code> 索引型的sql使用PreparedStatement类型的数据库对象，将带有索引的sql语句传入connection的方法prepareStatement(sql)方法来完成操作。
+ String sql = "seletc * from user where LoginName=? and LoginPwd=?"//其中的?代表的是之后要传入的值。
+ PreparedStatement pstmt = connection.prepareStatement(sql);
+ //将参数按照之前sql之中定义的顺序一一填入其中，第一个值为索引，就是?出现在sql语句中的第几个位置。第二个值为要传入该位置的确定的值。
+ pstmt.setString(1,name);
+ pstmt.setString(2,pwd);
+</code></pre></li>
 </ol>
-<p>  其中索引型要比连接型更加的安全，更加快捷。<br>
-<img src="https://study-image-1259719447.cos.ap-chengdu.myqcloud.com/%E8%BF%9E%E6%8E%A5%E5%9E%8B%E5%AD%97%E6%AE%B5%E7%9A%84%E5%BC%8A%E7%AB%AF.png" alt="连接型字段的弊端"><br>
-可以直接通过上面图片显示的方法直接登录，即使数据库中没有用户的登录名为"‘or 1=1 or’"。</p>
-<p>​		<br>
-​	<br>
-​</p>
+<p>  其中索引型要比连接型更加的安全，更加快捷。<br><img src="https://study-image-1259719447.cos.ap-chengdu.myqcloud.com/%E8%BF%9E%E6%8E%A5%E5%9E%8B%E5%AD%97%E6%AE%B5%E7%9A%84%E5%BC%8A%E7%AB%AF.png" alt="连接型字段的弊端"><br>可以直接通过上面图片显示的方法直接登录，即使数据库中没有用户的登录名为”‘or 1=1 or’”。</p>
+<p>​<br>​<br>​        </p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -484,7 +459,7 @@ pstmt.setString(2,pwd);
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#jdbc架构"><span class="nav-number">1.</span> <span class="nav-text">JDBC架构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#jdbc双层架构"><span class="nav-number">1.1.</span> <span class="nav-text">JDBC双层架构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jdbc三层架构"><span class="nav-number">1.2.</span> <span class="nav-text">JDBC三层架构</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#jdbc的基本步骤"><span class="nav-number">2.</span> <span class="nav-text">JDBC的基本步骤</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#JDBC架构"><span class="nav-number">1.</span> <span class="nav-text">JDBC架构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#JDBC双层架构"><span class="nav-number">1.1.</span> <span class="nav-text">JDBC双层架构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JDBC三层架构"><span class="nav-number">1.2.</span> <span class="nav-text">JDBC三层架构</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JDBC的基本步骤"><span class="nav-number">2.</span> <span class="nav-text">JDBC的基本步骤</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -556,13 +531,13 @@ pstmt.setString(2,pwd);
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">318k</span>
+    <span title="站点总字数">325k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">4:49</span>
+    <span title="站点阅读时长">4:56</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0
   </div>
