@@ -55,12 +55,15 @@
 <meta property="og:site_name" content="AggressiveJokerJD&#39;s Blog">
 <meta property="og:description" content="最近两天搭建了博客嘛，然后就是没有先开始学习，而是先弄了一下博客的美化，其实也都是从网上扒下来的东西了，但是还是记录一下吧。">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://pu0chvxph.bkt.clouddn.com/GithubFMOG%E6%96%87%E5%AD%97.png">
+<meta property="og:image" content="https://study-image-1259719447.cos.ap-chengdu.myqcloud.com/GithubFMOG%E5%9B%BE%E6%A1%88.png">
+<meta property="og:image" content="https://study-image-1259719447.cos.ap-chengdu.myqcloud.com/Next%E4%B8%BB%E9%A2%98%E7%9A%84%E5%9B%9B%E7%A7%8D%E5%8A%A8%E6%80%81%E8%83%8C%E6%99%AF.png">
 <meta property="og:image" content="https://study-image-1259719447.cos.ap-chengdu.myqcloud.com/fireworks%E6%95%88%E6%9E%9C%E5%9B%BE.jpg">
 <meta property="og:updated_time" content="2019-12-18T12:42:11.643Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="博客美化[基于NEXT主题]">
 <meta name="twitter:description" content="最近两天搭建了博客嘛，然后就是没有先开始学习，而是先弄了一下博客的美化，其实也都是从网上扒下来的东西了，但是还是记录一下吧。">
-<meta name="twitter:image" content="https://study-image-1259719447.cos.ap-chengdu.myqcloud.com/fireworks%E6%95%88%E6%9E%9C%E5%9B%BE.jpg">
+<meta name="twitter:image" content="http://pu0chvxph.bkt.clouddn.com/GithubFMOG%E6%96%87%E5%AD%97.png">
 
 <link rel="canonical" href="http://yoursite.com/2019/07/03/博客美化-基于NEXT主题/">
 
@@ -256,7 +259,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2.9k</span>
+              <span>3.4k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -277,61 +280,53 @@
       
         <p>  最近两天搭建了博客嘛，然后就是没有先开始学习，而是先弄了一下博客的美化，其实也都是从网上扒下来的东西了，但是还是记录一下吧。</p>
 <a id="more"></a>
-<h2 id="为博客添加-Github-右上角链接"><a href="#为博客添加-Github-右上角链接" class="headerlink" title="为博客添加 Github 右上角链接"></a>为博客添加 Github 右上角链接</h2><hr>
+<h2 id="为博客添加-github-右上角链接">为博客添加 Github 右上角链接</h2>
+<hr>
   有两种样式的链接，一种是[<font color="LightSkyBlue">文字样式</font>](https://study-image-1259719447.cos.ap-chengdu.myqcloud.com/GithubFMOG%E6%96%87%E5%AD%97.png)的
-
-![文字](http://pu0chvxph.bkt.clouddn.com/GithubFMOG%E6%96%87%E5%AD%97.png)
-
-一种是[<font color="LightSkyBlue">图案样式</font>](http://tholman.com/github-corners/)的
-
-![图案](https://study-image-1259719447.cos.ap-chengdu.myqcloud.com/GithubFMOG%E5%9B%BE%E6%A1%88.png)
-
-喜欢相应的样式可以去上面两个链接里面选择不同颜色，复制代码黏贴到<code>themes/next/layout/_layout.swig</code>文件中的<code> class="headband"</code>的下面,把<code>href</code>修改为你自己的Github链接即可。
-
-## 为博客添加背景图片
+<p><img src="http://pu0chvxph.bkt.clouddn.com/GithubFMOG%E6%96%87%E5%AD%97.png" alt="文字"></p>
+<p>一种是<a href="http://tholman.com/github-corners/" target="_blank" rel="noopener"><font color="LightSkyBlue">图案样式</font></a>的</p>
+<p><img src="https://study-image-1259719447.cos.ap-chengdu.myqcloud.com/GithubFMOG%E5%9B%BE%E6%A1%88.png" alt="图案"></p>
+<p>喜欢相应的样式可以去上面两个链接里面选择不同颜色，复制代码黏贴到<code>themes/next/layout/_layout.swig</code>文件中的<code> class="headband"</code>的下面,把<code>href</code>修改为你自己的Github链接即可。</p>
+<h2 id="为博客添加背景图片">为博客添加背景图片</h2>
 <hr>
   一般我们都会为自己的博客添加一个好看的背景图片，可以将背景图片放入<code>themes\next\source\images</code>，然后修改<code>themes\next\source\css\_custom\custom.styl</code>文件添加下面的代码(直接添加即可)：
-
-    body {
-        background:url(/images/yourbackground.jpg);
-        background-repeat: no-repeat;
-        background-attachment:fixed;
-        background-position:50% 50%;
-    }
-
-将url修改为自己的图片的位置和名字即可，也可以在url之中插入一个图片的外链也可以达到相同的效果。
-
-## 设置博客的动态背景
+<pre><code>body {
+    background:url(/images/yourbackground.jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position:50% 50%;
+}
+</code></pre>
+<p>将url修改为自己的图片的位置和名字即可，也可以在url之中插入一个图片的外链也可以达到相同的效果。</p>
+<h2 id="设置博客的动态背景">设置博客的动态背景</h2>
 <hr>
   在next主题的预置动态背景中有四种不同的样式，可以根据自己的喜好为博客添加动态背景。
-
-![](https://study-image-1259719447.cos.ap-chengdu.myqcloud.com/Next%E4%B8%BB%E9%A2%98%E7%9A%84%E5%9B%9B%E7%A7%8D%E5%8A%A8%E6%80%81%E8%83%8C%E6%99%AF.png)
-
-  图中显示的是四种不同的动态背景，可以通过将<code>false</code>修改为<code>ture</code>来激活动态背景。也可以修改<code>/themes/next/layout/_layout.swig</code>文件来修改动态背景的样式，在<code>&lt; /body &gt;</code>之前添加如下代码(记得去掉script&lt;&gt;两端的空格和后面的空格[为了显示而加])即可：
-
-    
-
-1. 修改color改变线条的颜色
-2. 修改opacity改变线条的透明度(默认0.5)[范围0-1]
-3. 修改count改变线条的数目
-4. 修改zIndex：背景的z-index属性，css属性用于控制所在层的位置, 默认: -1
-
-## 设置博客博主头像
+<p><img src="https://study-image-1259719447.cos.ap-chengdu.myqcloud.com/Next%E4%B8%BB%E9%A2%98%E7%9A%84%E5%9B%9B%E7%A7%8D%E5%8A%A8%E6%80%81%E8%83%8C%E6%99%AF.png" alt=""></p>
+<p>  图中显示的是四种不同的动态背景，可以通过将<code>false</code>修改为<code>ture</code>来激活动态背景。也可以修改<code>/themes/next/layout/_layout.swig</code>文件来修改动态背景的样式，在<code>&lt; /body &gt;</code>之前添加如下代码(记得去掉script&lt;&gt;两端的空格和后面的空格[为了显示而加])即可：</p>
+<pre><code>{% if theme.canvas_nest %}
+		&lt; script type="text/javascript"
+		color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-
+		nest.min.js" &gt;&lt; /script &gt;
+	{% endif %}
+</code></pre>
+<ol>
+<li>修改color改变线条的颜色</li>
+<li>修改opacity改变线条的透明度(默认0.5)[范围0-1]</li>
+<li>修改count改变线条的数目</li>
+<li>修改zIndex：背景的z-index属性，css属性用于控制所在层的位置, 默认: -1</li>
+</ol>
+<h2 id="设置博客博主头像">设置博客博主头像</h2>
 <hr>
   在next主题的配置文件<code>_config.yml</code>中将avatar的注释去掉，然后在avatar之后加上你要作为投降的图片的本机地址或者URL即可：
-
-    avatar: 本机图片位置/图片URL外链
-
-## 修改博客的文章的透明度 
+<pre><code>avatar: 本机图片位置/图片URL外链
+</code></pre>
+<h2 id="修改博客的文章的透明度">修改博客的文章的透明度</h2>
 <hr>
   修改<code>themes/next/source/css/_schemes/Pisces/_layout.styl</code>文件中的所有的<code>background</code>可以修改文章的面板的颜色，将<code>background</code>设置为<code>None</code>即可为透明。
-
-## 修改博客底部标签#为一个书页图标
+<h2 id="修改博客底部标签-为一个书页图标">修改博客底部标签#为一个书页图标</h2>
 <hr>
   修改模板<code>/themes/next/layout/_macro/post.swig</code>，搜索 <code>rel="tag"&gt;#</code>，将<code> # </code>换成<code>&lt; i class="fa fa-tag" &gt;&lt; /i &gt;</code>即可修改。
-
-## 将文字中的代码引用设置为其他颜色
-
+<h2 id="将文字中的代码引用设置为其他颜色">将文字中的代码引用设置为其他颜色</h2>
 
 <p>打开<code>\themes\next\source\css_custom\custom.styl</code>,向里面添加如下代码：</p>
 <pre><code>// Custom styles.
@@ -349,21 +344,31 @@ code {
 .highlight, code, pre {
     border: 1px solid #d6d6d6;
 }
-</code></pre><p>可以自行的调整参数满足自己的要求</p>
-<h2 id="修改代码块使其更加舒服"><a href="#修改代码块使其更加舒服" class="headerlink" title="修改代码块使其更加舒服"></a>修改代码块使其更加舒服</h2><p></p><hr><br>  找到了一个博主写的关于如何修改代码块使其更加美化的方法，而且非常的详细，所以自己也就不多写了，转载了<a href="https://eggsywelsh.github.io/2016/11/10/hexo%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE/" target="_blank" rel="noopener">博文</a><p></p>
+</code></pre>
+<p>可以自行的调整参数满足自己的要求</p>
+<h2 id="修改代码块使其更加舒服">修改代码块使其更加舒服</h2>
+<hr>
+  找到了一个博主写的关于如何修改代码块使其更加美化的方法，而且非常的详细，所以自己也就不多写了，转载了[博文](https://eggsywelsh.github.io/2016/11/10/hexo%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE/)
 <ol>
 <li><a href="https://github.com/google/code-prettify" target="_blank" rel="noopener">Google Code Prettify 的github地址</a></li>
 <li><a href="https://jmblog.github.io/color-themes-for-google-code-prettify/" target="_blank" rel="noopener">Google Code Prettify 的样式地址</a></li>
 </ol>
 <p>上面两个是需要的东西</p>
-<h2 id="添加鼠标点解特效"><a href="#添加鼠标点解特效" class="headerlink" title="添加鼠标点解特效"></a>添加鼠标点解特效</h2><p></p><hr><br>  这里主要还是参考了别人的代码，在anime官网也可以搜到具体的<a href="https://codepen.io/Koinu/pen/NABpjL" target="_blank" rel="noopener">fireworks的代码</a>，但是我加入进去并不能够实现，应该是_layout.swig里面的配置不太合适，但是用<a href="https://blog.rayboo.top/2018/10/29/hexo-nexT-%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB%E5%8A%A8%E7%94%BB/" target="_blank" rel="noopener">这个文章</a>中的也可以实现同样的效果.<p></p>
+<h2 id="添加鼠标点解特效">添加鼠标点解特效</h2>
+<hr>
+  这里主要还是参考了别人的代码，在anime官网也可以搜到具体的[fireworks的代码](https://codepen.io/Koinu/pen/NABpjL)，但是我加入进去并不能够实现，应该是_layout.swig里面的配置不太合适，但是用[这个文章](https://blog.rayboo.top/2018/10/29/hexo-nexT-%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB%E5%8A%A8%E7%94%BB/)中的也可以实现同样的效果.
 <p><img src="https://study-image-1259719447.cos.ap-chengdu.myqcloud.com/fireworks%E6%95%88%E6%9E%9C%E5%9B%BE.jpg" alt="fireworks效果图"></p>
-<h2 id="添加文章置顶"><a href="#添加文章置顶" class="headerlink" title="添加文章置顶"></a>添加文章置顶</h2><p></p><hr><br>  为博客的文章添加置顶还是有必要的，可以方便查看的嘛最少，主要有两个步骤，还有一个为了优化界面的步骤。<p></p>
-<h3 id="安装库"><a href="#安装库" class="headerlink" title="安装库"></a>安装库</h3><pre><code>nmp uninstall hexo-generator-index --save
+<h2 id="添加文章置顶">添加文章置顶</h2>
+<hr>
+  为博客的文章添加置顶还是有必要的，可以方便查看的嘛最少，主要有两个步骤，还有一个为了优化界面的步骤。
+<h3 id="安装库">安装库</h3>
+<pre><code>nmp uninstall hexo-generator-index --save
 
 nmp install hexo-generator-index-pin-top --save
-</code></pre><p>我在添加的时候会报错，显示数据库异常(就像我安装Aplayer的时候也是，但是可以使用)，而且之后在上传到github的时候也会显示，但是我还是硬着头皮上传了，目前来说还是能用的，可以完成文章置顶的效果。</p>
-<h3 id="设置文章置顶"><a href="#设置文章置顶" class="headerlink" title="设置文章置顶"></a>设置文章置顶</h3><p>只需要在文章的front-matter中加入top: ture即可达到置顶效果。</p>
+</code></pre>
+<p>我在添加的时候会报错，显示数据库异常(就像我安装Aplayer的时候也是，但是可以使用)，而且之后在上传到github的时候也会显示，但是我还是硬着头皮上传了，目前来说还是能用的，可以完成文章置顶的效果。</p>
+<h3 id="设置文章置顶">设置文章置顶</h3>
+<p>只需要在文章的front-matter中加入top: ture即可达到置顶效果。</p>
 <pre><code>---
 title: '博客美化[基于NEXT主题]'
 date: 2019-07-03 23:29:40
@@ -371,15 +376,20 @@ categories: Hexo
 tags: 博客美化
 top: ture
 ---
-</code></pre><p>这样既可以使某一个文章置顶了。</p>
-<h3 id="为置顶文章添加图标"><a href="#为置顶文章添加图标" class="headerlink" title="为置顶文章添加图标"></a>为置顶文章添加图标</h3><p>将<code>blog\themes\next\layout_macro</code>文件夹下的<code>post.swig</code>文件的<code> &lt; div class=”post-meta” &gt;</code>下面加入如下代码：</p>
+</code></pre>
+<p>这样既可以使某一个文章置顶了。</p>
+<h3 id="为置顶文章添加图标">为置顶文章添加图标</h3>
+<p>将<code>blog\themes\next\layout_macro</code>文件夹下的<code>post.swig</code>文件的<code> &lt; div class=“post-meta” &gt;</code>下面加入如下代码：</p>
 <pre><code>{% if post.top %}
 		&lt; i class="fa fa-thumb-tack"&gt;
 		&lt; font color="green"&gt;Topping
 		&lt; span class="post-meta-divider"&gt;|
 	{% endif %}
-</code></pre><p>要去掉其中&lt;&gt;之前的空格，因为为了显示出来加了空格。</p>
-<h2 id="参考了的好的文章"><a href="#参考了的好的文章" class="headerlink" title="参考了的好的文章"></a>参考了的好的文章</h2><p></p><hr><br><a href="https://qianling.pw/hexo-optimization/" target="_blank" rel="noopener">Hexo优化汇总</a><p></p>
+</code></pre>
+<p>要去掉其中&lt;&gt;之前的空格，因为为了显示出来加了空格。</p>
+<h2 id="参考了的好的文章">参考了的好的文章</h2>
+<hr>
+[Hexo优化汇总](https://qianling.pw/hexo-optimization/)
 <p><a href="https://www.feiwuuz.com.cn/archives/5483aa06.html" target="_blank" rel="noopener">Hexo博客Next主题美化</a></p>
 <p><a href="https://blog.rayboo.top/2018/10/29/hexo-nexT-%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB%E5%8A%A8%E7%94%BB/" target="_blank" rel="noopener">Hexo博客鼠标点击特效fireworks</a></p>
 <script>
@@ -502,7 +512,7 @@ top: ture
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#为博客添加-Github-右上角链接"><span class="nav-number">1.</span> <span class="nav-text">为博客添加 Github 右上角链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改代码块使其更加舒服"><span class="nav-number">2.</span> <span class="nav-text">修改代码块使其更加舒服</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加鼠标点解特效"><span class="nav-number">3.</span> <span class="nav-text">添加鼠标点解特效</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加文章置顶"><span class="nav-number">4.</span> <span class="nav-text">添加文章置顶</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装库"><span class="nav-number">4.1.</span> <span class="nav-text">安装库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置文章置顶"><span class="nav-number">4.2.</span> <span class="nav-text">设置文章置顶</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#为置顶文章添加图标"><span class="nav-number">4.3.</span> <span class="nav-text">为置顶文章添加图标</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考了的好的文章"><span class="nav-number">5.</span> <span class="nav-text">参考了的好的文章</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#为博客添加-github-右上角链接"><span class="nav-number">1.</span> <span class="nav-text">为博客添加 Github 右上角链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为博客添加背景图片"><span class="nav-number">2.</span> <span class="nav-text">为博客添加背景图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置博客的动态背景"><span class="nav-number">3.</span> <span class="nav-text">设置博客的动态背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置博客博主头像"><span class="nav-number">4.</span> <span class="nav-text">设置博客博主头像</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改博客的文章的透明度"><span class="nav-number">5.</span> <span class="nav-text">修改博客的文章的透明度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改博客底部标签-为一个书页图标"><span class="nav-number">6.</span> <span class="nav-text">修改博客底部标签#为一个书页图标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#将文字中的代码引用设置为其他颜色"><span class="nav-number">7.</span> <span class="nav-text">将文字中的代码引用设置为其他颜色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改代码块使其更加舒服"><span class="nav-number">8.</span> <span class="nav-text">修改代码块使其更加舒服</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加鼠标点解特效"><span class="nav-number">9.</span> <span class="nav-text">添加鼠标点解特效</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加文章置顶"><span class="nav-number">10.</span> <span class="nav-text">添加文章置顶</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装库"><span class="nav-number">10.1.</span> <span class="nav-text">安装库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置文章置顶"><span class="nav-number">10.2.</span> <span class="nav-text">设置文章置顶</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#为置顶文章添加图标"><span class="nav-number">10.3.</span> <span class="nav-text">为置顶文章添加图标</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考了的好的文章"><span class="nav-number">11.</span> <span class="nav-text">参考了的好的文章</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -518,7 +528,7 @@ top: ture
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">181</span>
+          <span class="site-state-item-count">184</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -574,13 +584,13 @@ top: ture
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">325k</span>
+    <span title="站点总字数">1.4m</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">4:56</span>
+    <span title="站点阅读时长">21:25</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0
   </div>
